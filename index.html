@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Calendar</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Training Calendar</h1>
+      <p class="subtitle">Training Calendar Generator</p>
+    </header>
+
+    <main class="main">
+      <section class="config-panel">
+        <h2>Training Configuration</h2>
+        <form id="trainingForm">
+          <div class="form-group">
+            <label for="event">Race Event</label>
+            <select id="event" required>
+              <option value="">Select event...</option>
+              <option value="5k">5K</option>
+              <option value="10k">10K</option>
+              <option value="half_marathon">Half Marathon</option>
+              <option value="marathon">Marathon</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="raceDate">Race Date</label>
+            <input type="date" id="raceDate" required>
+          </div>
+
+          <div class="form-group">
+            <label for="daysPerWeek">Days Available Per Week</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="daysPerWeek" value="4" checked>
+                <span>4 days</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="daysPerWeek" value="5">
+                <span>5 days</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="daysPerWeek" value="6">
+                <span>6 days</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="daysPerWeek" value="7">
+                <span>7 days</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="currentMileage">Current Weekly Mileage</label>
+            <input type="number" id="currentMileage" min="0" max="200" value="20" required>
+            <span class="hint">miles per week</span>
+          </div>
+
+          <div class="form-group">
+            <label>Distance Units</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="units" value="km" checked>
+                <span>Kilometers</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="units" value="miles">
+                <span>Miles</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>VDOT Level</label>
+            <div class="vdot-input-method">
+              <div class="method-tabs">
+                <button type="button" class="tab active" data-method="race">From Race Time</button>
+                <button type="button" class="tab" data-method="manual">Manual VDOT</button>
+              </div>
+              <div id="raceTimeMethod" class="method-content active">
+                <div class="form-group">
+                  <select id="raceDistance">
+                    <option value="5k">5K</option>
+                    <option value="10k">10K</option>
+                    <option value="half">Half Marathon</option>
+                    <option value="marathon">Marathon</option>
+                  </select>
+                </div>
+                <div class="time-input">
+                  <input type="number" id="raceHours" min="0" max="10" placeholder="h" class="time-field">
+                  <span>:</span>
+                  <input type="number" id="raceMinutes" min="0" max="59" placeholder="mm" class="time-field">
+                  <span>:</span>
+                  <input type="number" id="raceSeconds" min="0" max="59" placeholder="ss" class="time-field">
+                </div>
+                <button type="button" id="calculateVdot" class="btn-secondary btn-block">Calculate</button>
+                <div id="vdotResult" class="vdot-result hidden"></div>
+              </div>
+              <div id="manualMethod" class="method-content">
+                <input type="range" id="vdotSlider" min="30" max="85" value="50">
+                <div class="vdot-display">
+                  <span id="vdotValue">50</span>
+                  <span class="vdot-label">VDOT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Heart Rate (for zone display)</label>
+            <div class="hr-row">
+              <div>
+                <input type="number" id="maxHr" min="120" max="220" placeholder="max" value="190">
+                <span class="hint">max bpm</span>
+              </div>
+              <div>
+                <input type="number" id="restHr" min="30" max="100" placeholder="rest" value="60">
+                <span class="hint">rest bpm</span>
+              </div>
+            </div>
+            <span class="hint">Zones are estimates from %VO2max (Swain formula). Paces remain the source of truth.</span>
+          </div>
+
+          <button type="submit" class="btn-primary">Generate Training Plan</button>
+          <button type="button" id="resetPlan" class="btn-secondary btn-reset">Clear Saved Plan</button>
+        </form>
+      </section>
+
+      <section class="calendar-panel hidden" id="calendarPanel">
+        <div class="calendar-header">
+          <h2>Training Calendar</h2>
+          <div class="countdown" id="countdown"></div>
+          <div class="calendar-nav">
+            <button id="prevWeek" class="btn-nav">&laquo; Prev</button>
+            <span id="weekIndicator">Week 1</span>
+            <button id="nextWeek" class="btn-nav">Next &raquo;</button>
+          </div>
+        </div>
+
+        <div class="pace-zones" id="paceZones">
+          <h3>Your Training Paces (VDOT <span id="currentVdot">50</span>)</h3>
+          <div class="pace-grid">
+            <div class="pace-item">
+              <span class="pace-type">Easy</span>
+              <span class="pace-value" id="paceEasy">9:15-10:00</span>
+              <span class="pace-km" id="paceEasyKm"></span>
+            </div>
+            <div class="pace-item">
+              <span class="pace-type">Marathon</span>
+              <span class="pace-value" id="paceMarathon">6:36</span>
+              <span class="pace-km" id="paceMarathonKm"></span>
+            </div>
+            <div class="pace-item">
+              <span class="pace-type">Tempo</span>
+              <span class="pace-value" id="paceTempo">6:08</span>
+              <span class="pace-km" id="paceTempoKm"></span>
+            </div>
+            <div class="pace-item">
+              <span class="pace-type">Interval</span>
+              <span class="pace-value" id="paceInterval">5:47</span>
+              <span class="pace-km" id="paceIntervalKm"></span>
+            </div>
+            <div class="pace-item">
+              <span class="pace-type">Repetition</span>
+              <span class="pace-value" id="paceRepetition">5:13</span>
+              <span class="pace-km" id="paceRepetitionKm"></span>
+            </div>
+          </div>
+          <div class="hr-zones" id="hrZones">
+            <h4>Heart-Rate Zones (est.)</h4>
+            <div class="pace-grid" id="hrGrid"></div>
+          </div>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid">
+          <!-- Calendar will be rendered here -->
+        </div>
+
+        <div class="week-details" id="weekDetails">
+          <!-- Week details will be rendered here -->
+        </div>
+
+        <div class="calendar-summary" id="calendarSummary">
+          <!-- Summary will be rendered here -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Training plan calendar generator</p>
+    </footer>
+  </div>
+
+  <script src="js/vdot-calculator.js"></script>
+  <script src="js/calendar-generator.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
