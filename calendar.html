@@ -9,7 +9,13 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <a href="index.html" style="color:white; text-decoration:none;"><h1>Training Calendar</h1></a>
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TC</span>
+        <span class="brand-text">
+          <h1>Training Calendar</h1>
+          <span class="brand-tagline">VDOT · Training Planner</span>
+        </span>
+      </a>
       <nav>
         <a href="index.html">Configuration</a>
         <a href="calendar.html" class="active">Calendar</a>
@@ -21,8 +27,10 @@
     <main class="main single">
       <section class="calendar-panel" id="calendarPanel">
         <div class="calendar-header">
-          <h2>Training Calendar</h2>
-          <div class="countdown" id="countdown"></div>
+          <div class="calendar-title-group">
+            <h2>Training Calendar</h2>
+            <div class="countdown" id="countdown"></div>
+          </div>
           <div class="calendar-nav">
             <button id="prevWeek" class="btn-nav">&laquo; Prev</button>
             <span id="weekIndicator">Week 1</span>
@@ -86,9 +94,10 @@
         <div class="week-details" id="weekDetails"></div>
         <div class="calendar-summary" id="calendarSummary"></div>
 
-        <div id="noPlan" class="hidden" style="text-align:center; padding:40px; color:var(--gray-500);">
-          <p>No training plan found.</p>
-          <a href="index.html" class="btn-primary" style="display:inline-block; margin-top:12px; text-decoration:none; padding:10px 20px;">Create a Training Plan</a>
+        <div id="noPlan" class="hidden">
+          <h3>No training plan yet</h3>
+          <p>Configure your race to generate a personalized training calendar.</p>
+          <a href="index.html" class="btn-primary">Create a Training Plan</a>
         </div>
       </section>
     </main>
