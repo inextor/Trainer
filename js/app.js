@@ -286,20 +286,29 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="summary-item"><span class="label">Phase</span><span class="value">${week.phase}</span></div>
       </div>`;
 
-    renderPhaseTimeline();
+    renderPhaseTimeline(week);
   }
 
-  function renderPhaseTimeline() {
+  function renderPhaseTimeline(week) {
     const el = $('calendarSummary');
     if (!el) return;
+    const order = ['build', 'peak', 'taper'];
+    const labels = { build: 'Build', peak: 'Peak', taper: 'Taper' };
+    const currentIdx = order.indexOf(week.phase);
+    const blocks = order.map((p, i) => {
+      const label = labels[p];
+      const isCurrent = i === currentIdx;
+      const isPast = i < currentIdx;
+      const cls = `phase-block ${p}` + (isCurrent ? ' current' : '') + (isPast ? ' past' : '');
+      const marker = isCurrent ? '●' : isPast ? '✓' : '○';
+      return `<div class="${cls}"><span class="phase-marker">${marker}</span>${label}</div>`;
+    }).join('');
+    const phaseLabel = labels[week.phase] || week.phase;
     el.innerHTML = `
-      <h3>Training Phases</h3>
-      <div class="phase-timeline">
-        <div class="phase-block build">Build</div>
-        <div class="phase-block peak">Peak</div>
-        <div class="phase-block taper">Taper</div>
-      </div>
-      <p style="color:var(--gray-500);font-size:0.9rem;">Tap a day for details. Progress is saved automatically.</p>`;
+      <h3>Phases</h3>
+      <div class="phase-timeline">${blocks}</div>
+      <p class="phase-caption">You're in the <strong>${phaseLabel}</strong> phase · Week ${week.weekNum} of ${currentCalendar.totalWeeks}</p>
+      <p class="phase-hint">Tap a day for details. Progress is saved automatically.</p>`;
   }
 
   // ---- Day detail dialog (<dialog>) ----

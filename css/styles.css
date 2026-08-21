@@ -900,17 +900,53 @@ body {
   padding: 13px;
   text-align: center;
   border-radius: var(--radius-sm);
-  color: #0d1117;
-  font-weight: 800;
-  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: var(--bg-elevated);
+  border: 1px dashed var(--border-strong);
+  opacity: 0.75;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
-.phase-block.base { background: var(--easy); }
-.phase-block.build { background: var(--tempo); }
-.phase-block.peak { background: var(--interval); color: #fff; }
-.phase-block.taper { background: var(--marathon); color: #fff; }
+.phase-marker { font-size: 0.8rem; }
 
-.calendar-summary p { color: var(--text-muted); font-size: 0.85rem; }
+/* Past phases: done, solid & quiet */
+.phase-block.past { opacity: 1; border-style: solid; color: var(--text-faint); }
+
+/* Current phase: filled, vibrant highlight */
+.phase-block.current {
+  opacity: 1;
+  border-style: solid;
+  border-color: transparent;
+  color: #0d1117;
+  font-weight: 800;
+  box-shadow: var(--shadow-lg);
+}
+.phase-block.current .phase-marker { color: #0d1117; }
+
+.phase-block.build.current  { background: var(--tempo); }
+.phase-block.peak.current   { background: var(--interval); color: #fff; }
+.phase-block.peak.current .phase-marker { color: #fff; }
+.phase-block.taper.current  { background: var(--marathon); color: #fff; }
+.phase-block.taper.current .phase-marker { color: #fff; }
+
+.phase-caption {
+  color: var(--text);
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+.phase-caption strong { color: var(--accent-2); }
+
+.phase-hint {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
 
 /* ---------- Footer ---------- */
 .footer {
