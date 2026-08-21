@@ -9,7 +9,13 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <a href="index.html" style="color:white; text-decoration:none;"><h1>Training Calendar</h1></a>
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TC</span>
+        <span class="brand-text">
+          <h1>Training Calendar</h1>
+          <span class="brand-tagline">VDOT · Training Planner</span>
+        </span>
+      </a>
       <nav>
         <a href="index.html" class="active">Configuration</a>
         <a href="calendar.html" id="viewPlanLink">Calendar</a>
@@ -20,7 +26,9 @@
     <main class="main">
       <section class="config-panel">
         <h2>Training Configuration</h2>
+        <p class="panel-sub">Set your race, availability and fitness to build a personalized plan.</p>
         <form id="trainingForm">
+          <div class="section-title">Race Details</div>
           <div class="form-group">
             <label for="event">Race Event</label>
             <select id="event" required>
@@ -37,6 +45,7 @@
             <input type="date" id="raceDate" required>
           </div>
 
+          <div class="section-title">Schedule</div>
           <div class="form-group">
             <label for="daysPerWeek">Days Available Per Week</label>
             <div class="radio-group">
@@ -79,6 +88,7 @@
             <span class="hint" id="mileageHint">km per week</span>
           </div>
 
+          <div class="section-title">Fitness</div>
           <div class="form-group">
             <label>VDOT Level</label>
             <div class="vdot-input-method">
@@ -97,9 +107,9 @@
                 </div>
                 <div class="time-input">
                   <input type="number" id="raceHours" min="0" max="10" placeholder="h" class="time-field">
-                  <span>:</span>
+                  <span class="time-sep">:</span>
                   <input type="number" id="raceMinutes" min="0" max="59" placeholder="mm" class="time-field">
-                  <span>:</span>
+                  <span class="time-sep">:</span>
                   <input type="number" id="raceSeconds" min="0" max="59" placeholder="ss" class="time-field">
                 </div>
                 <button type="button" id="calculateVdot" class="btn-secondary btn-block">Calculate</button>
