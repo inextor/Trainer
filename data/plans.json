@@ -4,177 +4,6948 @@
     "lengthWeeks": 18,
     "paceBasis": "time",
     "daySelection": {
-      "3": ["A", "C", "E"],
-      "4": ["A", "B", "C", "E"],
-      "5": ["A", "B", "C", "D", "E"]
+      "3": [
+        "A",
+        "C",
+        "E"
+      ],
+      "4": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "5": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
     },
     "blocks": [
       {
-        "weeks": [18, 17, 16],
-        "sessions": {
-          "A": [{"p": "E", "m": 1, "times": 15, "rec": {"p": "W", "m": 1}}],
-          "B": "A",
-          "C": [
-            {"p": "E", "m": 1, "times": 9, "rec": {"p": "W", "m": 1}},
-            {"p": "E", "m": 2, "times": 3, "rec": {"p": "W", "m": 2}}
-          ],
-          "D": "C",
-          "E": [
-            {"p": "E", "m": 1, "times": 9, "rec": {"p": "W", "m": 1}},
-            {"p": "E", "m": 3, "times": 2, "rec": {"p": "W", "m": 3}}
-          ]
-        }
-      },
-      {
-        "weeks": [15, 14],
-        "sessions": {
-          "A": [{"p": "E", "m": 5, "times": 4, "rec": {"p": "W", "m": 5}}],
-          "B": "A",
-          "C": [{"p": "E", "m": 2, "times": 10, "rec": {"p": "W", "m": 2}}],
-          "D": "C",
-          "E": [
-            {"p": "E", "m": 4, "times": 5, "rec": {"p": "W", "m": 4}},
-            {"p": "E", "m": 4, "times": 3, "rec": {"p": "W", "m": 4}},
-            {"p": "E", "m": 18},
-            {"p": "W", "m": 6}
-          ]
-        }
-      },
-      {
-        "weeks": [13, 12],
+        "weeks": [
+          18,
+          17,
+          16
+        ],
         "sessions": {
           "A": [
-            {"p": "E", "m": 5}, {"p": "W", "m": 3},
-            {"p": "T", "m": 3, "times": 5, "rec": {"p": "W", "m": 2}},
-            {"p": "ST", "times": 10, "dur": 0.3, "rec": {"p": "W", "m": 1}}
+            {
+              "p": "E",
+              "m": 1,
+              "times": 15,
+              "rec": {
+                "p": "W",
+                "m": 1
+              }
+            }
           ],
-          "B": [{"p": "E", "m": 10, "times": 3, "rec": {"p": "W", "m": 5}}],
+          "B": "A",
+          "C": [
+            {
+              "p": "E",
+              "m": 1,
+              "times": 9,
+              "rec": {
+                "p": "W",
+                "m": 1
+              }
+            },
+            {
+              "p": "E",
+              "m": 2,
+              "times": 3,
+              "rec": {
+                "p": "W",
+                "m": 2
+              }
+            }
+          ],
+          "D": "C",
+          "E": [
+            {
+              "p": "E",
+              "m": 1,
+              "times": 9,
+              "rec": {
+                "p": "W",
+                "m": 1
+              }
+            },
+            {
+              "p": "E",
+              "m": 3,
+              "times": 2,
+              "rec": {
+                "p": "W",
+                "m": 3
+              }
+            }
+          ]
+        }
+      },
+      {
+        "weeks": [
+          15,
+          14
+        ],
+        "sessions": {
+          "A": [
+            {
+              "p": "E",
+              "m": 5,
+              "times": 4,
+              "rec": {
+                "p": "W",
+                "m": 5
+              }
+            }
+          ],
+          "B": "A",
+          "C": [
+            {
+              "p": "E",
+              "m": 2,
+              "times": 10,
+              "rec": {
+                "p": "W",
+                "m": 2
+              }
+            }
+          ],
+          "D": "C",
+          "E": [
+            {
+              "p": "E",
+              "m": 4,
+              "times": 5,
+              "rec": {
+                "p": "W",
+                "m": 4
+              }
+            },
+            {
+              "p": "E",
+              "m": 4,
+              "times": 3,
+              "rec": {
+                "p": "W",
+                "m": 4
+              }
+            },
+            {
+              "p": "E",
+              "m": 18
+            },
+            {
+              "p": "W",
+              "m": 6
+            }
+          ]
+        }
+      },
+      {
+        "weeks": [
+          13,
+          12
+        ],
+        "sessions": {
+          "A": [
+            {
+              "p": "E",
+              "m": 5
+            },
+            {
+              "p": "W",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "m": 3,
+              "times": 5,
+              "rec": {
+                "p": "W",
+                "m": 2
+              }
+            },
+            {
+              "p": "ST",
+              "times": 10,
+              "dur": 0.3,
+              "rec": {
+                "p": "W",
+                "m": 1
+              }
+            }
+          ],
+          "B": [
+            {
+              "p": "E",
+              "m": 10,
+              "times": 3,
+              "rec": {
+                "p": "W",
+                "m": 5
+              }
+            }
+          ],
           "C": "A",
-          "D": [{"p": "E", "m": 10, "times": 3, "rec": {"p": "W", "m": 5}}],
+          "D": [
+            {
+              "p": "E",
+              "m": 10,
+              "times": 3,
+              "rec": {
+                "p": "W",
+                "m": 5
+              }
+            }
+          ],
           "E": [
-            {"p": "E", "m": 5}, {"p": "W", "m": 5},
-            {"p": "T", "m": 5, "times": 3, "rec": {"p": "W", "m": 2}},
-            {"p": "E", "m": 15}, {"p": "W", "m": 4},
-            {"p": "T", "m": 5, "times": 2, "rec": {"p": "W", "m": 2}},
-            {"p": "E", "m": 28}, {"p": "W", "m": 6}
+            {
+              "p": "E",
+              "m": 5
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "T",
+              "m": 5,
+              "times": 3,
+              "rec": {
+                "p": "W",
+                "m": 2
+              }
+            },
+            {
+              "p": "E",
+              "m": 15
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "m": 5,
+              "times": 2,
+              "rec": {
+                "p": "W",
+                "m": 2
+              }
+            },
+            {
+              "p": "E",
+              "m": 28
+            },
+            {
+              "p": "W",
+              "m": 6
+            }
           ]
         }
       },
       {
-        "weeks": [11, 10],
+        "weeks": [
+          11,
+          10
+        ],
         "sessions": {
           "A": [
-            {"p": "E", "m": 10}, {"p": "W", "m": 5},
-            {"p": "ST", "times": 5, "dur": 0.3, "rec": {"p": "W", "m": 1}},
-            {"p": "W", "m": 5},
-            {"p": "E", "m": 10, "times": 2, "rec": {"p": "W", "m": 5}}
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "ST",
+              "times": 5,
+              "dur": 0.3,
+              "rec": {
+                "p": "W",
+                "m": 1
+              }
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "E",
+              "m": 10,
+              "times": 2,
+              "rec": {
+                "p": "W",
+                "m": 5
+              }
+            }
           ],
           "B": "A",
           "C": [
-            {"p": "E", "m": 5}, {"p": "W", "m": 5},
-            {"p": "E", "m": 20}, {"p": "W", "m": 5},
-            {"p": "T", "m": 5}, {"p": "W", "m": 5},
-            {"p": "E", "m": 5}, {"p": "W", "m": 5}
+            {
+              "p": "E",
+              "m": 5
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "E",
+              "m": 20
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "T",
+              "m": 5
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "E",
+              "m": 5
+            },
+            {
+              "p": "W",
+              "m": 5
+            }
           ],
-          "D": [{"p": "E", "m": 10, "times": 3, "rec": {"p": "W", "m": 5}}],
+          "D": [
+            {
+              "p": "E",
+              "m": 10,
+              "times": 3,
+              "rec": {
+                "p": "W",
+                "m": 5
+              }
+            }
+          ],
           "E": [
-            {"p": "E", "m": 10}, {"p": "W", "m": 5},
-            {"p": "ST", "times": 5, "dur": 0.3, "rec": {"p": "W", "m": 1}},
-            {"p": "W", "m": 5},
-            {"p": "T", "m": 20}, {"p": "W", "m": 5},
-            {"p": "E", "m": 15}
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "ST",
+              "times": 5,
+              "dur": 0.3,
+              "rec": {
+                "p": "W",
+                "m": 1
+              }
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "T",
+              "m": 20
+            },
+            {
+              "p": "W",
+              "m": 5
+            },
+            {
+              "p": "E",
+              "m": 15
+            }
           ]
         }
       }
     ],
     "weeks9_2": {
       "9": {
-        "q1": [{"p": "L", "m": 90}],
+        "q1": [
+          {
+            "p": "L",
+            "m": 90
+          }
+        ],
         "q2": [
-          {"p": "E", "m": 10}, {"p": "T", "m": 15}, {"p": "E", "m": 5},
-          {"p": "T", "m": 10, "times": 2, "rec": {"p": "W", "m": 2}},
-          {"p": "T", "m": 5}, {"p": "E", "m": 10}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 15
+          },
+          {
+            "p": "E",
+            "m": 5
+          },
+          {
+            "p": "T",
+            "m": 10,
+            "times": 2,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          },
+          {
+            "p": "T",
+            "m": 5
+          },
+          {
+            "p": "E",
+            "m": 10
+          }
         ]
       },
       "8": {
         "q1": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 6, "times": 4, "rec": {"p": "W", "m": 2}},
-          {"p": "E", "m": 60},
-          {"p": "T", "m": 8, "times": 2, "rec": {"p": "W", "m": 2}}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 6,
+            "times": 4,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          },
+          {
+            "p": "E",
+            "m": 60
+          },
+          {
+            "p": "T",
+            "m": 8,
+            "times": 2,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          }
         ],
         "q2": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 6, "times": 4, "rec": {"p": "W", "m": 2}},
-          {"p": "W", "m": 10},
-          {"p": "T", "m": 6, "times": 3, "rec": {"p": "W", "m": 2}}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 6,
+            "times": 4,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          },
+          {
+            "p": "W",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 6,
+            "times": 3,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          }
         ]
       },
       "7": {
-        "q1": [{"p": "M", "m": 105}],
+        "q1": [
+          {
+            "p": "M",
+            "m": 105
+          }
+        ],
         "q2": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 10, "times": 3, "rec": {"p": "W", "m": 2}},
-          {"p": "E", "m": 40}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 10,
+            "times": 3,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          },
+          {
+            "p": "E",
+            "m": 40
+          }
         ]
       },
       "6": {
-        "q1": [{"p": "L", "m": 120}],
+        "q1": [
+          {
+            "p": "L",
+            "m": 120
+          }
+        ],
         "q2": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 6, "times": 6, "rec": {"p": "W", "m": 1}},
-          {"p": "E", "m": 10}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 6,
+            "times": 6,
+            "rec": {
+              "p": "W",
+              "m": 1
+            }
+          },
+          {
+            "p": "E",
+            "m": 10
+          }
         ]
       },
       "5": {
         "q1": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 6, "times": 4, "rec": {"p": "W", "m": 1}},
-          {"p": "E", "m": 60},
-          {"p": "T", "m": 6, "times": 3, "rec": {"p": "W", "m": 1}}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 6,
+            "times": 4,
+            "rec": {
+              "p": "W",
+              "m": 1
+            }
+          },
+          {
+            "p": "E",
+            "m": 60
+          },
+          {
+            "p": "T",
+            "m": 6,
+            "times": 3,
+            "rec": {
+              "p": "W",
+              "m": 1
+            }
+          }
         ],
         "q2": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 10, "times": 4, "rec": {"p": "W", "m": 2}},
-          {"p": "E", "m": 10}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 10,
+            "times": 4,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          },
+          {
+            "p": "E",
+            "m": 10
+          }
         ]
       },
       "4": {
-        "q1": [{"p": "L", "m": 150}],
+        "q1": [
+          {
+            "p": "L",
+            "m": 150
+          }
+        ],
         "q2": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 10, "times": 4, "rec": {"p": "W", "m": 2}},
-          {"p": "E", "m": 10}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 10,
+            "times": 4,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          },
+          {
+            "p": "E",
+            "m": 10
+          }
         ]
       },
       "3": {
-        "q1": [{"p": "M", "m": 135}],
+        "q1": [
+          {
+            "p": "M",
+            "m": 135
+          }
+        ],
         "q2": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 12, "times": 3, "rec": {"p": "W", "m": 2}},
-          {"p": "E", "m": 10}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 12,
+            "times": 3,
+            "rec": {
+              "p": "W",
+              "m": 2
+            }
+          },
+          {
+            "p": "E",
+            "m": 10
+          }
         ]
       },
       "2": {
-        "q1": [{"p": "L", "m": 135}],
+        "q1": [
+          {
+            "p": "L",
+            "m": 135
+          }
+        ],
         "q2": [
-          {"p": "E", "m": 10},
-          {"p": "T", "m": 6, "times": 7, "rec": {"p": "W", "m": 1}},
-          {"p": "E", "m": 10}
+          {
+            "p": "E",
+            "m": 10
+          },
+          {
+            "p": "T",
+            "m": 6,
+            "times": 7,
+            "rec": {
+              "p": "W",
+              "m": 1
+            }
+          },
+          {
+            "p": "E",
+            "m": 10
+          }
         ]
       }
     },
     "week1": {
-      "7": [{"p": "E", "m": 90}],
-      "6": [{"p": "E", "m": 60}],
-      "5": [
-        {"p": "E", "m": 10},
-        {"p": "T", "m": 5, "times": 4, "rec": {"p": "W", "m": 2}},
-        {"p": "E", "m": 10}
+      "7": [
+        {
+          "p": "E",
+          "m": 90
+        }
       ],
-      "4": [{"p": "E", "m": 38}],
-      "3": [{"p": "E", "m": 30, "rest_ok": true}]
+      "6": [
+        {
+          "p": "E",
+          "m": 60
+        }
+      ],
+      "5": [
+        {
+          "p": "E",
+          "m": 10
+        },
+        {
+          "p": "T",
+          "m": 5,
+          "times": 4,
+          "rec": {
+            "p": "W",
+            "m": 2
+          }
+        },
+        {
+          "p": "E",
+          "m": 10
+        }
+      ],
+      "4": [
+        {
+          "p": "E",
+          "m": 38
+        }
+      ],
+      "3": [
+        {
+          "p": "E",
+          "m": 30,
+          "rest_ok": true
+        }
+      ]
     },
     "week10_note": "During week 10, try to complete a steady 10K run (easy effort if raced)."
+  },
+  "tables": {
+    "5k_10k_40_50": {
+      "source": "OEBPS/chapter13.xhtml table 0 (Table 13.1)",
+      "rows": [
+        [
+          "Phase II"
+        ],
+        [
+          "Week 1",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 2 sets of (8 × 200 R w/200 jg) w/800 jg between sets + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 4 × 200 R w/200 jg + 2 × 1 T w/1 min rests + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 2",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 4 sets of (200 R + 200 jg + 200 R + 200 jg + 400 R + 400 jg) + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 3 × 1 T w/1 min rests + 6 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 3",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 9 M + 6 ST"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 4 × 200 R w/200 jg + 4 × 400 R w/400 jg + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 7 × 2 min H w/1 min jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Phase II"
+        ],
+        [
+          "Week 4",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 4 × 400 R w/400 jg + 1 E + 4 × 400 R w/400 jg + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 4 × 200 R w/200 jg + steady 3 T + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 5",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 5 sets of (200 R + 200 jg + 200 R + 400 jg + 400 R + 200 jg) + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 4 × 1 T w/1 min rests + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 6",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 9 M + 6 ST"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 10 × 400 R w/400 jg + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 3 × 3 min H w/2 min jg + 4 × 2 min H w/2 min jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Phase III"
+        ],
+        [
+          "Week 1",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 4 × 1,200 I w/3 min jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 4 × 1 T w/1 min rests + 2 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Week 2",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 10 M + 4 ST"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 5 × 1K I w/400 jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 3 T + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 3",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 6 × 800 I w/400 jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 5 × 1 T w/1 min rests + 6 ST + 1 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 4",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 5 M + 1 E + 5 M"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 4 × 1,200 I w/3 min jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 1 T + 2 min rests + 2 T + 1 min rests + 1 T + 4 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 5",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 5 × 1K I w/400 jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + steady 3 T + 4 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Phase III"
+        ],
+        [
+          "Week 6",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 10 M + 6 ST"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 6 × 3 min H w/2 min jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 5 × 1 T w/1 min rests + 6 ST + 1 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Phase IV"
+        ],
+        [
+          "Week 1",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); 5 × 1 T w/1 min rests (if no race) + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 6 × 1K I w/400 jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Week 2",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); steady 3 mile T (if no race) + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 5 × 1,200 I w/3 min jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Week 3",
+          "Q session",
+          "Workout (In any of the next 4 weeks with an important race, cut L run to 90 minutes)"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); 5 × 1 T w/1 min rests (if no race) + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 6 × 1K I w/400 jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Week 4",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); steady 3 T (if no race) + 1 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 5 × 1,200 I w/3 min jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Week 5",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); 2 × 2 T w/2 min rests between (if no race) + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 6 × 1K I w/400 jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Phase IV"
+        ],
+        [
+          "Week 6",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race)"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 6 × 1K I w/400 jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ]
+      ]
+    },
+    "5k_10k_60_70": {
+      "source": "OEBPS/chapter13.xhtml table 1 (Table 13.2)",
+      "rows": [
+        [
+          "Phase II"
+        ],
+        [
+          "Week 1",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 4 × 200 R w/200 jg + 6 × 400 R w/400 jg + 4 × 200 R w/200 jg + 3 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 4 × 200 R w/200 jg + 4 × 1 T w/1 min rests + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 2",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 6 sets of (200 R + 200 jg + 200 R + 200 jg + 400 R + 400 jg) + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 5 × 1 T w/1 min rests + 6 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 3",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 10 M + 6 ST"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 4 × 200 R w/200 jg + 8 × 400 R w/400 jg + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 10 × 2 min H w/1 min jg + 3 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 4",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 2 × 200 R w/200 jg + 10 × 400 R w/400 jg + 1 E + 4 × 200 R w/400 jg + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 4 × 200 R w/200 jg + 3 T + 3 min rests + 2 × 1 T w/1 min rests + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Phase II"
+        ],
+        [
+          "Week 5",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 6 sets of (200 R + 200 jg + 200 R + 400 jg + 400 R + 200 jg) + 3 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 6 × 1 T w/1 min rests + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 6",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 10 M + 6 ST"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "2 E + 12 × 400 R w/400 jg + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "Q3",
+          "2 E + 2 × 4 min H w/3 min jg + 3 × 3 min H w/2 min jg + 2 × 2 min H w/1 min jg + 2 E"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Phase III"
+        ],
+        [
+          "Week 1",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 6 × 1,200 I w/3 min jg + 3 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 6 × 1 T w/1 min rests + 2 E (try today, but may move this workout to Fri or Sat)"
+        ],
+        [
+          "Friday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Week 2",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "4 E + 10 M + 4 ST"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 5-8 × 1K I (not to total more than 24 min at I pace) w/400 jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 3 T + 4 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Phase III"
+        ],
+        [
+          "Week 3",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 8 × 3 min H w/2 min jg + 3 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 6 × 1 T w/1 min rests + 4 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 4",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 8 M + 1 T + 2 M (make this a nonstop workout, w/no rests between M & T & M )"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 4-6 × 1,200 I (total not more than 24 min H running) w/3 min jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "Q3",
+          "2 E + 3 × 2 T + 2 min rests + 4 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "Week 5",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 7 × 3 min H w/4 min jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + steady 3 T + 4 × 200 R w/200 jg + 3 T + 2 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Week 6",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "1 E + 10 M + 2 E + 6 ST"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 10 ST"
+        ],
+        [
+          "Tuesday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Wednesday",
+          "Q2",
+          "2 E + 2 × 4 min H w/3 min jg + 3 × 3 min H w/2 min jg + 4 × 2 min H w/1 min jg + 2 E"
+        ],
+        [
+          "Thursday",
+          "Q3",
+          "2 E + 4 × 1 T w/1 min rests + 2 T + 6 ST + 1 E"
+        ],
+        [
+          "Friday",
+          "",
+          "E day"
+        ],
+        [
+          "Saturday",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "Phase IV"
+        ],
+        [
+          "Week 1",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); 3 × 2 T w/2 min rests (if no race) + 3 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 6 × 4 min H w/3 min jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Week 2",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); if no race, do steady 3 T + 2 E + 2 T + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 6 × 4 min H w/3 min jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Week 3",
+          "Q session",
+          "Workout (In any of next 4 weeks with an important race, cut L run to 90 minutes)"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); 3 × 2 T w/2 min rests (if no race) + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 6 × 4 min H w/3 min jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Phase IV"
+        ],
+        [
+          "Week 4",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); if no race, do steady 3 T + 2 min rests + 2 T + 1 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 8 × 3 min H w/2 min jg + 2 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Week 5",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); if no race, do 2 × 2 T w/2 min rests between + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 10 × 2 min H w/1 min jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ],
+        [
+          "Week 6",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Sunday",
+          "Q1",
+          "L run of the lesser of 25% of week’s mileage and 120 min, whichever comes first"
+        ],
+        [
+          "Monday",
+          "",
+          "E day + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "Q2",
+          "3 × 1 T w/2 min rests (if Sat race); if no coming race, run 6 × 1 T w/1 min rests + 2 E"
+        ],
+        [
+          "Wednesday",
+          "",
+          "E day"
+        ],
+        [
+          "Thursday",
+          "",
+          "E day"
+        ],
+        [
+          "Friday",
+          "",
+          "If no weekend race coming, do Q3: 10 × 2 min H w/1 min jg + 1 E ; if Sat race, today is E day."
+        ],
+        [
+          "Saturday",
+          "",
+          "If race today, then Q3 is the race; if no race, today is E day."
+        ]
+      ]
+    },
+    "alien_15k_30k": {
+      "source": "OEBPS/chapter15.xhtml table 0 (Table 15.1)",
+      "rows": [
+        [
+          "Day",
+          "Q session",
+          "Workout"
+        ],
+        [
+          "Weeks 1, 3, 5, 7, 9, and beyond"
+        ],
+        [
+          "1",
+          "Q1",
+          "L run"
+        ],
+        [
+          "2",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "3",
+          "Q2",
+          "T session"
+        ],
+        [
+          "4",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "5",
+          "",
+          "E day"
+        ],
+        [
+          "6",
+          "Q3",
+          "R session"
+        ],
+        [
+          "7",
+          "",
+          "E day"
+        ],
+        [
+          "Weeks 2, 4, 6, 8, 10, and beyond"
+        ],
+        [
+          "1",
+          "Q1",
+          "M run"
+        ],
+        [
+          "2",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "3",
+          "Q2",
+          "T session"
+        ],
+        [
+          "4",
+          "",
+          "E day + 8 ST"
+        ],
+        [
+          "5",
+          "",
+          "E day"
+        ],
+        [
+          "6",
+          "Q3",
+          "I session"
+        ],
+        [
+          "7",
+          "",
+          "E day"
+        ],
+        [
+          "Prerace week"
+        ],
+        [
+          "Race − 6 days",
+          "Q1",
+          "2/3 of normal L run"
+        ],
+        [
+          "Race − 5 days",
+          "",
+          "E day"
+        ],
+        [
+          "Race − 4 days",
+          "",
+          "E day"
+        ],
+        [
+          "Race − 3 days",
+          "Q2",
+          "3 × 1 T w/2 min rest"
+        ],
+        [
+          "Race − 2 days",
+          "",
+          "E day"
+        ],
+        [
+          "Race − 1 day",
+          "",
+          "E day or day off"
+        ],
+        [
+          "Race day",
+          "Q3",
+          "Race day"
+        ],
+        [
+          "Recovery week"
+        ],
+        [
+          "Number of recovery days depends on race length (1 day per 3K of race distance). Pick up next Q day as appropriate and complete that week."
+        ]
+      ]
+    },
+    "marathon_2q": {
+      "source": "OEBPS/chapter16_split_001.xhtml table 1 (Table 16.3)",
+      "rows": [
+        [
+          "Up to 40 miles (64 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "Workout",
+          "Miles for Q sessions"
+        ],
+        [
+          "18",
+          ".8",
+          "Q1 = 3 E + 4 M + 1 T + 1 M + 2 E (nonstop workout if no rest shown)",
+          "11"
+        ],
+        [
+          "Q2 = 5 E + 2 T + 2 min rest + 1 E + 2 × (1 T w/1 min rest between) + 2 E",
+          "12"
+        ],
+        [
+          "17",
+          ".8",
+          "Q1 = 2 E + 2 × (1 T w/1 min rests) + 30 min E + 2 × (1 T w/1 min rests) + 2 E",
+          "12"
+        ],
+        [
+          "Q2 = 3 E + 6 × (2 min I w/2 min jg between) + 4 × (1 min R w/2 min jg) + 2 E",
+          "9"
+        ],
+        [
+          "16",
+          ".9",
+          "Q1 = steady E run of 90-110 min",
+          "11"
+        ],
+        [
+          "Q2 = 5 E + 4 × (1 T w/1 min rests) + 2 E",
+          "11"
+        ],
+        [
+          "15",
+          ".9",
+          "Q1 = 2 E + 5 M + 1 T + 1 M + 2 E",
+          "11"
+        ],
+        [
+          "Q2 = 40 min E + 4 × (1 T w/1 min rests) + 2 E",
+          "9"
+        ],
+        [
+          "14",
+          ".9",
+          "Q1 = 2 E + 2 × (1 T w/1 min rests) + 30 min E + 2 × (1 T w/1 min rests) + 2 E",
+          "11"
+        ],
+        [
+          "Q2 = 40 min E + 5 × (3 min I w/2 min jg recoveries) + 2 E",
+          "9"
+        ],
+        [
+          "13",
+          ".9",
+          "Q1= steady E run of 90-120 min",
+          "12"
+        ],
+        [
+          "Q2 = 40 min E + 2 × (2 T w/2 min rests) + 2 E",
+          "10"
+        ],
+        [
+          "12",
+          "1.0",
+          "Q1 = 4 E + 6 M + 1 T + 1 E",
+          "12"
+        ],
+        [
+          "Q2 = 6 E + 3 T + 3 min E + 1 T + 2 E",
+          "12"
+        ],
+        [
+          "11",
+          ".9",
+          "Q1 = 8 E + 4 × (1 T w/1 min rests) + 1 E",
+          "13"
+        ],
+        [
+          "Q2 = 6 E + 3 × (4 min I w/3 min jg) + 4 × (1 min R w/2 min jg) + 2 E",
+          "11"
+        ],
+        [
+          "10",
+          "1.0",
+          "Q1 = steady E run of 120-130 min",
+          "14"
+        ],
+        [
+          "Q2 = 6 E + 6 M + 2 E",
+          "14"
+        ],
+        [
+          "9",
+          "1.0",
+          "Q1 = 4 E + 1 T + 8 M + 2 E",
+          "15"
+        ],
+        [
+          "Q2 = 4 E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E",
+          "11"
+        ],
+        [
+          "8",
+          ".9",
+          "Q1 = 5 E + 9 M + 2 E",
+          "16"
+        ],
+        [
+          "Q2 = 8 E + 5 × (3 min I w/2 min recovery jg) + 3 × (2 min I w/1 min jg) + 2 E",
+          "13"
+        ],
+        [
+          "7",
+          ".9",
+          "Q1 = steady E run of 130-150 min",
+          "16"
+        ],
+        [
+          "Q2 = 2 E + 10 M + 1 T + 2 E",
+          "15"
+        ],
+        [
+          "6",
+          "1.0",
+          "Q1 = 3 E + 12 M + 1 E",
+          "16"
+        ],
+        [
+          "Q2 = 45 min E + 2 × (2 T w/2 min rests) + 1 T + 1 E",
+          "11"
+        ],
+        [
+          "5",
+          "1.0",
+          "Q1 = 2 E + 2 T + 60 min E + 2 × (1 T w/1 min rest between) + 2 E",
+          "15"
+        ],
+        [
+          "Q2 = 6 E + 5 × (3 min I w/2 min jg) + 4 × (1 min R w/2 min jg) + 2 E",
+          "12"
+        ],
+        [
+          "4",
+          ".9",
+          "Q1 = steady E run of 150 min",
+          "17"
+        ],
+        [
+          "Q2 = 6 E + 5 × (3 min I w/3 min jg) + 1 T + 4 E",
+          "14"
+        ],
+        [
+          "3",
+          ".9",
+          "Q1 = 1 E + 8 M + 1 E + 6 M + 1 E",
+          "17"
+        ],
+        [
+          "Q2 = 6 E + 4 × (1 T w/1 min rests) + 2 E",
+          "12"
+        ],
+        [
+          "2",
+          ".9",
+          "Q1 = 1 E + 2 × (2 T w/2 min rests) + 60 min E",
+          "12"
+        ],
+        [
+          "Q2 = 4 E + 1 T + 2 M + 1 E + 1 T + 2 M + 1 E",
+          "12"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: Q1 = 90 min E 6 days: 60 min E 5 days: Q2 = 2 E + 5 × (800 T w/2 min E recovery jg) + 1 E 4 days: 50 min E 3 days: 30-40 min E 2 days: 0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+          "10 7 6 6 4 2 3"
+        ],
+        [
+          "41-55 miles (66-89 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "Workout",
+          "Miles for Q sessions"
+        ],
+        [
+          "18",
+          ".8",
+          "Q1 = 4 E + 8 M + 1 T + 1 E (a nonstop workout)",
+          "14"
+        ],
+        [
+          "Q2 = 8 E + 2 × (2 T w/2 min rests) + 1 T + 2 E",
+          "15"
+        ],
+        [
+          "17",
+          ".8",
+          "Q1 = 2 E + 3 T + 40 min E + 2 T + 1 E",
+          "13"
+        ],
+        [
+          "Q2 = 6 E + 5 × (3 min I w/2 min jg recoveries) + 6 × (1 min R w/2 min jg) + 2 E",
+          "13"
+        ],
+        [
+          "16",
+          ".9",
+          "Q1 = steady E run of 90-120 min",
+          "15"
+        ],
+        [
+          "Q2 = 6 E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E",
+          "13"
+        ],
+        [
+          "15",
+          ".9",
+          "Q1 = 2 E + 8 M + 1 E + 2 M + 2 E",
+          "15"
+        ],
+        [
+          "Q2 = 40 min E + 3 × (2 T w/2 min rests) + 2 E",
+          "13"
+        ],
+        [
+          "14",
+          ".9",
+          "Q1 = 1 E + 2 × (2 T w/2 min rests) + 60 min E + 1 T + 1 E",
+          "15"
+        ],
+        [
+          "Q2 = 6 E + 5 × (4 min I w/3 min jg recoveries) + 2 E",
+          "13"
+        ],
+        [
+          "13",
+          ".9",
+          "Q1= steady E run of 100-120 min",
+          "16"
+        ],
+        [
+          "Q2 = 40 min E + 3 × (2 T w/2 min rests) + 2 E",
+          "13"
+        ],
+        [
+          "12",
+          "1.0",
+          "Q1 = 2 E + 6 M + 1 E + 6 M + 1 E",
+          "16"
+        ],
+        [
+          "Q2 = 6 E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+          "14"
+        ],
+        [
+          "11",
+          ".9",
+          "Q1 = 10 E + 2 × (2 T w/2 min rests) + 2 E",
+          "16"
+        ],
+        [
+          "Q2 = 8 E + 5 × (3 min I w/2 min jg) + 6 × (1 min R w/2 min jg) + 2 E",
+          "15"
+        ],
+        [
+          "10",
+          "1.0",
+          "Q1 = steady E run of 120 min",
+          "16"
+        ],
+        [
+          "Q2 = 2 E + 12 M + 2 E",
+          "16"
+        ],
+        [
+          "9",
+          "1.0",
+          "Q1 = 2 E + 6 M + 1 E + 4 M + 1 T + 1 E",
+          "15"
+        ],
+        [
+          "Q2 = 5 E + 3 × (2 T w/2 min rests) + 1 T + 2 E",
+          "14"
+        ],
+        [
+          "8",
+          ".9",
+          "Q1 = 60 min E + 8 M + 1 E",
+          "17"
+        ],
+        [
+          "Q2 = 8 E + 4 × (4 min I w/3 min recovery jg) + 3 E",
+          "14"
+        ],
+        [
+          "7",
+          ".9",
+          "Q1 = steady E run of 120-150 min",
+          "17"
+        ],
+        [
+          "Q2 = 2 E + 8 M + 3 × (1 T w/1 min recovery between) + 2 E",
+          "15"
+        ],
+        [
+          "6",
+          "1.0",
+          "Q1 = 2 E + 14 M + 1 E",
+          "17"
+        ],
+        [
+          "Q2 = 60 min E + 3 × (2 T w/2 min rests) + 1 T + 1 E",
+          "15"
+        ],
+        [
+          "5",
+          "1.0",
+          "Q1 = 2 E + 3 T + 60 min E + 2 T + 2 E",
+          "17"
+        ],
+        [
+          "Q2 = 8 E + 5 × (3 min I w/2 min E ) + 4 × (1 min R w/2 min jg) + 3 E",
+          "15"
+        ],
+        [
+          "4",
+          ".9",
+          "Q1 = steady E run of 150 min",
+          "17"
+        ],
+        [
+          "Q2 = 6 E + 5 × (3 min I w/2 min E ) + 4 E",
+          "13"
+        ],
+        [
+          "3",
+          ".9",
+          "Q1 = 1 E + 8 M + 1 E + 6 M + 1 E",
+          "17"
+        ],
+        [
+          "Q2 = 4 E + 2 × (2 T w/2 min rests) + 3 × (1 T w/1 min rests) + 2 E",
+          "13"
+        ],
+        [
+          "2",
+          ".9",
+          "Q1 = 1 E + 3 × (2 T w/2 min E recoveries) + 60 min E",
+          "15"
+        ],
+        [
+          "Q2 = 4 E + 1 T + 2 M + 1 E + 1 T + 2 M + 2 E",
+          "13"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: Q1 = 90 min E 6 days: 60 min E 5 days: Q2 = 2 E + 3 × (1 T w/2 min rests) + 2 E 4 days: 50 min E 3 days: 30-40 min E 2 days: 0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+          "10 8 7 6 5 2 3"
+        ],
+        [
+          "56-70 miles (90-113 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "Workout",
+          "Miles for Q sessions"
+        ],
+        [
+          "18",
+          ".8",
+          "Q1 = 1 E + 6 M + 1 E + 6 M + 2 E (a nonstop workout)",
+          "16"
+        ],
+        [
+          "Q2 = 8 E + 3 T + 3 min rest + 2 T + 2 E",
+          "15"
+        ],
+        [
+          "17",
+          ".8",
+          "Q1 = 2 E + 3 T + 60 min E + 1 T + 1 E",
+          "15"
+        ],
+        [
+          "Q2 = 4 E + 5 × (1 km I w/3 min jg recoveries) + 4 × (400 R w/400 m jg) + 2 E",
+          "13"
+        ],
+        [
+          "16",
+          ".9",
+          "Q1 = steady E run of the lesser of 16 miles (26 km) and 120 min",
+          "16"
+        ],
+        [
+          "Q2 = 6 E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+          "14"
+        ],
+        [
+          "15",
+          ".9",
+          "Q1 = 2 E + 8 M + 1 E + 3 M + 2 E",
+          "16"
+        ],
+        [
+          "Q2 = 40 min E + 3 × (2 T w/2 min rests) + 2 × (1 T w/1 min rests) + 1 E",
+          "15"
+        ],
+        [
+          "14",
+          ".9",
+          "Q1 = 1 E + 2 × (2 T w/2 min rests) + 60 min E + 2 T + 1 E",
+          "16"
+        ],
+        [
+          "Q2 = 8 E + 6 × (1 km I w/3 min jg recoveries) + 2 E",
+          "14"
+        ],
+        [
+          "13",
+          ".8",
+          "Q1= steady E run of the lesser of 17 miles (27 km) and 120 min",
+          "17"
+        ],
+        [
+          "Q2 = 40 min E + 3 T + 2 min rest + 2 × (2 T w/1 min rest between) + 2 E",
+          "15"
+        ],
+        [
+          "12",
+          "1.0",
+          "Q1 = 1 E + 8 M + 1 E + 6 M + 1 E",
+          "17"
+        ],
+        [
+          "Q2 = 4 E + 3 T + 3 min E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E",
+          "14"
+        ],
+        [
+          "11",
+          ".9",
+          "Q1 = 12 E + 3 T + 1 E",
+          "16"
+        ],
+        [
+          "Q2 = 8 E + 5 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 1 E",
+          "15"
+        ],
+        [
+          "10",
+          ".9",
+          "Q1 = steady E run of the lesser of 18 miles (29 km) and 130 min",
+          "18"
+        ],
+        [
+          "Q2 = 2 E + 12 M + 2 E",
+          "16"
+        ],
+        [
+          "9",
+          "1.0",
+          "Q1 = 3 E + 6 M + 1 E + 4 M + 1 T + 1 E",
+          "16"
+        ],
+        [
+          "Q2 = 5 E + 4 × (2 T w/2 min rests) + 2 E",
+          "15"
+        ],
+        [
+          "8",
+          "1.0",
+          "Q1 = 2 E + 2 T + 60 min E + 2 T + 2 E or 60 min E + 8 M + 1 E",
+          "17"
+        ],
+        [
+          "Q2 = 8 E + 6 × (1 km I w/3 min jg) + 2 E",
+          "16"
+        ],
+        [
+          "7",
+          ".9",
+          "Q1 = steady E run of the lesser of 20 miles (32 km) and 150 min",
+          "20"
+        ],
+        [
+          "Q2 = 2 E + 8 M + 2 × (2 T w/2 min recovery between) + 2 E",
+          "16"
+        ],
+        [
+          "6",
+          "1.0",
+          "Q1 = 3 E + 12 M + 2 E",
+          "17"
+        ],
+        [
+          "Q2 = 40 min E + 4 × (2 T w/2 min rests) + 2 × (1 T w/1 min rests) + 1 E",
+          "17"
+        ],
+        [
+          "5",
+          ".9",
+          "Q1 = 6 E + 2 T + 6 E + 2 T + 1 E",
+          "17"
+        ],
+        [
+          "Q2 = 8 E + 5 × (1 km I w/3 min jg) + 6 × (200 R w/200 jg) + 2 E",
+          "16"
+        ],
+        [
+          "4",
+          ".9",
+          "Q1 = steady E run of the lesser of 20 miles (32 km) and 150 min",
+          "20"
+        ],
+        [
+          "Q2 = 6 E + 5 × (1 km I w/3 min E ) + 4 E",
+          "15"
+        ],
+        [
+          "3",
+          ".8",
+          "Q1 = 2 E + 6 M + 1 E + 6 M + 2 E",
+          "17"
+        ],
+        [
+          "Q2 = 2 E + 4 × (2 T w/2 min E) + 2 E",
+          "12"
+        ],
+        [
+          "2",
+          ".8",
+          "Q1 = 2 E + 3 × (2 T w/2 min rests) + 7 E",
+          "15"
+        ],
+        [
+          "Q2 = 3 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+          "11"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: Q1 = 90 min E 6 days: 60 min E 5 days: Q2 = 3 E + 3 × (1 T w/2 min rests) + 2 E 4 days: 50 min E 3 days: 30-40 min E 2 days: 0-20 min E 1 day: 20-30 min E (race is tomorrow)",
+          "13 8 8 7 5 3 3"
+        ],
+        [
+          "71 to 85 miles (114-137 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "Workout",
+          "Miles for Q sessions"
+        ],
+        [
+          "18",
+          ".8",
+          "Q1 = 5 E + 6 M + 1 T + 5 M + 1 E (a nonstop workout)",
+          "18"
+        ],
+        [
+          "Q2 = 8 E + 4 T + 4 min rest + 4 T + 1 E",
+          "17"
+        ],
+        [
+          "17",
+          ".8",
+          "Q1 = 3 E + 3 T + 60 min E + 2 T + 2 E",
+          "18"
+        ],
+        [
+          "Q2 = 6 E + 5 × (1 km I w/2 min jg) + 6 × (400 R w/400 m recovery jg) + 2 E",
+          "15"
+        ],
+        [
+          "16",
+          ".9",
+          "Q1 = steady E run of 18 miles (29 km)",
+          "18"
+        ],
+        [
+          "Q2 = 5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+          "17"
+        ],
+        [
+          "15",
+          ".9",
+          "Q1 = 2 E + 8 M + 1 T + 2 M + 1 E + 2 M + 2 E",
+          "18"
+        ],
+        [
+          "Q2 = 6 E + 4 × (2 T w/2 min rests) + 2 E",
+          "16"
+        ],
+        [
+          "14",
+          ".9",
+          "Q1 = 2 E + 2 × (2 T w/2 min rests) + 60 min E + 2 T + 2 E",
+          "18"
+        ],
+        [
+          "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 2 E or 8 E + 5 × (1 I w/4 min jg) + 2 E",
+          "17"
+        ],
+        [
+          "13",
+          ".8",
+          "Q1= steady E run of 19 miles (31 km)",
+          "19"
+        ],
+        [
+          "Q2 = 7 E + 4 × (2 T w/2 min rests) + 2 E",
+          "17"
+        ],
+        [
+          "12",
+          "1.0",
+          "Q1 = 4 E + 8 M + 1 T + 4 M + 2 E",
+          "19"
+        ],
+        [
+          "Q2 = 4 E + 3 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+          "15"
+        ],
+        [
+          "11",
+          ".9",
+          "Q1 = 8 E + 3 T + 8 E",
+          "19"
+        ],
+        [
+          "Q2 = 8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+          "17"
+        ],
+        [
+          "10",
+          ".8",
+          "Q1 = steady E run of 20 miles (32 km)",
+          "20"
+        ],
+        [
+          "Q2 = 2 E + 14 M + 2 E",
+          "18"
+        ],
+        [
+          "9",
+          "1.0",
+          "Q1 = 4 E + 6 M + 1 T + 5 M + 2 E",
+          "18"
+        ],
+        [
+          "Q2 = 5 E + 2 × (3 T w/3 min rests) + 2 T + 3 E",
+          "16"
+        ],
+        [
+          "8",
+          ".9",
+          "Q1 = 1 E + 3 T + 10 E + 3 T + 1 E or 4 E + 13 M + 1 E",
+          "18"
+        ],
+        [
+          "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 2 E",
+          "17"
+        ],
+        [
+          "7",
+          ".9",
+          "Q1 = steady E run of 20 miles (32 km)",
+          "20"
+        ],
+        [
+          "Q2 = 2 E + 8 M + 3 T + 2 E",
+          "15"
+        ],
+        [
+          "6",
+          "1.0",
+          "Q1 = 2 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+          "18"
+        ],
+        [
+          "Q2 = 4 E + 4 × (2 T w/2 min rests) + 2 E",
+          "14"
+        ],
+        [
+          "5",
+          ".9",
+          "Q1 = 2 E + 2 T + 8 E + 2 T + 2 E",
+          "16"
+        ],
+        [
+          "Q2 = 6 E + 5 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+          "14"
+        ],
+        [
+          "4",
+          ".8",
+          "Q1 = steady E run of 18 miles",
+          "18"
+        ],
+        [
+          "Q2 = 3 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E",
+          "12"
+        ],
+        [
+          "3",
+          ".8",
+          "Q1 = 3 E + 6 M + 1 T + 6 M + 2 E",
+          "18"
+        ],
+        [
+          "Q2 = 2 E + 4 × (2 T w/2 min E) + 2 E",
+          "12"
+        ],
+        [
+          "2",
+          ".7",
+          "Q1 = 2 E + 3 × (2 T w/2 min E recoveries) + 8 E",
+          "16"
+        ],
+        [
+          "Q2 = 4 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+          "12"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: Q1 = 90 min E 6 days: 60 min E 5 days: Q2 = 4 E + 3 × (1 T w/2 min E recoveries) + 2 E 4 days: 50 min E 3 days: 30-40 min E 2 days: 0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+          "13 8 9 7 5 3 3"
+        ],
+        [
+          "86-100 miles (138-161 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "Workout",
+          "Miles for Q sessions"
+        ],
+        [
+          "18",
+          ".8",
+          "Q1 = 5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 1 E (a nonstop workout)",
+          "20"
+        ],
+        [
+          "Q2 = 8 E + 4 T + 4 min rest + 4 T + 2 E",
+          "18"
+        ],
+        [
+          "17",
+          ".8",
+          "Q1 = 4 E + 3 T + 60 min E + 3 T + 2 E",
+          "21"
+        ],
+        [
+          "Q2 = 8 E + 5 × (1 km I w/2 min recovery jg) + 6 × (400 R w/400 m jg) + 2 E",
+          "17"
+        ],
+        [
+          "16",
+          ".9",
+          "Q1 = steady E run of 22 miles (35 km)",
+          "22"
+        ],
+        [
+          "Q2 = 5 E + 4 T + 4 min rest + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 2 E",
+          "17"
+        ],
+        [
+          "15",
+          ".9",
+          "Q1 = 2 E + 8 M + 1 T + 4 M + 1 T + 2 M + 2 E",
+          "20"
+        ],
+        [
+          "Q2 = 6 E + 4 × (2 T w/2 min rests) + 2 E",
+          "16"
+        ],
+        [
+          "14",
+          ".8",
+          "Q1 = 2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+          "20"
+        ],
+        [
+          "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 2 E or 8 E + 5 × (1 I w/4 min jg) + 2 E",
+          "17"
+        ],
+        [
+          "13",
+          ".9",
+          "Q1 = steady E run of 21 miles (34 km)",
+          "21"
+        ],
+        [
+          "Q2 = 40 min E + 5 × (2 T w/2 min rests) + 2 E",
+          "18"
+        ],
+        [
+          "12",
+          "1.0",
+          "Q1 = 4 E + 8 M + 1 T + 6 M + 1 T + 1 E",
+          "21"
+        ],
+        [
+          "Q2 = 6 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+          "18"
+        ],
+        [
+          "11",
+          "1.0",
+          "Q1 = 8 E + 4 T + 10 E",
+          "22"
+        ],
+        [
+          "Q2 = 8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+          "17"
+        ],
+        [
+          "10",
+          ".8",
+          "Q1 = steady E run of 21 miles (34 km)",
+          "21"
+        ],
+        [
+          "Q2 = 2 E + 15 M + 2 E",
+          "19"
+        ],
+        [
+          "9",
+          "1.0",
+          "Q1 = 4 E + 6 M + 1 T + 6 M + 1 E",
+          "18"
+        ],
+        [
+          "Q2 = 3 E + 4 T + 4 min rest + 3 T + 3 min rest + 3 T + 2 E",
+          "15"
+        ],
+        [
+          "8",
+          "1.0",
+          "Q1 = 2 E + 4 T + 10 E + 4 T + 1 E or 5 E + 14 M + 2 E",
+          "21"
+        ],
+        [
+          "Q2 = 8 E + 3 × (1 I w/4 min jg) + 3 × (1 km I w/2 min jg) + 2 E",
+          "16"
+        ],
+        [
+          "7",
+          ".9",
+          "Q1 = steady E run of 22 miles (35 km)",
+          "22"
+        ],
+        [
+          "Q2 = 2 E + 8 M + 4 T + 2 E",
+          "16"
+        ],
+        [
+          "6",
+          "1.0",
+          "Q1 = 3 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+          "19"
+        ],
+        [
+          "Q2 = 3 E + 4 T + 4 min E + 3 × (2 T w/2 min rests) + 2 E",
+          "15"
+        ],
+        [
+          "5",
+          ".8",
+          "Q1 = 2 E + 3 T + 8 E + 3 T + 2 E",
+          "18"
+        ],
+        [
+          "Q2 = 6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+          "15"
+        ],
+        [
+          "4",
+          ".9",
+          "Q1 = steady E run of 20 miles (32 km)",
+          "20"
+        ],
+        [
+          "Q2 = 6 E + 3 × (1 T w/1 min rests) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E",
+          "15"
+        ],
+        [
+          "3",
+          ".8",
+          "Q1 = 4 E + 6 M + 1 T + 6 M + 2 E",
+          "19"
+        ],
+        [
+          "Q2 = 2 E + 4 × (2 T w/2 min rests) + 2 E",
+          "12"
+        ],
+        [
+          "2",
+          ".7",
+          "Q1 = 2 E + 3 × (2 T w/2 min rests) + 8 E",
+          "16"
+        ],
+        [
+          "Q2 = 4 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+          "12"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: Q1 = 90 min E 6 days: 60 min E 5 days: Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E 4 days: 50 min E 3 days: 30-40 min E 2 days: 0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+          "14 9 9 7 6 3 4"
+        ],
+        [
+          "101-120 miles (163-193 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "Workout",
+          "Miles for Q sessions"
+        ],
+        [
+          "18",
+          ".8",
+          "Q1 = 5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 2 E (a nonstop workout)",
+          "21"
+        ],
+        [
+          "Q2 = 10 E + 4 T + 4 min rest + 4 T + 2 E",
+          "20"
+        ],
+        [
+          "17",
+          ".8",
+          "Q1 = 4 E + 3 T + 60 min E + 3 T + 2 E",
+          "21"
+        ],
+        [
+          "Q2 = 8 E + 5 × (1 km I or 3 min H w/ 2 min jg) + 6 × (400 R w/ 400 m jg) + 2 E",
+          "17"
+        ],
+        [
+          "16",
+          ".9",
+          "Q1 = steady E run of 23 miles (37 km)",
+          "23"
+        ],
+        [
+          "Q2 = 5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+          "18"
+        ],
+        [
+          "15",
+          ".9",
+          "Q1 = 2 E + 8 M + 1 T + 4 M + 1 T + 3 M + 2 E",
+          "21"
+        ],
+        [
+          "Q2 = 8 E + 4 × (2 T w/2 min rests) + 2 E",
+          "18"
+        ],
+        [
+          "14",
+          ".8",
+          "Q1 = 2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+          "20"
+        ],
+        [
+          "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 3 E or 8 E + 5 × (1 I w/ 4 min jg) + 3 E",
+          "18"
+        ],
+        [
+          "13",
+          "1.0",
+          "Q1 = steady E run of 20 miles (32 km)",
+          "20"
+        ],
+        [
+          "Q2 = 8 E + 5 × (2 T w/2 min rests) + 2 E",
+          "20"
+        ],
+        [
+          "12",
+          "1.0",
+          "Q1 = 4 E + 8 M + 1 T + 6 M + 1 T + 2 E",
+          "22"
+        ],
+        [
+          "Q2 = 6 E + 4 T + 4 min rest + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 2 E",
+          "18"
+        ],
+        [
+          "11",
+          ".9",
+          "Q1 = 10 E + 4 T + 8 E",
+          "22"
+        ],
+        [
+          "Q2 = 8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+          "17"
+        ],
+        [
+          "10",
+          ".8",
+          "Q1 = steady E run of 21 miles (34 km)",
+          "21"
+        ],
+        [
+          "Q2 = 2 E + 16 M + 2 E",
+          "20"
+        ],
+        [
+          "9",
+          "1.0",
+          "Q1 = 4 E + 6 M + 1 T + 6 M + 2 E",
+          "19"
+        ],
+        [
+          "Q2 = 3 E + 4 T + 4 min E + 4 T + 4 min E + 2 T + 2 E",
+          "16"
+        ],
+        [
+          "8",
+          ".9",
+          "Q1 = 6 E + 13 M + 2 E",
+          "21"
+        ],
+        [
+          "Q2 = 8 E + 3 × (1,200 I w/3 min jg) + 3 × (1 km I w/3 min jg) + 2 E",
+          "17"
+        ],
+        [
+          "7",
+          "1.0",
+          "Q1 = steady E run of 22 miles (35 km)",
+          "22"
+        ],
+        [
+          "Q2 = 3 E + 8 M + 4 T + 2 E",
+          "17"
+        ],
+        [
+          "6",
+          "1.0",
+          "Q1 = 4 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+          "20"
+        ],
+        [
+          "Q2 = 3 E + 4 T + 4 min rest + 2 × (3 T w/3 min jg between) + 2 E",
+          "15"
+        ],
+        [
+          "5",
+          ".8",
+          "Q1 = 2 E + 4 T + 8 E + 4 T + 2 E",
+          "20"
+        ],
+        [
+          "Q2 = 6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+          "15"
+        ],
+        [
+          "4",
+          ".9",
+          "Q1 = steady E run of 21 miles (34 km)",
+          "21"
+        ],
+        [
+          "Q2 = 5 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E",
+          "14"
+        ],
+        [
+          "3",
+          ".8",
+          "Q1 = 4 E + 6 M + 1 T + 6 M + 1 T + 2 E",
+          "20"
+        ],
+        [
+          "Q2 = 4 E + 4 × (2 T w/2 min E) + 2 E",
+          "14"
+        ],
+        [
+          "2",
+          ".7",
+          "Q1 = 2 E + 3 × (2 T w/2 min rests) + 8 E",
+          "16"
+        ],
+        [
+          "Q2 = 4 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+          "12"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: Q1 = 90 min E 6 days: 60 min E 5 days: Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E 4 days: 50 min E 3 days: 30-40 min E 2 days: 0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+          "14 9 9 7 5 3 3"
+        ],
+        [
+          "More than 120 miles (193 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "Workout",
+          "Miles for Q sessions"
+        ],
+        [
+          "18",
+          ".8",
+          "Q1 = 5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 2 E (a nonstop workout)",
+          "21"
+        ],
+        [
+          "Q2 = 10 E + 4 T + 1 E + 4 T + 2 E",
+          "21"
+        ],
+        [
+          "17",
+          ".8",
+          "Q1 = 4 E + 3 T + 60 min E + 3 T + 2 E",
+          "21"
+        ],
+        [
+          "Q2 = 8 E + 6 × (1 km I w/2 min jg) + 6 × (400 R w/400 m jg) + 2 E",
+          "17"
+        ],
+        [
+          "16",
+          ".9",
+          "Q1 = steady E run of 23 miles (37 km)",
+          "23"
+        ],
+        [
+          "Q2 = 5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+          "18"
+        ],
+        [
+          "15",
+          ".9",
+          "Q1 = 2 E + 8 M + 1 T + 4 M + 1 T + 3 M + 2 E",
+          "21"
+        ],
+        [
+          "Q2 = 8 E + 4 × (2 T w/2 min rests) + 2 E",
+          "18"
+        ],
+        [
+          "14",
+          ".8",
+          "Q1 = 2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+          "20"
+        ],
+        [
+          "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 3 E or 8 E + 5 × (1 I w/4 min jg) + 3 E",
+          "17"
+        ],
+        [
+          "13",
+          "1.0",
+          "Q1= steady E run of 20 miles (32 km)",
+          "20"
+        ],
+        [
+          "Q2 = 8 E + 5 × (2 T w/2 min rests) + 2 E",
+          "20"
+        ],
+        [
+          "12",
+          "1.0",
+          "Q1 = 4 E + 8 M + 1 T + 6 M + 1 T + 2 E",
+          "22"
+        ],
+        [
+          "Q2 = 6 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+          "19"
+        ],
+        [
+          "11",
+          ".9",
+          "Q1 = 10 E + 4 T + 8 E",
+          "22"
+        ],
+        [
+          "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+          "18"
+        ],
+        [
+          "10",
+          ".8",
+          "Q1 = steady E run of 21 miles (34 km)",
+          "21"
+        ],
+        [
+          "Q2 = 2 E + 16 M + 2 E",
+          "20"
+        ],
+        [
+          "9",
+          "1.0",
+          "Q1 = 4 E + 6 M + 1 T + 6 M + 2 E",
+          "19"
+        ],
+        [
+          "Q2 = 3 E + 4 T + 4 min E + 4 T + 4 min E + 2 T + 2 E",
+          "16"
+        ],
+        [
+          "8",
+          "1.0",
+          "Q1 = 6 E + 13 M + 3 E",
+          "22"
+        ],
+        [
+          "Q2 = 8 E + 3 × (1 I w/4 min jg) + 3 × (1 km I w/2 min jg) + 2 E",
+          "17"
+        ],
+        [
+          "7",
+          ".9",
+          "Q1 = steady E run of 22 miles (35 km)",
+          "22"
+        ],
+        [
+          "Q2 = 4 E + 8 M + 4 T + 2 E",
+          "18"
+        ],
+        [
+          "6",
+          "1.0",
+          "Q1 = 4 E + 8 M + 1 T + 4 M + 1 T + 1 M + 2 E",
+          "21"
+        ],
+        [
+          "Q2 = 3 E + 4 T + 4 min E + 2 × (3 T w/3 min rests) + 2 E",
+          "15"
+        ],
+        [
+          "5",
+          ".8",
+          "Q1 = 2 E + 4 T + 8 E + 4 T + 2 E",
+          "20"
+        ],
+        [
+          "Q2 = 6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+          "15"
+        ],
+        [
+          "4",
+          ".9",
+          "Q1 = steady E run of 21 miles (34 km)",
+          "21"
+        ],
+        [
+          "Q2 = 5 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E",
+          "15"
+        ],
+        [
+          "3",
+          ".7",
+          "Q1 = 4 E + 6 M + 1 T + 6 M + 1 T + 2 E",
+          "20"
+        ],
+        [
+          "Q2 = 2 E + 4 × (2 T w/2 min jg) + 2 E",
+          "12"
+        ],
+        [
+          "2",
+          ".7",
+          "Q1 = 2 E + 3 × (2 T w/2 min rests) + 8 E",
+          "16"
+        ],
+        [
+          "Q2 = 4 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+          "12"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: Q1 = 90 min E 6 days: 60 min E 5 days: Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E 4 days: 50 min E 3 days: 30-40 min E 2 days: 30-40 min E 1 day: 20-30 min E (tomorrow is the race)",
+          "14 9 9 7 6 5 3"
+        ]
+      ]
+    },
+    "marathon_4wk": {
+      "source": "OEBPS/chapter16_split_002.xhtml table 0 (Table 16.4)",
+      "rows": [
+        [
+          "Up to 40 miles (64 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "First Q session",
+          "Second Q session"
+        ],
+        [
+          "26",
+          ".9",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "25",
+          ".9",
+          "L = lesser of 12 miles (19 km) & 90 min",
+          "2 E + 2 × 1 T w/1 min rests + 3 × 3 min H ( I pace) w/2 min jg + 4 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "24",
+          ".8",
+          "30 min E + 6 M",
+          "1 E + 3 M + 1 E + 3 M + 1 E"
+        ],
+        [
+          "23",
+          ".9",
+          "2 E + 4 × 1 T w/1 min rests + 2 E",
+          "2 E + 3 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "22",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "21",
+          ".8",
+          "L = lesser of 13 miles (21 km) & 90 min",
+          "2 E + 2 × 1 T w/2 min rests + 3 × 1 km I w/3 min jg + 6 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "20",
+          "1.0",
+          "30 min E + 8 M",
+          "1 E + 5 M + 1 E + 4 M + 1 E"
+        ],
+        [
+          "19",
+          ".9",
+          "2 E + 4 × 1 T w/1 min rests + 2 E",
+          "2 E + 3 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "18",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "17",
+          ".8",
+          "L = lesser of 14 miles (23 km) & 2 hr",
+          "2 E + 2 T + 2 min rest + 3 × 3 min H w/3 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "16",
+          ".9",
+          "3 E + 10 M",
+          "2 E + 6 M + 1 E + 4 M + 1 E"
+        ],
+        [
+          "15",
+          ".8",
+          "2 E + 2 × 1 T w/1 min rests",
+          "2 E + 4 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 2 E + 2 T + 2 min rest + 1 T + 1 E"
+        ],
+        [
+          "14",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "13",
+          ".9",
+          "L = lesser of 15 miles (24 km) & 2 hr",
+          "2 E + 2 T + 2 min rest + 3 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "12",
+          ".8",
+          "20 min E + 12 M",
+          "2 E + 6 M + 1 E + 5 M + 1 E"
+        ],
+        [
+          "11",
+          ".7",
+          "2 E + 2 × 1 T w/1 min rests + 2 T",
+          "2 E + 4 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 2 E + 2 min rest + 1 T + 1 E"
+        ],
+        [
+          "10",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "9",
+          ".9",
+          "L = lesser of 15 miles (24 km) & 130 min",
+          "2 E + 2 T + 2 min rest + 2 T + 2 min rest + 3 × 3 min H w/2 min jg + 6 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "8",
+          "1.0",
+          "30 min E + 12 M",
+          "3 E + 6 M + 1 E + 4 M + 1 E"
+        ],
+        [
+          "7",
+          ".8",
+          "30 min E + 3 × 2 T w/2 min rests + 2 E",
+          "2 E + 4 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "6",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "5",
+          ".9",
+          "L = lesser of 15 miles (24 km) & 130 min",
+          "2 E + 2 × 1 T w/1 min rests + 3 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "4",
+          ".9",
+          "20 min E + 12 M",
+          "3 E + 5 M + 1 E + 5 M + 1 E"
+        ],
+        [
+          "3",
+          ".8",
+          "60 min E + 3 T + 2 min rest + 2 T + 2 E",
+          "2 E + 4 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "2",
+          ".7",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: 90 min E 6 days: 60 min E 5 days: 3 × 1 T w/2 min rests 4 days: 60 min E 3 days: 45 min E 2 days: 30 min E 1 day: 30 min E (tomorrow is the marathon race)"
+        ],
+        [
+          "41-55 miles (66-89 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "First Q session",
+          "Second Q session"
+        ],
+        [
+          "26",
+          ".8",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "25",
+          ".9",
+          "L = lesser of 13 miles (21 km) & 90 min",
+          "2 E + 3 × 1 T w/1 min rests + 3 × 3 min H ( I pace) w/2 min recovery jg + 4 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "24",
+          ".8",
+          "30 min E + 7 M",
+          "1 E + 5 M + 1 E + 2 M + 1 E"
+        ],
+        [
+          "23",
+          ".9",
+          "2 E + 5 × 1 T w/1 min rests + 2 E",
+          "2 E + 4 × 1 T w/1 min rests + 4 × 400 R w/400 jg + 1 E"
+        ],
+        [
+          "22",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "21",
+          ".8",
+          "L = lesser of 14 miles (23 km) & 90 min",
+          "2 E + 3 × 1 T w/2 min rests + 3 × 3 min H w/2 min jg + 4 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "20",
+          "1.0",
+          "30 min E + 9 M",
+          "2 E + 5 M + 1 E + 4 M + 2 E"
+        ],
+        [
+          "19",
+          ".9",
+          "2 E + 5 × 1 T w/1 min rests + 2 E",
+          "2 E + 4 × 1 T w/1 min rests + 4 × 400 R w/400 jg + 1 E"
+        ],
+        [
+          "18",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "17",
+          ".8",
+          "L = lesser of 15 miles (24 km) & 100 min",
+          "2 E + 3 × 1 T + 3 min rest + 3 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "16",
+          ".9",
+          "3 E + 10 M",
+          "2 E + 6 M + 1 E + 5 M + 1 E"
+        ],
+        [
+          "15",
+          ".8",
+          "2 E + 2 × 2 T w/2 min rests + 2 E",
+          "2 E + 3 T + 3 min rest + 2 T + 2 min rest + 8 × 200 R w/200 jg + 2 × 1 T w/1 min rests + 1 E + 2 E"
+        ],
+        [
+          "14",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "13",
+          ".9",
+          "L = lesser of 16 miles (26 km) & 2 hr",
+          "2 E + 3 × 1 T w/1 min rests + 3 min rest + 3 × 1 km I w/3 min jg + 4 × 400 R w/400 jg + 1 E"
+        ],
+        [
+          "12",
+          ".8",
+          "3 E + 13 M",
+          "1 E + 6 M + 1 E + 5 M + 1 E + 2 M + 1 E"
+        ],
+        [
+          "11",
+          ".7",
+          "2 E + 2 × 2 T w/2 min rests",
+          "2 E + 3 T + 3 min rest + 2 T + 2 min rest + 2 × 400 R w/400 jg + 2 × 1 T w/1 min rest + 1 E + 4 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "10",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "9",
+          ".9",
+          "L = lesser of 16 miles (26 km) & 140 min",
+          "2 E + 3 × 1 T w/1 min rests + 4 × 3 min H w/2 min jg + 6 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "8",
+          "1.0",
+          "20 min E + 14 M",
+          "1 E + 6 M + 1 E + 7 M + 1 E"
+        ],
+        [
+          "7",
+          ".8",
+          "4 E + 3 × 2 T w/2 min rests + 1 T + 1 E",
+          "2 E + 2 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 4 × 1 T w/1 min rests + 2 E"
+        ],
+        [
+          "6",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "5",
+          ".9",
+          "L = lesser of 16 miles (26 km) & 140 min",
+          "2 E + 2 × 3 T w/3 min rests + 2 T + 3 min rest + 4 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "4",
+          ".9",
+          "10 min E + 14 M",
+          "1 E + 8 M + 1 E + 5 M + 1 E"
+        ],
+        [
+          "3",
+          ".8",
+          "60 min E + 3 × 2 T w/2 min rests + 1 T",
+          "2 E + 2 × 2 T w/2 min rests + 2 × 1 T w/1 min rests + 2 E + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "2",
+          ".7",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: 90 min E 6 days: 60 min E 5 days: 3 × 1 mile T w/2 min rests 4 days: 60 min E 3 days: 45 min E 2 days: 30 min E 1 day: 30 min E (tomorrow is the marathon race)"
+        ],
+        [
+          "56-70 miles (90-113 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "First Q session",
+          "Second Q session"
+        ],
+        [
+          "26",
+          ".8",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "25",
+          ".9",
+          "L = lesser of 14 miles (23 km) & 100 min",
+          "2 E + 3 × 1 T w/1 min rests + 4 × 3 min H ( I pace) w/2 min recovery jg + 6 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "24",
+          ".8",
+          "30 min E + 8 M",
+          "1 E + 5 M + 1 E + 3 M + 1 E"
+        ],
+        [
+          "23",
+          ".9",
+          "2 E + 6 × 1 T w/1 min rests + 2 E",
+          "2 E + 5 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "22",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "21",
+          ".8",
+          "L = lesser of 15 miles (24 km) & 105 min",
+          "2 E + 3 × 1 T w/2 min rests + 5 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "20",
+          "1.0",
+          "30 min E + 10 M",
+          "2 E + 6 M + 1 E + 4 M + 2 E"
+        ],
+        [
+          "19",
+          ".9",
+          "2 E + 3 × 1 T w/1 min rests + 2 T",
+          "2 E + 6 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 1 E + 2 × 1 T w/1 min rest + 1 E"
+        ],
+        [
+          "18",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "17",
+          ".8",
+          "L = lesser of 16 miles (26 km) & 2 hr",
+          "2 E + 3 × 1 T + 3 min rest + 5 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "16",
+          ".9",
+          "4 E + 12 M",
+          "2 E + 6 M + 1 E + 6 M + 1 E"
+        ],
+        [
+          "15",
+          ".8",
+          "2 E + 3 × 2 T w/2 min rests",
+          "2 E + 6 × 1 T w/1 min rests + 4 × 200 R w/200 jg + 2 × 1 T w/1 min rests + 1 E + 4 × 400 R w/400 jg + 2 E"
+        ],
+        [
+          "14",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "13",
+          ".9",
+          "L = lesser of 17 miles (27 km) & 130 min",
+          "2 E + 2 × 2 T w/2 min rests + 5 × 3 min H w/2 min jg + 4 × 400 R w/400 jg + 1 E"
+        ],
+        [
+          "12",
+          ".8",
+          "M = 3 E + 14 M",
+          "1 E + 8 M + 1 E + 6 M + 1 E"
+        ],
+        [
+          "11",
+          ".7",
+          "T = 4 E + 4 × 2 T w/2 min rests + 2 E",
+          "2 E + 6 × 1 T w/1 min rests + 4 × 200 R w/200 jg + 4 × 400 R w/400 jg + 1 E"
+        ],
+        [
+          "10",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "9",
+          ".9",
+          "L = lesser of 18 miles (29 km) & 140 min",
+          "2 E + 3 T + 3 min rest + 2 T + 2 min rest + 5 × 3 min H w/2 min jg + 6 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "8",
+          "1.0",
+          "30 min E + 15 M",
+          "2 E + 8 M + 1 E + 6 M + 2 E"
+        ],
+        [
+          "7",
+          ".8",
+          "4 E + 4 × 2 T w/2 min rests + 1 T + 1 E",
+          "2 E + 3 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "6",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "5",
+          ".9",
+          "L = lesser of 18 miles (29 km) & 140 min",
+          "2 E + 3 T + 3 min rest + 2 T + 3 min rest + 5 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "4",
+          ".9",
+          "50 min E + 16 M",
+          "4 E + 10 M + 1 E + 6 M + 2 E"
+        ],
+        [
+          "3",
+          ".8",
+          "60 min E + 4 × 3 T w/3 min rests + 1 E",
+          "2 E + 2 × 3 T w/3 min rests + 8 × 200 R w/ 200 jg + 2 E"
+        ],
+        [
+          "2",
+          ".7",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: 90 min E 6 days: 60 min E 5 days: 3 × 1 mile T w/2 min rests 4 days: 60 min E 3 days: 45 min E 2 days: 30 min E 1 day: 30 min E (tomorrow is the marathon race)"
+        ],
+        [
+          "71-85 miles (114-137 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "First Q session",
+          "Second Q session"
+        ],
+        [
+          "26",
+          ".9",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "25",
+          ".9",
+          "L = lesser of 15 miles (24 km) & 100 min",
+          "2 E + 4 × 1 T w/1 min rests + 4 × 3 min H ( I pace) w/2 min recovery jg + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "24",
+          ".8",
+          "40 min E + 8 M",
+          "3 E + 5 M + 1 E + 3 M + 3 E"
+        ],
+        [
+          "23",
+          ".9",
+          "2 E + 3 × 1 T w/1 min rests + 2 T + 2 min rest + 2 × 1 T w/1 min rests",
+          "2 E + 6 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "22",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "21",
+          ".8",
+          "L = lesser of 17 miles (27 km) & 2 hr",
+          "2 E + 3 × 1 T w/2 min rests + 5 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "20",
+          "1.0",
+          "30 min E + 10 M",
+          "2 E + 6 M + 1 E + 4 M + 2 E"
+        ],
+        [
+          "19",
+          ".9",
+          "2 E + 3 × 1 T w/1 min rests + 2 T + 2 × 1 T w/1 min rest + 1 E",
+          "2 E + 6 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "18",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "17",
+          ".8",
+          "L = lesser of 18 miles (29 km) & 130 min",
+          "2 E + 4 × 1 T w/1 min rests + 5 × 3 min H w/2 min jg + 6 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "16",
+          ".9",
+          "40 min E + 12 M",
+          "4 E + 6 M + 1 E + 6 M + 1 E"
+        ],
+        [
+          "15",
+          ".8",
+          "2 E + 4 × 2 T w/2 min rests + 2 T + 2 E",
+          "2 E + 3 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 1 T + 2 E"
+        ],
+        [
+          "14",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "13",
+          ".9",
+          "L = lesser of 19 miles (31 km) & 2.5 hr",
+          "2 E + 5 × 1 T w/1 min rests + 6 × 3 min H w/2 min jg + 4 × 400 R w/400 jg + 2 E"
+        ],
+        [
+          "12",
+          ".8",
+          "4 E + 14 M",
+          "2 E + 8 M + 1 E + 6 M + 1 E"
+        ],
+        [
+          "11",
+          ".7",
+          "4 E + 5 × 2 T w/2 min rests + 1 E",
+          "2 E + 3 × 2 T w/1 min rests + 8 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "10",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "9",
+          ".9",
+          "L = lesser of 20 miles (32 km) & 2.5 hr",
+          "2 E + 3 × 2 T w/3 min rests + 2 T + 2 min rest + 6 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "8",
+          "1.0",
+          "30 min E + 16 M",
+          "2 E + 8 M + 1 E + 8 M + 1 E"
+        ],
+        [
+          "7",
+          ".8",
+          "4 E + 3 × 3 T w/3 min rests + 2 T + 1 E",
+          "2 E + 4 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 1 T + 2 E"
+        ],
+        [
+          "6",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "5",
+          ".9",
+          "L = lesser of 20 miles (32 km) & 2.5 hr",
+          "2 E + 3 × 2 T w/2 min rests + 6 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "4",
+          ".9",
+          "30 min E + 16 M",
+          "4 E + 8 M + 1 E + 6 M + 1 E"
+        ],
+        [
+          "3",
+          ".8",
+          "60 min E + 3 × 3 T w/3 min rests + 2 T + 1 E",
+          "2 E + 4 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 1 T + 2 E"
+        ],
+        [
+          "2",
+          ".7",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: 90 min E 6 days: 60 min E 5 days: 3 × 1 T w/2 min rests 4 days: 60 min E 3 days: 45 min E 2 days: 30 min E 1 day: 30 min E (tomorrow is the marathon race)"
+        ],
+        [
+          "86-100 miles (138-161 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "First Q session",
+          "Second Q session"
+        ],
+        [
+          "26",
+          ".8",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "25",
+          ".9",
+          "L = lesser of 16 miles (26 km) & 2 hr",
+          "2 E + 2 × 2 T w/2 min rests + 5 × 3 min H ( I pace) w/2 min recovery jg + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "24",
+          ".8",
+          "40 min E + 9 M",
+          "3 E + 5 M + 1 E + 3 M + 3 E"
+        ],
+        [
+          "23",
+          ".9",
+          "2 E + 2 × 1 T w/1 min rests + 2 × 2 T w/2 min rest + 2 × 1 T w/1 min rest + 2 E",
+          "2 E + 6 × 1 T w/1 min rests + 8 × 200 R w/200 E + 2 × 2 T w/2 min jg + 2 E"
+        ],
+        [
+          "22",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "21",
+          ".8",
+          "L = lesser of 18 miles (29 km) & 130 min",
+          "2 E + 3 × 1 T w/2 min rests + 5 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "20",
+          "1.0",
+          "50 min E + 11 M",
+          "2 E + 6 M + 1 E + 4 M + 2 E"
+        ],
+        [
+          "19",
+          ".9",
+          "2 E + 3 × 1 T w/1 min rests + 2 × 2 T w/2 min rest + 2 × 1 T w/1 min rest + 2 E",
+          "2 E + 6 × 1 T w/1 min rests + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "18",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "17",
+          ".8",
+          "L = lesser of 19 miles (31 km) & 2.5 hr",
+          "2 E + 4 × 1 T w/1 min rests + 5 × 3 min H w/2 min jg + 6 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "16",
+          ".9",
+          "40 min E + 13 M",
+          "4 E + 6 M + 1 E + 6 M + 1 E"
+        ],
+        [
+          "15",
+          ".8",
+          "2 E + 4 × 2 T w/2 min rests + 2 × 1 T w/1 min rests + 2 E",
+          "2 E + 3 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "14",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "13",
+          ".9",
+          "L = lesser of 20 miles (32 km) & 2.5 hr",
+          "2 E + 5 × 1 T w/1 min rests + 6 × 3 min H w/2 min jg + 4 × 400 R w/400 jg + 1 E"
+        ],
+        [
+          "12",
+          ".8",
+          "30 min E + 15 M",
+          "2 E + 8 M + 1 E + 6 M + 1 E"
+        ],
+        [
+          "11",
+          ".7",
+          "4 E + 4 × 2 T w/2 min rests + 3 × 1 T w/1 min rests + 1 E",
+          "2 E + 3 × 2 T w/1 min rests + 8 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "10",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "9",
+          ".9",
+          "L = lesser of 22 miles (35 km) & 2.5 hr",
+          "2 E + 3 × 2 T w/2 min rests + 2 T + 2 min rest + 6 × 3 min H w/2 min jg + 4 × 400 R w/400 jg + 1 E"
+        ],
+        [
+          "8",
+          "1.0",
+          "40 min E + 16 M",
+          "4 E + 8 M + 1 E + 8 M + 1 E"
+        ],
+        [
+          "7",
+          ".8",
+          "4 E + 6 × 2 T w/2 min rests + 1 E",
+          "2 E + 2 × 3 T w/3 min rests + 8 × 200 R w/200 jg + 4 × 1 T w/1 min rests + 2 E"
+        ],
+        [
+          "6",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "5",
+          ".9",
+          "L = lesser of 22 miles (35 km) & 2.5 hr",
+          "2 E + 3 × 2 T w/2 min rests + 6 × 3 min H w/2 min jg + 4 × 400 R w/400 jg + 1 E"
+        ],
+        [
+          "4",
+          ".9",
+          "M = 40 min E + 16 M",
+          "4 E + 8 M + 1 E + 8 M + 1 E"
+        ],
+        [
+          "3",
+          ".8",
+          "60 min E + 6 × 2 T w/2 min rests",
+          "2 E + 3 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 3 × 1 T w/1 min rests + 2 E"
+        ],
+        [
+          "2",
+          ".7",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: 90 min E 6 days: 60 min E 5 days: 3 × 1 T w/2 min rests 4 days: 60 min E 3 days: 45 min E 2 days: 30 min E 1 day: 30 min E (tomorrow is the marathon race)"
+        ],
+        [
+          "101-120 miles (163-193 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "First Q session",
+          "Second Q session"
+        ],
+        [
+          "26",
+          ".8",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "25",
+          ".9",
+          "L = lesser of 17 miles & 2 hr",
+          "2 E + 2 × 2 T w/2 min rests + 1 T + 3 min rest + 5 × 3 min H w/2 min jg + 6 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "24",
+          ".8",
+          "50 min E + 10 M",
+          "3 E + 6 M + 1 E + 4 M + 3 E"
+        ],
+        [
+          "23",
+          ".9",
+          "3 E + 3 T + 3 min rest + 3 × 2 T w/2 min rests + 2 E",
+          "2 E + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 2 min rest + 8 × 200 R w/200 jg + 1 T + 2 E"
+        ],
+        [
+          "22",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "21",
+          ".8",
+          "L = lesser of 18 miles (29 km) & 130 min",
+          "2 E + 5 × 1 T w/1 min rests + 6 × 3 min H w/2 min jg + 6 × 200 R w/200 jg + 3 E"
+        ],
+        [
+          "20",
+          "1.0",
+          "50 min E + 12 M",
+          "3 E + 6 M + 1 E + 6 M + 3 E"
+        ],
+        [
+          "19",
+          ".9",
+          "3 E + 5 × 2 T w/2 min rests + 2 E",
+          "2 E + 3 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 2 T + 1 E"
+        ],
+        [
+          "18",
+          ".9",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "17",
+          ".8",
+          "L = lesser of 20 miles (32 km) & 2.5 hr",
+          "2 E + 3 × 2 T w/2 min rests + 6 × 3 min H w/2 min jg + 6 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "16",
+          ".9",
+          "40 min E + 14 M",
+          "4 E + 8 M + 1 E + 6 M + 1 E"
+        ],
+        [
+          "15",
+          ".8",
+          "3 E + 2 × 3 T w/3 min rests + 2 × 2 T w/2 min rests + 1 T + 2 E",
+          "3 E + 4 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "14",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "13",
+          ".9",
+          "L = lesser of 21 miles (34 km) & 2.5 hr",
+          "2 E + 3 × 2 T w/2 min rests + 6 × 3 min H w/2 min jg + 4 × 400 R w/400 jg + 2 E"
+        ],
+        [
+          "12",
+          ".8",
+          "40 min E + 15 M",
+          "4 E + 8 M + 1 E + 7 M + 1 E"
+        ],
+        [
+          "11",
+          ".7",
+          "4 E + 4 × 3 T w/3 min rests + 2 E",
+          "2 E + 4 × 2 T w/1 min rests + 8 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "10",
+          ".6",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "9",
+          ".9",
+          "L = lesser of 23 miles (37 km) & 2.5 hr",
+          "2 E + 4 × 2 T w/2 min rests + 6 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 3 E"
+        ],
+        [
+          "8",
+          "1.0",
+          "40 min E + 16 M",
+          "4 E + 10 M + 1 E + 6 M + 2 E"
+        ],
+        [
+          "7",
+          ".8",
+          "4 E + 3 × 3 T w/3 min rests + 2 × 2 T w/2 min rests + 1 E",
+          "2 E + 2 × 3 T w/3 min rests + 8 × 200 R w/200 jg + 4 × 1 T w/1 min rests + 2 E"
+        ],
+        [
+          "6",
+          ".9",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "5",
+          ".9",
+          "L = lesser of 23 miles (37 km) & 2.5 hr",
+          "2 E + 2 × 3 T w/3 min rests + 2 T + 3 min rest + 6 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "4",
+          ".9",
+          "40 min E + 16 M",
+          "4 E + 8 M + 1 E + 8 M + 2 E"
+        ],
+        [
+          "3",
+          ".8",
+          "60 min E + 3 × 3 T w/3 min rests",
+          "2 E + 2 × 3 T w/3 min rests + 8 × 200 R w/200 jg + 3 × 1 T w/2 min rests + 2 E"
+        ],
+        [
+          "2",
+          ".7",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: 90 min E 6 days: 60 min E 5 days: 3 × 1 T w/2 min rests 4 days: 60 min E 3 days: 45 min E 2 days: 30 min E 1 day: 30 min E (tomorrow is the marathon race)"
+        ],
+        [
+          "More than 120 miles (193 km) per week"
+        ],
+        [
+          "Weeks until race",
+          "Fraction of peak",
+          "First Q session",
+          "Second Q session"
+        ],
+        [
+          "26",
+          ".8",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "25",
+          ".9",
+          "L = lesser of 18 miles (29 km) & 2 hr",
+          "2 E + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 1 min rest + 5 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "24",
+          ".8",
+          "60 min E + 10 M",
+          "4 E + 6 M + 1 E + 4 M + 3 E"
+        ],
+        [
+          "23",
+          ".9",
+          "3 E + 5 × 2 T w/2 min rests + 3 E",
+          "3 E + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 2 min rest + 8 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "22",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "21",
+          ".8",
+          "L = lesser of 19 miles (31 km) & 135 min",
+          "3 E + 6 × 1 T w/1 min rests + 6 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "20",
+          "1.0",
+          "50 min E + 12 M",
+          "4 E + 6 M + 1 E + 6 M + 3 E"
+        ],
+        [
+          "19",
+          ".9",
+          "3 E + 3 × 3 T w/3 min rests + 2 T + 2 E",
+          "3 E + 4 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 1 T + 2 E"
+        ],
+        [
+          "18",
+          ".9",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "17",
+          ".8",
+          "L = lesser of 21 miles (34 m) & 2.5 hr",
+          "3 E + 3 × 2 T w/2 min rests + 6 × 3 min H w/2 min jg + 4 × 400 R w/400 jg + 2 E"
+        ],
+        [
+          "16",
+          ".9",
+          "50 min E + 14 M",
+          "4 E + 8 M + 1 E + 6 M + 2 E"
+        ],
+        [
+          "15",
+          ".8",
+          "3 E + 6 × 2 T w/2 min rests + 2 E",
+          "2 E + 4 × 2 T w/2 min rests + 8 × 200 R w/200 jg + 2 T + 2 E"
+        ],
+        [
+          "14",
+          "1.0",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "13",
+          ".9",
+          "L = lesser of 22 miles (35 km) & 2.5 hr",
+          "3 E + 3 T + 3 min rest + 2 × 2 T w/2 min rests + 6 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "12",
+          ".8",
+          "50 min E + 15 M",
+          "4 E + 8 M + 1 E + 7 M + 2 E"
+        ],
+        [
+          "11",
+          ".7",
+          "4 E + 3 T + 3 min rest + 5 × 2 T w/2 min rests + 2 E",
+          "3 E + 2 × 3 T w/3 min rests + 8 × 200 R w/200 jg + 2 × 2 T w/2 min rests + 2 E"
+        ],
+        [
+          "10",
+          ".6",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "9",
+          ".9",
+          "L = lesser of 23 miles (37 km) & 2.5 hr",
+          "2 E + 2 × 3 T w/3 min rests + 2 T + 2 min rest + 6 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 1 E"
+        ],
+        [
+          "8",
+          "1.0",
+          "40 min E + 16 M",
+          "4 E + 10 M + 1 E + 6 M + 2 E"
+        ],
+        [
+          "7",
+          ".8",
+          "4 E + 3 × 3 T w/3 min rests + 2 × 2 T w/2 min rests + 1 E",
+          "3 E + 2 × 3 T w/3 min rests + 8 × 200 R w/200 jg + 4 × 1 T w/1 min rests + 2 E"
+        ],
+        [
+          "6",
+          ".9",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "5",
+          ".9",
+          "L = lesser of 23 miles (37 km) & 2.5 hr",
+          "2 E + 2 × 3 T w/3 min rests + 2 T + 3 min rest + 6 × 3 min H w/2 min jg + 8 × 200 R w/200 jg + 2 E"
+        ],
+        [
+          "4",
+          ".9",
+          "40 min E + 16 M",
+          "4 E + 10 M + 1 E + 6 M + 2 E"
+        ],
+        [
+          "3",
+          ".8",
+          "60 min E + 3 × 3 T w/3 min rests",
+          "2 E + 2 × 3 T w/3 min rests + 8 × 200 R w/200 jg + 3 × 1 T w/2 min rests + 2 E"
+        ],
+        [
+          "2",
+          ".7",
+          "No Q sessions this week; E runs all week + add 6-8 ST on 2 days"
+        ],
+        [
+          "1",
+          "—",
+          "7 days: 90 min E 6 days: 60 min E 5 days: 3 × 1 T w/2 min rests 4 days: 60 min E 3 days: 45 min E 2 days: 30 min E 1 day: 30 min E (tomorrow is the marathon race)"
+        ]
+      ]
+    },
+    "marathon_5wk": {
+      "source": "OEBPS/chapter16_split_003.xhtml table 0 (Table 16.5)",
+      "rows": [
+        [
+          "Week",
+          "Day",
+          "Workout"
+        ],
+        [
+          "1",
+          "Sunday",
+          "L run"
+        ],
+        [
+          "Monday",
+          "E + 8 ST"
+        ],
+        [
+          "Tuesday",
+          "E"
+        ],
+        [
+          "Wednesday",
+          "T session"
+        ],
+        [
+          "Thursday",
+          "R session"
+        ],
+        [
+          "Friday",
+          "E"
+        ],
+        [
+          "Saturday",
+          "E + 6 ST"
+        ],
+        [
+          "2",
+          "Sunday",
+          "M run"
+        ],
+        [
+          "Monday",
+          "E + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "E"
+        ],
+        [
+          "Wednesday",
+          "T session"
+        ],
+        [
+          "Thursday",
+          "R session"
+        ],
+        [
+          "Friday",
+          "E"
+        ],
+        [
+          "Saturday",
+          "E + 8 ST"
+        ],
+        [
+          "3",
+          "Sunday",
+          "L run"
+        ],
+        [
+          "Monday",
+          "E + 8 ST"
+        ],
+        [
+          "Tuesday",
+          "E"
+        ],
+        [
+          "Wednesday",
+          "T session"
+        ],
+        [
+          "Thursday",
+          "I session"
+        ],
+        [
+          "Friday",
+          "E"
+        ],
+        [
+          "Saturday",
+          "E + 6 ST"
+        ],
+        [
+          "4",
+          "Sunday",
+          "M run"
+        ],
+        [
+          "Monday",
+          "E + 6 ST"
+        ],
+        [
+          "Tuesday",
+          "E"
+        ],
+        [
+          "Wednesday",
+          "T session"
+        ],
+        [
+          "Thursday",
+          "R session"
+        ],
+        [
+          "Friday",
+          "E"
+        ],
+        [
+          "Saturday",
+          "E + 8 ST"
+        ],
+        [
+          "5",
+          "Sunday",
+          "L run"
+        ],
+        [
+          "Monday",
+          "E + 8 ST"
+        ],
+        [
+          "Tuesday",
+          "E"
+        ],
+        [
+          "Wednesday",
+          "T session"
+        ],
+        [
+          "Thursday",
+          "I & R session"
+        ],
+        [
+          "Friday",
+          "E"
+        ],
+        [
+          "Saturday",
+          "E + 8 ST"
+        ]
+      ]
+    },
+    "marathon_18wk_miles": {
+      "source": "OEBPS/chapter16_split_003.xhtml table 1 (Table 16.6)",
+      "rows": [
+        [
+          "Week",
+          "Workout"
+        ],
+        [
+          "1",
+          "16-18 mile (not more than 2.5 hr) long run (referred to as L) at easy (E) pace"
+        ],
+        [
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 10-12 miles at current estimated marathon (M) pace"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "2",
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 2 × 3 miles T w/3 min rest between (T pace is 12-16 sec/mile faster than M, or can be selected from VDOT tables) + 60 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "3",
+          "10 min E + (4 × 2 mile T w/2 min rests) + 30 min E"
+        ],
+        [
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "17-20 mile (not more than 2.5 hr) L run"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "4",
+          "30 min E + 5 × 1 km I w/3 min jg + 4 × 400 R w/400 jg + 30 min E"
+        ],
+        [
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 4 × (2 mile T w/2 min rests) + 40 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "5",
+          "E day (total 1.0P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "18-20 mile L run (not more than 2.5 hr)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 10-12 miles M + 30 min E"
+        ],
+        [
+          "6",
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "20 min E + 4 × (2 mile T w/2 min rests) + 60 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "7",
+          "E day (total 1.0P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30 min E + 12 miles M + 30 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "8",
+          "60 min E + 6 × 1 km I w/400 jg recovery + 2 miles T + 10 min E"
+        ],
+        [
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "20-23 mile L run (not more than 2.5 hr)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "9",
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30 min E + 14 miles M + 20 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10",
+          "30 min E + 2 × (3 mile T w/3 min rests) + 2 × (2 mile T w/2 min rests) + 20 min E"
+        ],
+        [
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30 min E + 6 × 1,200 I w/3 min jg + 2 miles T + 30 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "11",
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "20-23 mile L run (not more than 2.5 hr)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "12",
+          "10 min E + 80-90 min M"
+        ],
+        [
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 5 × (1 mile T w/1 min rests) + 60 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "13",
+          "E day (total 1.0P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 3 miles T + 4 × 1 km I w/400 jg + 2 miles T + 10 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "14",
+          "20-23 mile L run (not more than 2.5 hr)"
+        ],
+        [
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "20 min E + 6 miles M + 10 min E + 3 miles T + 10 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "15",
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 6 miles M + 1 mile T + 6 miles M + 2 miles T + 10 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "16",
+          "10 min E + 12-14 miles M + 50 min E"
+        ],
+        [
+          "E day (total .7P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 5 × (1 mile T w/1 min rests) + 60 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "17",
+          "E day (total .6P-.7P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30 min E + 3 × (2 mile T w/2 min rests) + 20 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "18",
+          "90 min L"
+        ],
+        [
+          "60 min E"
+        ],
+        [
+          "20 min E + 3-4 × (1 mile T w/2 min rests) + 10 min E"
+        ],
+        [
+          "50 min E"
+        ],
+        [
+          "30 min E"
+        ],
+        [
+          "30 min E or rest day (especially if a travel day)"
+        ],
+        [
+          "30 min E (marathon race tomorrow)"
+        ]
+      ]
+    },
+    "marathon_18wk_km": {
+      "source": "OEBPS/chapter16_split_003.xhtml table 2 (Table 16.7)",
+      "rows": [
+        [
+          "Week",
+          "Workout"
+        ],
+        [
+          "1",
+          "25-30K (not more than 2.5 hr) long run (referred to as L) at easy (E) pace"
+        ],
+        [
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 15-18K at projected marathon (M) pace"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "2",
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 2 × 5K T w/3 min rest between (T pace is 8-10 sec/km faster than M) + 60 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "3",
+          "Possible road race today, or 10 min E + 4 × 3K T w/2 min rests + 30 min E"
+        ],
+        [
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "25-30K L run (not more than 2.5 hr)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "4",
+          "E day (total .9P this week)"
+        ],
+        [
+          "30 min E + 5 × (1 K T + 400 jg) + 30 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 4 × (3K T w/2 min rests) + 40 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "5",
+          "E day (total 1.0P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30K L run (not more than 2.5 hr)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 15K M + 30 min E"
+        ],
+        [
+          "6",
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "20 min E + 4 × (3K T w/2 min rests) + 60 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "7",
+          "E day (total 1.0P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30 min E + 18K M + 30 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "8",
+          "60 min E + 4K T + 30 min E + 3K T + 10 min E"
+        ],
+        [
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30-35K L run (not more than 2.5 hr)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "9",
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30 min E + 20K M + 20 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10",
+          "30 min E + 4 × (3K T w/2 min rests) + 30 min E"
+        ],
+        [
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 4K T + 10 min E + 4K T + 40 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "11",
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30-35K L (not more than 2.5 hr)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "12",
+          "10 min E + 20K M"
+        ],
+        [
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 5 × (2K T w/2 min rests) + 60 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "13",
+          "E day (total 1.0P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 4 × (3K T w/2 min rests) + 10 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "14",
+          "30-35K L"
+        ],
+        [
+          "E day (total .9P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "20 min E + 10K M + 10 min E + 4K T + 10 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "15",
+          "E day (total .8P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 5K T + 10 min E + 4K T + 10 min E + 3K T"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "16",
+          "10 min E + 20K M + 50 min E"
+        ],
+        [
+          "E day (total .7P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "10 min E + 4 × (2K T w/2 min rests) + 60 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "17",
+          "E day (total .6P-.7P this week)"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "30 min E + 3 × (3K T w/2 min rests) + 20 min E"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "E day"
+        ],
+        [
+          "18",
+          "90 min L"
+        ],
+        [
+          "60 min E"
+        ],
+        [
+          "20 min E + 3 × (2K T w/2 min rests) + 10 min E"
+        ],
+        [
+          "40 min E"
+        ],
+        [
+          "30 min E"
+        ],
+        [
+          "30 min E or rest day (especially if a travel day)"
+        ],
+        [
+          "30 min E (marathon race tomorrow)"
+        ]
+      ]
+    },
+    "marathon_18wk_time": {
+      "source": "OEBPS/chapter16_split_003.xhtml table 3 (Table 16.8)",
+      "rows": [
+        [
+          "Week",
+          "Workout and time"
+        ],
+        [
+          "1",
+          "L 120 - 150 min"
+        ],
+        [
+          "TIR 15-10-5 min"
+        ],
+        [
+          "2",
+          "EM 60-40 min"
+        ],
+        [
+          "TL 40-60 min"
+        ],
+        [
+          "3",
+          "TIR 20-15-6 min"
+        ],
+        [
+          "4",
+          "MT 60-15 min"
+        ],
+        [
+          "L 120-150 min"
+        ],
+        [
+          "5",
+          "TIR 20-10-10 min"
+        ],
+        [
+          "6",
+          "TL 40-70 min"
+        ],
+        [
+          "T race up to 25K"
+        ],
+        [
+          "7",
+          "MT 80-15 min"
+        ],
+        [
+          "8",
+          "TIR 20-10-8 min"
+        ],
+        [
+          "T 20-20-10-10 min"
+        ],
+        [
+          "9",
+          "T 40 min"
+        ],
+        [
+          "10",
+          "TIR 20-15-10 min"
+        ],
+        [
+          "L 150 min"
+        ],
+        [
+          "11",
+          "MT 80-20 min"
+        ],
+        [
+          "12",
+          "TIR 20-10-10 min"
+        ],
+        [
+          "L 150 min"
+        ],
+        [
+          "13",
+          "TIR 20-15-10 min"
+        ],
+        [
+          "14",
+          "Big T 20-20-15-12-6 min"
+        ],
+        [
+          "15",
+          "L 150 min"
+        ],
+        [
+          "I race 5-10K"
+        ],
+        [
+          "16",
+          "ME 80-60 min"
+        ],
+        [
+          "17",
+          "TL 40-80 min"
+        ],
+        [
+          "T 40 min"
+        ],
+        [
+          "18",
+          "L 1.5 hr E"
+        ],
+        [
+          "1 hr"
+        ],
+        [
+          "T 20 min"
+        ],
+        [
+          "1 hr E"
+        ],
+        [
+          "40 min E"
+        ],
+        [
+          "30 min or rest day E"
+        ],
+        [
+          "30 min E"
+        ],
+        [
+          "",
+          "Marathon race day"
+        ]
+      ]
+    }
+  },
+  "notes": {
+    "half_marathon": "No dedicated Half Marathon table in the book; use alien_15k_30k (Table 15.1, 15K to 30K) which covers Half Marathon (21.1K).",
+    "marathon_final12": "Table 16.9 is an image (OEBPS/images/Table16-9.jpg) in the EPUB, not an HTML table. Extracted image to webapp/images/Table16-9.jpg; OCR required for text."
+  },
+  "half_marathon_via_alien": {
+    "source": "OEBPS/chapter15.xhtml table 0 (Table 15.1)",
+    "rows": [
+      [
+        "Day",
+        "Q session",
+        "Workout"
+      ],
+      [
+        "Weeks 1, 3, 5, 7, 9, and beyond"
+      ],
+      [
+        "1",
+        "Q1",
+        "L run"
+      ],
+      [
+        "2",
+        "",
+        "E day + 8 ST"
+      ],
+      [
+        "3",
+        "Q2",
+        "T session"
+      ],
+      [
+        "4",
+        "",
+        "E day + 8 ST"
+      ],
+      [
+        "5",
+        "",
+        "E day"
+      ],
+      [
+        "6",
+        "Q3",
+        "R session"
+      ],
+      [
+        "7",
+        "",
+        "E day"
+      ],
+      [
+        "Weeks 2, 4, 6, 8, 10, and beyond"
+      ],
+      [
+        "1",
+        "Q1",
+        "M run"
+      ],
+      [
+        "2",
+        "",
+        "E day + 8 ST"
+      ],
+      [
+        "3",
+        "Q2",
+        "T session"
+      ],
+      [
+        "4",
+        "",
+        "E day + 8 ST"
+      ],
+      [
+        "5",
+        "",
+        "E day"
+      ],
+      [
+        "6",
+        "Q3",
+        "I session"
+      ],
+      [
+        "7",
+        "",
+        "E day"
+      ],
+      [
+        "Prerace week"
+      ],
+      [
+        "Race − 6 days",
+        "Q1",
+        "2/3 of normal L run"
+      ],
+      [
+        "Race − 5 days",
+        "",
+        "E day"
+      ],
+      [
+        "Race − 4 days",
+        "",
+        "E day"
+      ],
+      [
+        "Race − 3 days",
+        "Q2",
+        "3 × 1 T w/2 min rest"
+      ],
+      [
+        "Race − 2 days",
+        "",
+        "E day"
+      ],
+      [
+        "Race − 1 day",
+        "",
+        "E day or day off"
+      ],
+      [
+        "Race day",
+        "Q3",
+        "Race day"
+      ],
+      [
+        "Recovery week"
+      ],
+      [
+        "Number of recovery days depends on race length (1 day per 3K of race distance). Pick up next Q day as appropriate and complete that week."
+      ]
+    ]
+  },
+  "by_event": {
+    "5k": [
+      "5k_10k_40_50",
+      "5k_10k_60_70"
+    ],
+    "10k": [
+      "5k_10k_40_50",
+      "5k_10k_60_70"
+    ],
+    "half_marathon": [
+      "alien_15k_30k"
+    ],
+    "marathon": [
+      "marathon_2q",
+      "marathon_4wk",
+      "marathon_5wk",
+      "marathon_18wk_miles",
+      "marathon_18wk_km",
+      "marathon_18wk_time"
+    ]
+  },
+  "marathon_2q_structured": {
+    "categories": [
+      {
+        "name": "Up to 40 miles (64 km) per week",
+        "minMiles": 0,
+        "maxMiles": 40,
+        "weeks": {
+          "18": {
+            "fraction": ".8",
+            "qMiles": "11",
+            "q1": "Q1 = 3 E + 4 M + 1 T + 1 M + 2 E (nonstop workout if no rest shown)",
+            "q2": "Q2 = 5 E + 2 T + 2 min rest + 1 E + 2 × (1 T w/1 min rest between) + 2 E",
+            "q2Miles": "12"
+          },
+          "17": {
+            "fraction": ".8",
+            "qMiles": "12",
+            "q1": "Q1 = 2 E + 2 × (1 T w/1 min rests) + 30 min E + 2 × (1 T w/1 min rests) + 2 E",
+            "q2": "Q2 = 3 E + 6 × (2 min I w/2 min jg between) + 4 × (1 min R w/2 min jg) + 2 E",
+            "q2Miles": "9"
+          },
+          "16": {
+            "fraction": ".9",
+            "qMiles": "11",
+            "q1": "Q1 = steady E run of 90-110 min",
+            "q2": "Q2 = 5 E + 4 × (1 T w/1 min rests) + 2 E",
+            "q2Miles": "11"
+          },
+          "15": {
+            "fraction": ".9",
+            "qMiles": "11",
+            "q1": "Q1 = 2 E + 5 M + 1 T + 1 M + 2 E",
+            "q2": "Q2 = 40 min E + 4 × (1 T w/1 min rests) + 2 E",
+            "q2Miles": "9"
+          },
+          "14": {
+            "fraction": ".9",
+            "qMiles": "11",
+            "q1": "Q1 = 2 E + 2 × (1 T w/1 min rests) + 30 min E + 2 × (1 T w/1 min rests) + 2 E",
+            "q2": "Q2 = 40 min E + 5 × (3 min I w/2 min jg recoveries) + 2 E",
+            "q2Miles": "9"
+          },
+          "13": {
+            "fraction": ".9",
+            "qMiles": "12",
+            "q1": "Q1= steady E run of 90-120 min",
+            "q2": "Q2 = 40 min E + 2 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "10"
+          },
+          "12": {
+            "fraction": "1.0",
+            "qMiles": "12",
+            "q1": "Q1 = 4 E + 6 M + 1 T + 1 E",
+            "q2": "Q2 = 6 E + 3 T + 3 min E + 1 T + 2 E",
+            "q2Miles": "12"
+          },
+          "11": {
+            "fraction": ".9",
+            "qMiles": "13",
+            "q1": "Q1 = 8 E + 4 × (1 T w/1 min rests) + 1 E",
+            "q2": "Q2 = 6 E + 3 × (4 min I w/3 min jg) + 4 × (1 min R w/2 min jg) + 2 E",
+            "q2Miles": "11"
+          },
+          "10": {
+            "fraction": "1.0",
+            "qMiles": "14",
+            "q1": "Q1 = steady E run of 120-130 min",
+            "q2": "Q2 = 6 E + 6 M + 2 E",
+            "q2Miles": "14"
+          },
+          "9": {
+            "fraction": "1.0",
+            "qMiles": "15",
+            "q1": "Q1 = 4 E + 1 T + 8 M + 2 E",
+            "q2": "Q2 = 4 E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "11"
+          },
+          "8": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1 = 5 E + 9 M + 2 E",
+            "q2": "Q2 = 8 E + 5 × (3 min I w/2 min recovery jg) + 3 × (2 min I w/1 min jg) + 2 E",
+            "q2Miles": "13"
+          },
+          "7": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1 = steady E run of 130-150 min",
+            "q2": "Q2 = 2 E + 10 M + 1 T + 2 E",
+            "q2Miles": "15"
+          },
+          "6": {
+            "fraction": "1.0",
+            "qMiles": "16",
+            "q1": "Q1 = 3 E + 12 M + 1 E",
+            "q2": "Q2 = 45 min E + 2 × (2 T w/2 min rests) + 1 T + 1 E",
+            "q2Miles": "11"
+          },
+          "5": {
+            "fraction": "1.0",
+            "qMiles": "15",
+            "q1": "Q1 = 2 E + 2 T + 60 min E + 2 × (1 T w/1 min rest between) + 2 E",
+            "q2": "Q2 = 6 E + 5 × (3 min I w/2 min jg) + 4 × (1 min R w/2 min jg) + 2 E",
+            "q2Miles": "12"
+          },
+          "4": {
+            "fraction": ".9",
+            "qMiles": "17",
+            "q1": "Q1 = steady E run of 150 min",
+            "q2": "Q2 = 6 E + 5 × (3 min I w/3 min jg) + 1 T + 4 E",
+            "q2Miles": "14"
+          },
+          "3": {
+            "fraction": ".9",
+            "qMiles": "17",
+            "q1": "Q1 = 1 E + 8 M + 1 E + 6 M + 1 E",
+            "q2": "Q2 = 6 E + 4 × (1 T w/1 min rests) + 2 E",
+            "q2Miles": "12"
+          },
+          "2": {
+            "fraction": ".9",
+            "qMiles": "12",
+            "q1": "Q1 = 1 E + 2 × (2 T w/2 min rests) + 60 min E",
+            "q2": "Q2 = 4 E + 1 T + 2 M + 1 E + 1 T + 2 M + 1 E",
+            "q2Miles": "12"
+          },
+          "1": {
+            "fraction": "—",
+            "miles": "10 7 6 6 4 2 3",
+            "raceWeek": {
+              "7": "Q1 = 90 min E",
+              "6": "60 min E",
+              "5": "Q2 = 2 E + 5 × (800 T w/2 min E recovery jg) + 1 E",
+              "4": "50 min E",
+              "3": "30-40 min E",
+              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "1": "20-30 min E"
+            }
+          }
+        }
+      },
+      {
+        "name": "41-55 miles (66-89 km) per week",
+        "minMiles": 41,
+        "maxMiles": 55,
+        "weeks": {
+          "18": {
+            "fraction": ".8",
+            "qMiles": "14",
+            "q1": "Q1 = 4 E + 8 M + 1 T + 1 E (a nonstop workout)",
+            "q2": "Q2 = 8 E + 2 × (2 T w/2 min rests) + 1 T + 2 E",
+            "q2Miles": "15"
+          },
+          "17": {
+            "fraction": ".8",
+            "qMiles": "13",
+            "q1": "Q1 = 2 E + 3 T + 40 min E + 2 T + 1 E",
+            "q2": "Q2 = 6 E + 5 × (3 min I w/2 min jg recoveries) + 6 × (1 min R w/2 min jg) + 2 E",
+            "q2Miles": "13"
+          },
+          "16": {
+            "fraction": ".9",
+            "qMiles": "15",
+            "q1": "Q1 = steady E run of 90-120 min",
+            "q2": "Q2 = 6 E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "13"
+          },
+          "15": {
+            "fraction": ".9",
+            "qMiles": "15",
+            "q1": "Q1 = 2 E + 8 M + 1 E + 2 M + 2 E",
+            "q2": "Q2 = 40 min E + 3 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "13"
+          },
+          "14": {
+            "fraction": ".9",
+            "qMiles": "15",
+            "q1": "Q1 = 1 E + 2 × (2 T w/2 min rests) + 60 min E + 1 T + 1 E",
+            "q2": "Q2 = 6 E + 5 × (4 min I w/3 min jg recoveries) + 2 E",
+            "q2Miles": "13"
+          },
+          "13": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1= steady E run of 100-120 min",
+            "q2": "Q2 = 40 min E + 3 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "13"
+          },
+          "12": {
+            "fraction": "1.0",
+            "qMiles": "16",
+            "q1": "Q1 = 2 E + 6 M + 1 E + 6 M + 1 E",
+            "q2": "Q2 = 6 E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "14"
+          },
+          "11": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1 = 10 E + 2 × (2 T w/2 min rests) + 2 E",
+            "q2": "Q2 = 8 E + 5 × (3 min I w/2 min jg) + 6 × (1 min R w/2 min jg) + 2 E",
+            "q2Miles": "15"
+          },
+          "10": {
+            "fraction": "1.0",
+            "qMiles": "16",
+            "q1": "Q1 = steady E run of 120 min",
+            "q2": "Q2 = 2 E + 12 M + 2 E",
+            "q2Miles": "16"
+          },
+          "9": {
+            "fraction": "1.0",
+            "qMiles": "15",
+            "q1": "Q1 = 2 E + 6 M + 1 E + 4 M + 1 T + 1 E",
+            "q2": "Q2 = 5 E + 3 × (2 T w/2 min rests) + 1 T + 2 E",
+            "q2Miles": "14"
+          },
+          "8": {
+            "fraction": ".9",
+            "qMiles": "17",
+            "q1": "Q1 = 60 min E + 8 M + 1 E",
+            "q2": "Q2 = 8 E + 4 × (4 min I w/3 min recovery jg) + 3 E",
+            "q2Miles": "14"
+          },
+          "7": {
+            "fraction": ".9",
+            "qMiles": "17",
+            "q1": "Q1 = steady E run of 120-150 min",
+            "q2": "Q2 = 2 E + 8 M + 3 × (1 T w/1 min recovery between) + 2 E",
+            "q2Miles": "15"
+          },
+          "6": {
+            "fraction": "1.0",
+            "qMiles": "17",
+            "q1": "Q1 = 2 E + 14 M + 1 E",
+            "q2": "Q2 = 60 min E + 3 × (2 T w/2 min rests) + 1 T + 1 E",
+            "q2Miles": "15"
+          },
+          "5": {
+            "fraction": "1.0",
+            "qMiles": "17",
+            "q1": "Q1 = 2 E + 3 T + 60 min E + 2 T + 2 E",
+            "q2": "Q2 = 8 E + 5 × (3 min I w/2 min E ) + 4 × (1 min R w/2 min jg) + 3 E",
+            "q2Miles": "15"
+          },
+          "4": {
+            "fraction": ".9",
+            "qMiles": "17",
+            "q1": "Q1 = steady E run of 150 min",
+            "q2": "Q2 = 6 E + 5 × (3 min I w/2 min E ) + 4 E",
+            "q2Miles": "13"
+          },
+          "3": {
+            "fraction": ".9",
+            "qMiles": "17",
+            "q1": "Q1 = 1 E + 8 M + 1 E + 6 M + 1 E",
+            "q2": "Q2 = 4 E + 2 × (2 T w/2 min rests) + 3 × (1 T w/1 min rests) + 2 E",
+            "q2Miles": "13"
+          },
+          "2": {
+            "fraction": ".9",
+            "qMiles": "15",
+            "q1": "Q1 = 1 E + 3 × (2 T w/2 min E recoveries) + 60 min E",
+            "q2": "Q2 = 4 E + 1 T + 2 M + 1 E + 1 T + 2 M + 2 E",
+            "q2Miles": "13"
+          },
+          "1": {
+            "fraction": "—",
+            "miles": "10 8 7 6 5 2 3",
+            "raceWeek": {
+              "7": "Q1 = 90 min E",
+              "6": "60 min E",
+              "5": "Q2 = 2 E + 3 × (1 T w/2 min rests) + 2 E",
+              "4": "50 min E",
+              "3": "30-40 min E",
+              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "1": "20-30 min E"
+            }
+          }
+        }
+      },
+      {
+        "name": "56-70 miles (90-113 km) per week",
+        "minMiles": 56,
+        "maxMiles": 70,
+        "weeks": {
+          "18": {
+            "fraction": ".8",
+            "qMiles": "16",
+            "q1": "Q1 = 1 E + 6 M + 1 E + 6 M + 2 E (a nonstop workout)",
+            "q2": "Q2 = 8 E + 3 T + 3 min rest + 2 T + 2 E",
+            "q2Miles": "15"
+          },
+          "17": {
+            "fraction": ".8",
+            "qMiles": "15",
+            "q1": "Q1 = 2 E + 3 T + 60 min E + 1 T + 1 E",
+            "q2": "Q2 = 4 E + 5 × (1 km I w/3 min jg recoveries) + 4 × (400 R w/400 m jg) + 2 E",
+            "q2Miles": "13"
+          },
+          "16": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1 = steady E run of the lesser of 16 miles (26 km) and 120 min",
+            "q2": "Q2 = 6 E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "14"
+          },
+          "15": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1 = 2 E + 8 M + 1 E + 3 M + 2 E",
+            "q2": "Q2 = 40 min E + 3 × (2 T w/2 min rests) + 2 × (1 T w/1 min rests) + 1 E",
+            "q2Miles": "15"
+          },
+          "14": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1 = 1 E + 2 × (2 T w/2 min rests) + 60 min E + 2 T + 1 E",
+            "q2": "Q2 = 8 E + 6 × (1 km I w/3 min jg recoveries) + 2 E",
+            "q2Miles": "14"
+          },
+          "13": {
+            "fraction": ".8",
+            "qMiles": "17",
+            "q1": "Q1= steady E run of the lesser of 17 miles (27 km) and 120 min",
+            "q2": "Q2 = 40 min E + 3 T + 2 min rest + 2 × (2 T w/1 min rest between) + 2 E",
+            "q2Miles": "15"
+          },
+          "12": {
+            "fraction": "1.0",
+            "qMiles": "17",
+            "q1": "Q1 = 1 E + 8 M + 1 E + 6 M + 1 E",
+            "q2": "Q2 = 4 E + 3 T + 3 min E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "14"
+          },
+          "11": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1 = 12 E + 3 T + 1 E",
+            "q2": "Q2 = 8 E + 5 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 1 E",
+            "q2Miles": "15"
+          },
+          "10": {
+            "fraction": ".9",
+            "qMiles": "18",
+            "q1": "Q1 = steady E run of the lesser of 18 miles (29 km) and 130 min",
+            "q2": "Q2 = 2 E + 12 M + 2 E",
+            "q2Miles": "16"
+          },
+          "9": {
+            "fraction": "1.0",
+            "qMiles": "16",
+            "q1": "Q1 = 3 E + 6 M + 1 E + 4 M + 1 T + 1 E",
+            "q2": "Q2 = 5 E + 4 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "15"
+          },
+          "8": {
+            "fraction": "1.0",
+            "qMiles": "17",
+            "q1": "Q1 = 2 E + 2 T + 60 min E + 2 T + 2 E or 60 min E + 8 M + 1 E",
+            "q2": "Q2 = 8 E + 6 × (1 km I w/3 min jg) + 2 E",
+            "q2Miles": "16"
+          },
+          "7": {
+            "fraction": ".9",
+            "qMiles": "20",
+            "q1": "Q1 = steady E run of the lesser of 20 miles (32 km) and 150 min",
+            "q2": "Q2 = 2 E + 8 M + 2 × (2 T w/2 min recovery between) + 2 E",
+            "q2Miles": "16"
+          },
+          "6": {
+            "fraction": "1.0",
+            "qMiles": "17",
+            "q1": "Q1 = 3 E + 12 M + 2 E",
+            "q2": "Q2 = 40 min E + 4 × (2 T w/2 min rests) + 2 × (1 T w/1 min rests) + 1 E",
+            "q2Miles": "17"
+          },
+          "5": {
+            "fraction": ".9",
+            "qMiles": "17",
+            "q1": "Q1 = 6 E + 2 T + 6 E + 2 T + 1 E",
+            "q2": "Q2 = 8 E + 5 × (1 km I w/3 min jg) + 6 × (200 R w/200 jg) + 2 E",
+            "q2Miles": "16"
+          },
+          "4": {
+            "fraction": ".9",
+            "qMiles": "20",
+            "q1": "Q1 = steady E run of the lesser of 20 miles (32 km) and 150 min",
+            "q2": "Q2 = 6 E + 5 × (1 km I w/3 min E ) + 4 E",
+            "q2Miles": "15"
+          },
+          "3": {
+            "fraction": ".8",
+            "qMiles": "17",
+            "q1": "Q1 = 2 E + 6 M + 1 E + 6 M + 2 E",
+            "q2": "Q2 = 2 E + 4 × (2 T w/2 min E) + 2 E",
+            "q2Miles": "12"
+          },
+          "2": {
+            "fraction": ".8",
+            "qMiles": "15",
+            "q1": "Q1 = 2 E + 3 × (2 T w/2 min rests) + 7 E",
+            "q2": "Q2 = 3 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+            "q2Miles": "11"
+          },
+          "1": {
+            "fraction": "—",
+            "miles": "13 8 8 7 5 3 3",
+            "raceWeek": {
+              "7": "Q1 = 90 min E",
+              "6": "60 min E",
+              "5": "Q2 = 3 E + 3 × (1 T w/2 min rests) + 2 E",
+              "4": "50 min E",
+              "3": "30-40 min E",
+              "2": "0-20 min E 1 day: 20-30 min E (race is tomorrow)",
+              "1": "20-30 min E (race is tomorrow)"
+            }
+          }
+        }
+      },
+      {
+        "name": "71 to 85 miles (114-137 km) per week",
+        "minMiles": 71,
+        "maxMiles": 85,
+        "weeks": {
+          "18": {
+            "fraction": ".8",
+            "qMiles": "18",
+            "q1": "Q1 = 5 E + 6 M + 1 T + 5 M + 1 E (a nonstop workout)",
+            "q2": "Q2 = 8 E + 4 T + 4 min rest + 4 T + 1 E",
+            "q2Miles": "17"
+          },
+          "17": {
+            "fraction": ".8",
+            "qMiles": "18",
+            "q1": "Q1 = 3 E + 3 T + 60 min E + 2 T + 2 E",
+            "q2": "Q2 = 6 E + 5 × (1 km I w/2 min jg) + 6 × (400 R w/400 m recovery jg) + 2 E",
+            "q2Miles": "15"
+          },
+          "16": {
+            "fraction": ".9",
+            "qMiles": "18",
+            "q1": "Q1 = steady E run of 18 miles (29 km)",
+            "q2": "Q2 = 5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "17"
+          },
+          "15": {
+            "fraction": ".9",
+            "qMiles": "18",
+            "q1": "Q1 = 2 E + 8 M + 1 T + 2 M + 1 E + 2 M + 2 E",
+            "q2": "Q2 = 6 E + 4 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "16"
+          },
+          "14": {
+            "fraction": ".9",
+            "qMiles": "18",
+            "q1": "Q1 = 2 E + 2 × (2 T w/2 min rests) + 60 min E + 2 T + 2 E",
+            "q2": "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 2 E or 8 E + 5 × (1 I w/4 min jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "13": {
+            "fraction": ".8",
+            "qMiles": "19",
+            "q1": "Q1= steady E run of 19 miles (31 km)",
+            "q2": "Q2 = 7 E + 4 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "17"
+          },
+          "12": {
+            "fraction": "1.0",
+            "qMiles": "19",
+            "q1": "Q1 = 4 E + 8 M + 1 T + 4 M + 2 E",
+            "q2": "Q2 = 4 E + 3 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "15"
+          },
+          "11": {
+            "fraction": ".9",
+            "qMiles": "19",
+            "q1": "Q1 = 8 E + 3 T + 8 E",
+            "q2": "Q2 = 8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "10": {
+            "fraction": ".8",
+            "qMiles": "20",
+            "q1": "Q1 = steady E run of 20 miles (32 km)",
+            "q2": "Q2 = 2 E + 14 M + 2 E",
+            "q2Miles": "18"
+          },
+          "9": {
+            "fraction": "1.0",
+            "qMiles": "18",
+            "q1": "Q1 = 4 E + 6 M + 1 T + 5 M + 2 E",
+            "q2": "Q2 = 5 E + 2 × (3 T w/3 min rests) + 2 T + 3 E",
+            "q2Miles": "16"
+          },
+          "8": {
+            "fraction": ".9",
+            "qMiles": "18",
+            "q1": "Q1 = 1 E + 3 T + 10 E + 3 T + 1 E or 4 E + 13 M + 1 E",
+            "q2": "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "7": {
+            "fraction": ".9",
+            "qMiles": "20",
+            "q1": "Q1 = steady E run of 20 miles (32 km)",
+            "q2": "Q2 = 2 E + 8 M + 3 T + 2 E",
+            "q2Miles": "15"
+          },
+          "6": {
+            "fraction": "1.0",
+            "qMiles": "18",
+            "q1": "Q1 = 2 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+            "q2": "Q2 = 4 E + 4 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "14"
+          },
+          "5": {
+            "fraction": ".9",
+            "qMiles": "16",
+            "q1": "Q1 = 2 E + 2 T + 8 E + 2 T + 2 E",
+            "q2": "Q2 = 6 E + 5 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "14"
+          },
+          "4": {
+            "fraction": ".8",
+            "qMiles": "18",
+            "q1": "Q1 = steady E run of 18 miles",
+            "q2": "Q2 = 3 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "12"
+          },
+          "3": {
+            "fraction": ".8",
+            "qMiles": "18",
+            "q1": "Q1 = 3 E + 6 M + 1 T + 6 M + 2 E",
+            "q2": "Q2 = 2 E + 4 × (2 T w/2 min E) + 2 E",
+            "q2Miles": "12"
+          },
+          "2": {
+            "fraction": ".7",
+            "qMiles": "16",
+            "q1": "Q1 = 2 E + 3 × (2 T w/2 min E recoveries) + 8 E",
+            "q2": "Q2 = 4 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+            "q2Miles": "12"
+          },
+          "1": {
+            "fraction": "—",
+            "miles": "13 8 9 7 5 3 3",
+            "raceWeek": {
+              "7": "Q1 = 90 min E",
+              "6": "60 min E",
+              "5": "Q2 = 4 E + 3 × (1 T w/2 min E recoveries) + 2 E",
+              "4": "50 min E",
+              "3": "30-40 min E",
+              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "1": "20-30 min E"
+            }
+          }
+        }
+      },
+      {
+        "name": "86-100 miles (138-161 km) per week",
+        "minMiles": 86,
+        "maxMiles": 100,
+        "weeks": {
+          "18": {
+            "fraction": ".8",
+            "qMiles": "20",
+            "q1": "Q1 = 5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 1 E (a nonstop workout)",
+            "q2": "Q2 = 8 E + 4 T + 4 min rest + 4 T + 2 E",
+            "q2Miles": "18"
+          },
+          "17": {
+            "fraction": ".8",
+            "qMiles": "21",
+            "q1": "Q1 = 4 E + 3 T + 60 min E + 3 T + 2 E",
+            "q2": "Q2 = 8 E + 5 × (1 km I w/2 min recovery jg) + 6 × (400 R w/400 m jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "16": {
+            "fraction": ".9",
+            "qMiles": "22",
+            "q1": "Q1 = steady E run of 22 miles (35 km)",
+            "q2": "Q2 = 5 E + 4 T + 4 min rest + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 2 E",
+            "q2Miles": "17"
+          },
+          "15": {
+            "fraction": ".9",
+            "qMiles": "20",
+            "q1": "Q1 = 2 E + 8 M + 1 T + 4 M + 1 T + 2 M + 2 E",
+            "q2": "Q2 = 6 E + 4 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "16"
+          },
+          "14": {
+            "fraction": ".8",
+            "qMiles": "20",
+            "q1": "Q1 = 2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+            "q2": "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 2 E or 8 E + 5 × (1 I w/4 min jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "13": {
+            "fraction": ".9",
+            "qMiles": "21",
+            "q1": "Q1 = steady E run of 21 miles (34 km)",
+            "q2": "Q2 = 40 min E + 5 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "18"
+          },
+          "12": {
+            "fraction": "1.0",
+            "qMiles": "21",
+            "q1": "Q1 = 4 E + 8 M + 1 T + 6 M + 1 T + 1 E",
+            "q2": "Q2 = 6 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "18"
+          },
+          "11": {
+            "fraction": "1.0",
+            "qMiles": "22",
+            "q1": "Q1 = 8 E + 4 T + 10 E",
+            "q2": "Q2 = 8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "10": {
+            "fraction": ".8",
+            "qMiles": "21",
+            "q1": "Q1 = steady E run of 21 miles (34 km)",
+            "q2": "Q2 = 2 E + 15 M + 2 E",
+            "q2Miles": "19"
+          },
+          "9": {
+            "fraction": "1.0",
+            "qMiles": "18",
+            "q1": "Q1 = 4 E + 6 M + 1 T + 6 M + 1 E",
+            "q2": "Q2 = 3 E + 4 T + 4 min rest + 3 T + 3 min rest + 3 T + 2 E",
+            "q2Miles": "15"
+          },
+          "8": {
+            "fraction": "1.0",
+            "qMiles": "21",
+            "q1": "Q1 = 2 E + 4 T + 10 E + 4 T + 1 E or 5 E + 14 M + 2 E",
+            "q2": "Q2 = 8 E + 3 × (1 I w/4 min jg) + 3 × (1 km I w/2 min jg) + 2 E",
+            "q2Miles": "16"
+          },
+          "7": {
+            "fraction": ".9",
+            "qMiles": "22",
+            "q1": "Q1 = steady E run of 22 miles (35 km)",
+            "q2": "Q2 = 2 E + 8 M + 4 T + 2 E",
+            "q2Miles": "16"
+          },
+          "6": {
+            "fraction": "1.0",
+            "qMiles": "19",
+            "q1": "Q1 = 3 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+            "q2": "Q2 = 3 E + 4 T + 4 min E + 3 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "15"
+          },
+          "5": {
+            "fraction": ".8",
+            "qMiles": "18",
+            "q1": "Q1 = 2 E + 3 T + 8 E + 3 T + 2 E",
+            "q2": "Q2 = 6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "15"
+          },
+          "4": {
+            "fraction": ".9",
+            "qMiles": "20",
+            "q1": "Q1 = steady E run of 20 miles (32 km)",
+            "q2": "Q2 = 6 E + 3 × (1 T w/1 min rests) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "15"
+          },
+          "3": {
+            "fraction": ".8",
+            "qMiles": "19",
+            "q1": "Q1 = 4 E + 6 M + 1 T + 6 M + 2 E",
+            "q2": "Q2 = 2 E + 4 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "12"
+          },
+          "2": {
+            "fraction": ".7",
+            "qMiles": "16",
+            "q1": "Q1 = 2 E + 3 × (2 T w/2 min rests) + 8 E",
+            "q2": "Q2 = 4 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+            "q2Miles": "12"
+          },
+          "1": {
+            "fraction": "—",
+            "miles": "14 9 9 7 6 3 4",
+            "raceWeek": {
+              "7": "Q1 = 90 min E",
+              "6": "60 min E",
+              "5": "Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E",
+              "4": "50 min E",
+              "3": "30-40 min E",
+              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "1": "20-30 min E"
+            }
+          }
+        }
+      },
+      {
+        "name": "101-120 miles (163-193 km) per week",
+        "minMiles": 101,
+        "maxMiles": 120,
+        "weeks": {
+          "18": {
+            "fraction": ".8",
+            "qMiles": "21",
+            "q1": "Q1 = 5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 2 E (a nonstop workout)",
+            "q2": "Q2 = 10 E + 4 T + 4 min rest + 4 T + 2 E",
+            "q2Miles": "20"
+          },
+          "17": {
+            "fraction": ".8",
+            "qMiles": "21",
+            "q1": "Q1 = 4 E + 3 T + 60 min E + 3 T + 2 E",
+            "q2": "Q2 = 8 E + 5 × (1 km I or 3 min H w/ 2 min jg) + 6 × (400 R w/ 400 m jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "16": {
+            "fraction": ".9",
+            "qMiles": "23",
+            "q1": "Q1 = steady E run of 23 miles (37 km)",
+            "q2": "Q2 = 5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "18"
+          },
+          "15": {
+            "fraction": ".9",
+            "qMiles": "21",
+            "q1": "Q1 = 2 E + 8 M + 1 T + 4 M + 1 T + 3 M + 2 E",
+            "q2": "Q2 = 8 E + 4 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "18"
+          },
+          "14": {
+            "fraction": ".8",
+            "qMiles": "20",
+            "q1": "Q1 = 2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+            "q2": "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 3 E or 8 E + 5 × (1 I w/ 4 min jg) + 3 E",
+            "q2Miles": "18"
+          },
+          "13": {
+            "fraction": "1.0",
+            "qMiles": "20",
+            "q1": "Q1 = steady E run of 20 miles (32 km)",
+            "q2": "Q2 = 8 E + 5 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "20"
+          },
+          "12": {
+            "fraction": "1.0",
+            "qMiles": "22",
+            "q1": "Q1 = 4 E + 8 M + 1 T + 6 M + 1 T + 2 E",
+            "q2": "Q2 = 6 E + 4 T + 4 min rest + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 2 E",
+            "q2Miles": "18"
+          },
+          "11": {
+            "fraction": ".9",
+            "qMiles": "22",
+            "q1": "Q1 = 10 E + 4 T + 8 E",
+            "q2": "Q2 = 8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "10": {
+            "fraction": ".8",
+            "qMiles": "21",
+            "q1": "Q1 = steady E run of 21 miles (34 km)",
+            "q2": "Q2 = 2 E + 16 M + 2 E",
+            "q2Miles": "20"
+          },
+          "9": {
+            "fraction": "1.0",
+            "qMiles": "19",
+            "q1": "Q1 = 4 E + 6 M + 1 T + 6 M + 2 E",
+            "q2": "Q2 = 3 E + 4 T + 4 min E + 4 T + 4 min E + 2 T + 2 E",
+            "q2Miles": "16"
+          },
+          "8": {
+            "fraction": ".9",
+            "qMiles": "21",
+            "q1": "Q1 = 6 E + 13 M + 2 E",
+            "q2": "Q2 = 8 E + 3 × (1,200 I w/3 min jg) + 3 × (1 km I w/3 min jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "7": {
+            "fraction": "1.0",
+            "qMiles": "22",
+            "q1": "Q1 = steady E run of 22 miles (35 km)",
+            "q2": "Q2 = 3 E + 8 M + 4 T + 2 E",
+            "q2Miles": "17"
+          },
+          "6": {
+            "fraction": "1.0",
+            "qMiles": "20",
+            "q1": "Q1 = 4 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+            "q2": "Q2 = 3 E + 4 T + 4 min rest + 2 × (3 T w/3 min jg between) + 2 E",
+            "q2Miles": "15"
+          },
+          "5": {
+            "fraction": ".8",
+            "qMiles": "20",
+            "q1": "Q1 = 2 E + 4 T + 8 E + 4 T + 2 E",
+            "q2": "Q2 = 6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "15"
+          },
+          "4": {
+            "fraction": ".9",
+            "qMiles": "21",
+            "q1": "Q1 = steady E run of 21 miles (34 km)",
+            "q2": "Q2 = 5 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "14"
+          },
+          "3": {
+            "fraction": ".8",
+            "qMiles": "20",
+            "q1": "Q1 = 4 E + 6 M + 1 T + 6 M + 1 T + 2 E",
+            "q2": "Q2 = 4 E + 4 × (2 T w/2 min E) + 2 E",
+            "q2Miles": "14"
+          },
+          "2": {
+            "fraction": ".7",
+            "qMiles": "16",
+            "q1": "Q1 = 2 E + 3 × (2 T w/2 min rests) + 8 E",
+            "q2": "Q2 = 4 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+            "q2Miles": "12"
+          },
+          "1": {
+            "fraction": "—",
+            "miles": "14 9 9 7 5 3 3",
+            "raceWeek": {
+              "7": "Q1 = 90 min E",
+              "6": "60 min E",
+              "5": "Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E",
+              "4": "50 min E",
+              "3": "30-40 min E",
+              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "1": "20-30 min E"
+            }
+          }
+        }
+      },
+      {
+        "name": "More than 120 miles (193 km) per week",
+        "minMiles": 121,
+        "maxMiles": 999,
+        "weeks": {
+          "18": {
+            "fraction": ".8",
+            "qMiles": "21",
+            "q1": "Q1 = 5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 2 E (a nonstop workout)",
+            "q2": "Q2 = 10 E + 4 T + 1 E + 4 T + 2 E",
+            "q2Miles": "21"
+          },
+          "17": {
+            "fraction": ".8",
+            "qMiles": "21",
+            "q1": "Q1 = 4 E + 3 T + 60 min E + 3 T + 2 E",
+            "q2": "Q2 = 8 E + 6 × (1 km I w/2 min jg) + 6 × (400 R w/400 m jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "16": {
+            "fraction": ".9",
+            "qMiles": "23",
+            "q1": "Q1 = steady E run of 23 miles (37 km)",
+            "q2": "Q2 = 5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "18"
+          },
+          "15": {
+            "fraction": ".9",
+            "qMiles": "21",
+            "q1": "Q1 = 2 E + 8 M + 1 T + 4 M + 1 T + 3 M + 2 E",
+            "q2": "Q2 = 8 E + 4 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "18"
+          },
+          "14": {
+            "fraction": ".8",
+            "qMiles": "20",
+            "q1": "Q1 = 2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+            "q2": "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 3 E or 8 E + 5 × (1 I w/4 min jg) + 3 E",
+            "q2Miles": "17"
+          },
+          "13": {
+            "fraction": "1.0",
+            "qMiles": "20",
+            "q1": "Q1= steady E run of 20 miles (32 km)",
+            "q2": "Q2 = 8 E + 5 × (2 T w/2 min rests) + 2 E",
+            "q2Miles": "20"
+          },
+          "12": {
+            "fraction": "1.0",
+            "qMiles": "22",
+            "q1": "Q1 = 4 E + 8 M + 1 T + 6 M + 1 T + 2 E",
+            "q2": "Q2 = 6 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E",
+            "q2Miles": "19"
+          },
+          "11": {
+            "fraction": ".9",
+            "qMiles": "22",
+            "q1": "Q1 = 10 E + 4 T + 8 E",
+            "q2": "Q2 = 8 E + 8 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "18"
+          },
+          "10": {
+            "fraction": ".8",
+            "qMiles": "21",
+            "q1": "Q1 = steady E run of 21 miles (34 km)",
+            "q2": "Q2 = 2 E + 16 M + 2 E",
+            "q2Miles": "20"
+          },
+          "9": {
+            "fraction": "1.0",
+            "qMiles": "19",
+            "q1": "Q1 = 4 E + 6 M + 1 T + 6 M + 2 E",
+            "q2": "Q2 = 3 E + 4 T + 4 min E + 4 T + 4 min E + 2 T + 2 E",
+            "q2Miles": "16"
+          },
+          "8": {
+            "fraction": "1.0",
+            "qMiles": "22",
+            "q1": "Q1 = 6 E + 13 M + 3 E",
+            "q2": "Q2 = 8 E + 3 × (1 I w/4 min jg) + 3 × (1 km I w/2 min jg) + 2 E",
+            "q2Miles": "17"
+          },
+          "7": {
+            "fraction": ".9",
+            "qMiles": "22",
+            "q1": "Q1 = steady E run of 22 miles (35 km)",
+            "q2": "Q2 = 4 E + 8 M + 4 T + 2 E",
+            "q2Miles": "18"
+          },
+          "6": {
+            "fraction": "1.0",
+            "qMiles": "21",
+            "q1": "Q1 = 4 E + 8 M + 1 T + 4 M + 1 T + 1 M + 2 E",
+            "q2": "Q2 = 3 E + 4 T + 4 min E + 2 × (3 T w/3 min rests) + 2 E",
+            "q2Miles": "15"
+          },
+          "5": {
+            "fraction": ".8",
+            "qMiles": "20",
+            "q1": "Q1 = 2 E + 4 T + 8 E + 4 T + 2 E",
+            "q2": "Q2 = 6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "15"
+          },
+          "4": {
+            "fraction": ".9",
+            "qMiles": "21",
+            "q1": "Q1 = steady E run of 21 miles (34 km)",
+            "q2": "Q2 = 5 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E",
+            "q2Miles": "15"
+          },
+          "3": {
+            "fraction": ".7",
+            "qMiles": "20",
+            "q1": "Q1 = 4 E + 6 M + 1 T + 6 M + 1 T + 2 E",
+            "q2": "Q2 = 2 E + 4 × (2 T w/2 min jg) + 2 E",
+            "q2Miles": "12"
+          },
+          "2": {
+            "fraction": ".7",
+            "qMiles": "16",
+            "q1": "Q1 = 2 E + 3 × (2 T w/2 min rests) + 8 E",
+            "q2": "Q2 = 4 E + 1 T + 2 M + 1 T + 2 M + 2 E",
+            "q2Miles": "12"
+          },
+          "1": {
+            "fraction": "—",
+            "miles": "14 9 9 7 6 5 3",
+            "raceWeek": {
+              "7": "Q1 = 90 min E",
+              "6": "60 min E",
+              "5": "Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E",
+              "4": "50 min E",
+              "3": "30-40 min E",
+              "2": "30-40 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "1": "20-30 min E"
+            }
+          }
+        }
+      }
+    ]
   }
 }
