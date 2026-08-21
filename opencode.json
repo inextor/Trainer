@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "image-describer": {
+      "description": "Views and describes images using opencode-go/mimo-v2.5 vision model. Extracts text, analyzes scenes, identifies objects, and provides detailed image descriptions.",
+      "mode": "subagent",
+      "model": "opencode-go/mimo-v2.5",
+      "permission": {
+        "edit": "deny",
+        "bash": "deny"
+      }
+    }
+  }
+}

@@ -7,12 +7,16 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" style="color:white; text-decoration:none;"><h1>Training Calendar</h1></a>
+      <nav>
+        <a href="index.html" class="active">Configuration</a>
+        <a href="calendar.html" id="viewPlanLink">Calendar</a>
+      </nav>
+    </div>
+  </header>
   <div class="app">
-    <header class="header">
-      <h1>Training Calendar</h1>
-      <p class="subtitle">Training Calendar Generator</p>
-    </header>
-
     <main class="main">
       <section class="config-panel">
         <h2>Training Configuration</h2>
@@ -56,12 +60,6 @@
           </div>
 
           <div class="form-group">
-            <label for="currentMileage">Current Weekly Mileage</label>
-            <input type="number" id="currentMileage" min="0" max="200" value="20" required>
-            <span class="hint">miles per week</span>
-          </div>
-
-          <div class="form-group">
             <label>Distance Units</label>
             <div class="radio-group">
               <label class="radio-label">
@@ -76,10 +74,16 @@
           </div>
 
           <div class="form-group">
+            <label for="currentMileage" id="mileageLabel">Current Weekly Distance</label>
+            <input type="number" id="currentMileage" min="0" max="200" value="32" required>
+            <span class="hint" id="mileageHint">km per week</span>
+          </div>
+
+          <div class="form-group">
             <label>VDOT Level</label>
             <div class="vdot-input-method">
               <div class="method-tabs">
-                <button type="button" class="tab active" data-method="race">From Race Time</button>
+                <button type="button" class="tab active" data-method="raceTime">From Race Time</button>
                 <button type="button" class="tab" data-method="manual">Manual VDOT</button>
               </div>
               <div id="raceTimeMethod" class="method-content active">
@@ -128,66 +132,17 @@
 
           <button type="submit" class="btn-primary">Generate Training Plan</button>
           <button type="button" id="resetPlan" class="btn-secondary btn-reset">Clear Saved Plan</button>
+
+          <div class="plan-io">
+            <span class="plan-io-label">Plan Backup</span>
+            <div class="plan-io-buttons">
+              <button type="button" id="exportPlan" class="btn-secondary">Export Plan</button>
+              <button type="button" id="importPlan" class="btn-secondary">Import Plan</button>
+            </div>
+            <input type="file" id="importFile" accept=".json,application/json" class="hidden">
+            <span class="hint" id="planIoStatus"></span>
+          </div>
         </form>
-      </section>
-
-      <section class="calendar-panel hidden" id="calendarPanel">
-        <div class="calendar-header">
-          <h2>Training Calendar</h2>
-          <div class="countdown" id="countdown"></div>
-          <div class="calendar-nav">
-            <button id="prevWeek" class="btn-nav">&laquo; Prev</button>
-            <span id="weekIndicator">Week 1</span>
-            <button id="nextWeek" class="btn-nav">Next &raquo;</button>
-          </div>
-        </div>
-
-        <div class="pace-zones" id="paceZones">
-          <h3>Your Training Paces (VDOT <span id="currentVdot">50</span>)</h3>
-          <div class="pace-grid">
-            <div class="pace-item">
-              <span class="pace-type">Easy</span>
-              <span class="pace-value" id="paceEasy">9:15-10:00</span>
-              <span class="pace-km" id="paceEasyKm"></span>
-            </div>
-            <div class="pace-item">
-              <span class="pace-type">Marathon</span>
-              <span class="pace-value" id="paceMarathon">6:36</span>
-              <span class="pace-km" id="paceMarathonKm"></span>
-            </div>
-            <div class="pace-item">
-              <span class="pace-type">Tempo</span>
-              <span class="pace-value" id="paceTempo">6:08</span>
-              <span class="pace-km" id="paceTempoKm"></span>
-            </div>
-            <div class="pace-item">
-              <span class="pace-type">Interval</span>
-              <span class="pace-value" id="paceInterval">5:47</span>
-              <span class="pace-km" id="paceIntervalKm"></span>
-            </div>
-            <div class="pace-item">
-              <span class="pace-type">Repetition</span>
-              <span class="pace-value" id="paceRepetition">5:13</span>
-              <span class="pace-km" id="paceRepetitionKm"></span>
-            </div>
-          </div>
-          <div class="hr-zones" id="hrZones">
-            <h4>Heart-Rate Zones (est.)</h4>
-            <div class="pace-grid" id="hrGrid"></div>
-          </div>
-        </div>
-
-        <div class="calendar-grid" id="calendarGrid">
-          <!-- Calendar will be rendered here -->
-        </div>
-
-        <div class="week-details" id="weekDetails">
-          <!-- Week details will be rendered here -->
-        </div>
-
-        <div class="calendar-summary" id="calendarSummary">
-          <!-- Summary will be rendered here -->
-        </div>
       </section>
     </main>
 
@@ -199,6 +154,7 @@
   <script src="js/vdot-calculator.js"></script>
   <script src="js/calendar-generator.js"></script>
   <script src="js/storage.js"></script>
+  <script src="js/plan-io.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+# Book source and screenshots
+book/
+libro/
+ocr-text/
+ocr-verified/
+ocr-merged/
+ocr-output/
+ocr-batches/
+*.epub
+
+# Dependencies and test artifacts
+node_modules/
+test-results/
+playwright-report/
+.playwright/
+
+# Archive
+trainer.tar.xz
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store

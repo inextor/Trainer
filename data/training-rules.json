@@ -1,0 +1,127 @@
+{
+  "description": "Training rules and adjustment logic",
+  "single_quality_session_rules": {
+    "description": "When only 1 quality session per week is possible",
+    "priority_order": {
+      "marathon": "T (Tempo)",
+      "half_marathon": "T (Tempo)",
+      "10k": "T (Tempo)",
+      "5k": "I (Interval)",
+      "1500_mile": "I (Interval)",
+      "800m": "I (Interval)"
+    },
+    "reasoning": "Tempo work provides the most benefit for longer events. For shorter events, VO2max intervals are more important.",
+    "adjustment_rules": [
+      "Never place quality sessions back-to-back days",
+      "At least 1 easy day between quality sessions",
+      "Quality before long run, not after",
+      "Long run at easy pace, not race pace"
+    ]
+  },
+  "phase_breakdown": {
+    "description": "Training phases based on weeks until race",
+    "phases": {
+      "base": {
+        "purpose": "Build aerobic foundation",
+        "focus": "Easy running, long runs",
+        "quality_ratio": 0.1
+      },
+      "build": {
+        "purpose": "Increase intensity",
+        "focus": "Tempo, intervals",
+        "quality_ratio": 0.25
+      },
+      "peak": {
+        "purpose": "Race-specific fitness",
+        "focus": "Race-pace work, sharpener",
+        "quality_ratio": 0.3
+      },
+      "taper": {
+        "purpose": "Freshness for race",
+        "focus": "Reduced volume, maintain intensity",
+        "quality_ratio": 0.2
+      }
+    },
+    "week_allocation": {
+      "over_20_weeks": {
+        "base": "Weeks 1-6",
+        "build": "Weeks 7-14",
+        "peak": "Weeks 15-18",
+        "taper": "Weeks 19-20"
+      },
+      "16_to_20_weeks": {
+        "base": "Weeks 1-5",
+        "build": "Weeks 6-12",
+        "peak": "Weeks 13-16",
+        "taper": "Weeks 17-18"
+      },
+      "12_to_16_weeks": {
+        "base": "Weeks 1-4",
+        "build": "Weeks 5-10",
+        "peak": "Weeks 11-14",
+        "taper": "Weeks 15-16"
+      },
+      "8_to_12_weeks": {
+        "base": "Weeks 1-2",
+        "build": "Weeks 3-8",
+        "peak": "Weeks 9-10",
+        "taper": "Weeks 11-12"
+      },
+      "under_8_weeks": {
+        "build": "Weeks 1-5",
+        "peak": "Weeks 6-7",
+        "taper": "Week 8"
+      }
+    }
+  },
+  "mileage_progression": {
+    "description": "Weekly mileage increase rules",
+    "max_increase_per_week": "10%",
+    "max_weekly_increase": "5-10 miles",
+    "recovery_week_every": "3-4 weeks",
+    "recovery_week_reduction": "20-30%"
+  },
+  "taper_rules": {
+    "description": "Taper period guidelines",
+    "duration_weeks": {
+      "marathon": "2-3 weeks",
+      "half_marathon": "1-2 weeks",
+      "10k": "1-2 weeks",
+      "5k": "1 week"
+    },
+    "volume_reduction": {
+      "week_1": "20-25%",
+      "week_2": "40-50%",
+      "race_week": "60-70%"
+    },
+    "intensity_maintenance": "Keep some quality work, just reduce volume"
+  },
+  "long_run_rules": {
+    "description": "Long run guidelines",
+    "max_percentage_of_weekly": "30%",
+    "max_marathon_distance": "20-22 miles",
+    "pace": "Easy (E) pace, not marathon pace",
+    "frequency": "Once per week, usually Sunday",
+    "buildup": "Add 1-2 miles per week, cutback every 3-4 weeks"
+  },
+  "quality_session_rules": {
+    "description": "Rules for quality sessions (T, I, R)",
+    "tempo": {
+      "duration": "20-30 minutes continuous",
+      "alternative": "Cruise intervals (e.g., 4x1 mile at T with 1 min rest)",
+      "max_weekly_volume": "60 minutes at T pace"
+    },
+    "interval": {
+      "work_duration": "3-5 minutes at I pace",
+      "recovery_duration": "Equal to work or 1:1 ratio",
+      "max_reps": "5-6 reps",
+      "frequency": "1-2x per week"
+    },
+    "repetition": {
+      "distance": "200m-400m at R pace",
+      "recovery": "Full recovery (jog/walk back)",
+      "max_volume": "3000m total at R pace",
+      "frequency": "1x per week maximum"
+    }
+  }
+}

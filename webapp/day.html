@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Day — Detail</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body.day-page { background: var(--gray-50); }
+    .day-detail-page { max-width: 560px; margin: 0 auto; padding: 16px; }
+    .day-detail-card { background: white; border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; }
+  </style>
+</head>
+<body class="day-page">
+  <header class="header">
+    <div class="header-inner">
+      <a href="calendar.html" style="color:white; text-decoration:none;"><h1>Training Day</h1></a>
+      <nav>
+        <a href="calendar.html">← Calendar</a>
+        <a href="index.html">Configuration</a>
+      </nav>
+    </div>
+  </header>
+  <div class="app">
+    <main class="day-detail-page">
+      <div id="dayDetail" class="day-detail-card"></div>
+      <div id="dayNotFound" class="hidden" style="text-align:center; padding:40px; color:var(--gray-500);">
+        <p>Day not found.</p>
+        <a href="calendar.html" class="btn-primary" style="display:inline-block; margin-top:12px; text-decoration:none; padding:10px 20px;">Back to Calendar</a>
+      </div>
+    </main>
+  </div>
+  <script src="js/vdot-calculator.js"></script>
+  <script src="js/calendar-generator.js"></script>
+  <script src="js/storage.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const params = new URLSearchParams(location.search);
+      const dateStr = params.get('date');
+      if (!dateStr) {
+        document.getElementById('dayNotFound').classList.remove('hidden');
+        return;
+      }
+      // Load data
+      try {
+        const [vdotRes, plansRes] = await Promise.all([
+          fetch('data/vdot.json', {cache: 'no-store'}).then(r => r.json()),
+          fetch('data/plans.json', {cache: 'no-store'}).then(r => r.json())
+        ]);
+        VDOTCalculator.setTable(vdotRes.vdot);
+        window.PLANS = plansRes;
+      } catch(e) { console.warn(e); }
+      const saved = await Storage.load();
+      if (!saved || !saved.config || !saved.config.event) {
+        document.getElementById('dayNotFound').classList.remove('hidden');
+        return;
+      }
+      const cal = CalendarGenerator.generateCalendar(saved.config);
+      let target = null;
+      for (const w of cal.weeks) {
+        for (const d of w.days) {
+          const iso = d.date.toISOString().slice(0,10);
+          if (iso === dateStr) { target = { day: d, week: w, cal }; break; }
+        }
+        if (target) break;
+      }
+      if (!target) {
+        document.getElementById('dayNotFound').classList.remove('hidden');
+        return;
+      }
+      const { day, week } = target;
+      const units = cal.units;
+      const vdot = cal.vdot;
+      // Helpers (duplicated from app.js for standalone page)
+      function fmtMin(min){ if(min==null) return ''; const m=Math.floor(min); const s=Math.round((min-m)*60); return s?`${m} min ${s}s`:`${m} min`; }
+      function fmtDist(miles, units){ if(!miles) return ''; return units==='miles'?`${miles.toFixed(1)} mi`:`${(miles*1.609344).toFixed(1)} km`; }
+      function fmtPaceMile(spm){ const m=Math.floor(spm/60); const s=Math.round(spm%60); return `${m}:${String(s).padStart(2,'0')}`; }
+      function paceForZone(zone, units){
+        if(zone==='W'||zone==='rest'||zone==='ST') return '';
+        const spm = CalendarGenerator.paceSecondsPerMile(vdot, zone);
+        return units==='km' ? CalendarGenerator.fmtPace(spm)+'/km' : fmtPaceMile(spm)+'/mi';
+      }
+      const ZONE_NAMES = { E:'Easy', M:'Marathon', T:'Tempo', I:'Interval', R:'Repetition', L:'Long', W:'Walk', ST:'Strides', rest:'Rest' };
+      function zoneClassFor(p){ if(/ST\b/i.test(p)) return 'repetition'; if(/\bR\b/i.test(p)) return 'repetition'; if(/\bI\b/i.test(p)) return 'interval'; if(/\bT\b/i.test(p)) return 'tempo'; if(/\bM\b/i.test(p)) return 'marathon'; if(/\bL\b/i.test(p)) return 'long'; if(/\bW\b|rest|jg|Walk/i.test(p)) return 'rest'; if(/\bE\b/i.test(p)) return 'easy'; return 'easy'; }
+      function zoneLabelFor(p){ if(/ST\b/i.test(p)) return 'ST'; if(/\bR\b/i.test(p)) return 'R'; if(/\bI\b/i.test(p)) return 'I'; if(/\bT\b/i.test(p)) return 'T'; if(/\bM\b/i.test(p)) return 'M'; if(/\bL\b/i.test(p)) return 'L'; if(/\bW\b|\brest\b|\bjg\b|Walk/i.test(p)) return 'W'; if(/\bE\b/i.test(p)) return 'E'; return 'E'; }
+      function humanizePart(part){
+        let s=part.replace(/×/g,'x').replace(/\bw\//g,'with ').replace(/\bjg\b/gi,'Jog').replace(/\brecoveries\b/gi,'recovery').replace(/\brec\b/gi,'recovery').replace(/\bmin\b/gi,'Min').replace(/\bST\b/g,'Strides').replace(/\bR\b/g,'Repetition').replace(/\bI\b/g,'Interval').replace(/\bT\b/g,'Tempo').replace(/\bM\b/g,'Marathon').replace(/\bE\b/g,'Easy').replace(/\bL\b/g,'Long').replace(/\bW\b/g,'Walk');
+        s=s.replace(/\s+/g,' '); s=s.replace(/\s*\(\s*/g,' ('); s=s.replace(/\s*\)\s*/g,' ) '); return s.trim();
+      }
+      function parseDetailSteps(detail){ if(!detail) return []; return detail.split(/\s*\+\s*(?![^()]*\))/).map(s=>s.trim()).filter(Boolean); }
+      const time = day.totalMinutes ? fmtMin(day.totalMinutes) : '';
+      const dist = day.distanceMiles ? fmtDist(day.distanceMiles, units) : '';
+      const dateStr2 = day.date.toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+      let stepsHtml = '';
+      if (day.segments && day.segments.length && !day.detail) {
+        const n = day.segments.length;
+        stepsHtml = day.segments.map((seg,i)=>{
+          const zone=seg.p||'E'; const clsMap={E:'easy',M:'marathon',T:'tempo',I:'interval',R:'repetition',L:'long',W:'rest',ST:'repetition'}; const cls=clsMap[zone]||'easy'; const friendly=ZONE_NAMES[zone]||zone;
+          const isWarm=i===0&&zone==='E'; const isCool=i===n-1&&zone==='E'; const role=isWarm?'Warm-up':isCool?'Cool-down':''; const pace=paceForZone(zone, units);
+          const amtRaw=seg.m ? (seg.m>=1?`${Math.round(seg.m)} Min`:`${Math.round(seg.m*60)} s`) : seg.note||''; const amt=humanizePart(amtRaw);
+          return `<li class="day-step"><span class="zone-chip ${cls}">${zone}</span><span class="step-text">${amt} . ${friendly}${role?' - '+role:''}${pace?' . '+pace:''}</span></li>`;
+        }).join('');
+      } else {
+        const parts=parseDetailSteps(day.detail);
+        stepsHtml=parts.map((part,i)=>{
+          const zone=zoneLabelFor(part); const cls=zoneClassFor(part); const isWarm=i===0&&zone==='E'; const isCool=i===parts.length-1&&zone==='E'; const friendly=ZONE_NAMES[zone]||zone; const role=isWarm?'Warm-up':isCool?'Cool-down':''; const pace=paceForZone(zone,units);
+          const cleanRaw=part.replace(/\s+[EIMTRLW]\s*$/i,'').trim()||part; const clean=humanizePart(cleanRaw);
+          return `<li class="day-step"><span class="zone-chip ${cls}">${zone}</span><span class="step-text">${clean} . ${friendly}${role?' - '+role:''}${pace?' . '+pace:''}</span></li>`;
+        }).join('');
+      }
+      document.getElementById('dayDetail').innerHTML = `
+        <h3>${day.label} — ${dateStr2}</h3>
+        <div class="dialog-meta">${time ? 'Total for the day: '+time+' · ' : ''}${dist ? dist+' · ' : ''}${day.type}${week.note ? ' · '+week.note : ''} · ${week.phase}</div>
+        ${time ? '<p style="font-size:0.8rem; color:var(--gray-500); margin:8px 0 10px;">Total includes warm-up, main set and cool-down.</p>' : ''}
+        <ul class="day-steps">${stepsHtml || '<li class="day-step"><span class="step-text">'+(day.detail||'Rest')+'</span></li>'}</ul>
+        <div class="zone-legend" style="margin-top:14px">
+          <span class="legend-item"><span class="legend-dot easy"></span> Easy</span>
+          <span class="legend-item"><span class="legend-dot tempo"></span> Tempo</span>
+          <span class="legend-item"><span class="legend-dot interval"></span> Interval</span>
+          <span class="legend-item"><span class="legend-dot marathon"></span> Marathon</span>
+          <span class="legend-item"><span class="legend-dot long"></span> Long</span>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>
