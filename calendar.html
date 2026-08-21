@@ -25,6 +25,7 @@
   <div class="app">
 
     <main class="main single">
+      <!-- Card 1: Training Calendar (header / nav / plan backup) -->
       <section class="calendar-panel" id="calendarPanel">
         <div class="calendar-header">
           <div class="calendar-title-group">
@@ -45,61 +46,67 @@
           <span class="hint" id="planIoStatus"></span>
         </div>
 
-        <div class="pace-zones" id="paceZones">
-          <h3>Your Training Paces (VDOT <span id="currentVdot">50</span>)</h3>
-          <div class="pace-grid">
-            <div class="pace-item">
-              <span class="pace-type">Easy</span>
-              <span class="pace-value" id="paceEasy">9:15-10:00</span>
-              <span class="pace-km" id="paceEasyKm"></span>
-            </div>
-            <div class="pace-item">
-              <span class="pace-type">Marathon</span>
-              <span class="pace-value" id="paceMarathon">6:36</span>
-              <span class="pace-km" id="paceMarathonKm"></span>
-            </div>
-            <div class="pace-item">
-              <span class="pace-type">Tempo</span>
-              <span class="pace-value" id="paceTempo">6:08</span>
-              <span class="pace-km" id="paceTempoKm"></span>
-            </div>
-            <div class="pace-item">
-              <span class="pace-type">Interval</span>
-              <span class="pace-value" id="paceInterval">5:47</span>
-              <span class="pace-km" id="paceIntervalKm"></span>
-            </div>
-            <div class="pace-item">
-              <span class="pace-type">Repetition</span>
-              <span class="pace-value" id="paceRepetition">5:13</span>
-              <span class="pace-km" id="paceRepetitionKm"></span>
-            </div>
-          </div>
-          <div class="hr-zones" id="hrZones">
-            <h4>Heart-Rate Zones (est.)</h4>
-            <div class="pace-grid" id="hrGrid"></div>
-          </div>
-          <div class="zone-legend" id="zoneLegend">
-            <span class="legend-item"><span class="legend-dot easy"></span> E Easy</span>
-            <span class="legend-item"><span class="legend-dot marathon"></span> M Marathon</span>
-            <span class="legend-item"><span class="legend-dot tempo"></span> T Tempo</span>
-            <span class="legend-item"><span class="legend-dot interval"></span> I Interval</span>
-            <span class="legend-item"><span class="legend-dot repetition"></span> R Repetition</span>
-            <span class="legend-item"><span class="legend-dot long"></span> L Long</span>
-            <span class="legend-item"><span class="legend-dot rest"></span> W Walk / Rest</span>
-            <span class="legend-item"><span class="legend-dot repetition"></span> ST Strides</span>
-          </div>
-        </div>
-
-        <div class="calendar-grid" id="calendarGrid"></div>
-        <div class="week-details" id="weekDetails"></div>
-        <div class="calendar-summary" id="calendarSummary"></div>
-
         <div id="noPlan" class="hidden">
           <h3>No training plan yet</h3>
           <p>Configure your race to generate a personalized training calendar.</p>
           <a href="index.html" class="btn-primary">Create a Training Plan</a>
         </div>
       </section>
+
+      <!-- Card 2: Your Training Paces -->
+      <section class="pace-zones" id="paceZones">
+        <h3>Your Training Paces (VDOT <span id="currentVdot">50</span>)</h3>
+        <div class="pace-grid">
+          <div class="pace-item">
+            <span class="pace-type">Easy</span>
+            <span class="pace-value" id="paceEasy">9:15-10:00</span>
+            <span class="pace-km" id="paceEasyKm"></span>
+          </div>
+          <div class="pace-item">
+            <span class="pace-type">Marathon</span>
+            <span class="pace-value" id="paceMarathon">6:36</span>
+            <span class="pace-km" id="paceMarathonKm"></span>
+          </div>
+          <div class="pace-item">
+            <span class="pace-type">Tempo</span>
+            <span class="pace-value" id="paceTempo">6:08</span>
+            <span class="pace-km" id="paceTempoKm"></span>
+          </div>
+          <div class="pace-item">
+            <span class="pace-type">Interval</span>
+            <span class="pace-value" id="paceInterval">5:47</span>
+            <span class="pace-km" id="paceIntervalKm"></span>
+          </div>
+          <div class="pace-item">
+            <span class="pace-type">Repetition</span>
+            <span class="pace-value" id="paceRepetition">5:13</span>
+            <span class="pace-km" id="paceRepetitionKm"></span>
+          </div>
+        </div>
+        <div class="hr-zones" id="hrZones">
+          <h4>Heart-Rate Zones (est.)</h4>
+          <div class="pace-grid" id="hrGrid"></div>
+        </div>
+        <div class="zone-legend" id="zoneLegend">
+          <span class="legend-item"><span class="legend-dot easy"></span> E Easy</span>
+          <span class="legend-item"><span class="legend-dot marathon"></span> M Marathon</span>
+          <span class="legend-item"><span class="legend-dot tempo"></span> T Tempo</span>
+          <span class="legend-item"><span class="legend-dot interval"></span> I Interval</span>
+          <span class="legend-item"><span class="legend-dot repetition"></span> R Repetition</span>
+          <span class="legend-item"><span class="legend-dot long"></span> L Long</span>
+          <span class="legend-item"><span class="legend-dot rest"></span> W Walk / Rest</span>
+          <span class="legend-item"><span class="legend-dot repetition"></span> ST Strides</span>
+        </div>
+      </section>
+
+      <!-- Card 3: Training data (week grid) -->
+      <section class="calendar-grid" id="calendarGrid"></section>
+
+      <!-- Card 4: Week summary -->
+      <section class="week-details" id="weekDetails"></section>
+
+      <!-- Card 5: Phases -->
+      <section class="calendar-summary" id="calendarSummary"></section>
     </main>
 
     <footer class="footer">
