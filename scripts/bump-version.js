@@ -1,8 +1,10 @@
 /**
- * Bump the app version and propagate it to the visible footer.
+ * Bump the app version and propagate it to the visible version markers.
  *
- * package.json is the single source of truth; this script also updates the
- * "Training plan calendar generator vX.Y.Z" footer in index.html / calendar.html.
+ * package.json is the single source of truth; this script also updates:
+ *   - the header badge  <span class="app-version">vX.Y.Z</span>
+ *   - the footer string "Training plan calendar generator vX.Y.Z"
+ * across index.html / calendar.html / day.html.
  *
  * Usage:
  *   node scripts/bump-version.js            # patch bump (1.0.0 -> 1.0.1)
@@ -21,7 +23,8 @@ const ROOT = path.join(__dirname, '..');
 const PKG = path.join(ROOT, 'package.json');
 const HTML_FILES = [
   path.join(ROOT, 'webapp', 'index.html'),
-  path.join(ROOT, 'webapp', 'calendar.html')
+  path.join(ROOT, 'webapp', 'calendar.html'),
+  path.join(ROOT, 'webapp', 'day.html')
 ];
 
 function nextVersion(current, arg) {
@@ -50,12 +53,14 @@ pkg.version = newVersion;
 fs.writeFileSync(PKG, JSON.stringify(pkg, null, 2) + '\n');
 
 const footerRe = /Training plan calendar generator(?: v\d+\.\d+\.\d+)?/g;
+const badgeRe = /(<span class="app-version">)v\d+\.\d+\.\d+(<\/span>)/g;
 for (const file of HTML_FILES) {
   const rel = path.relative(ROOT, file);
   const html = fs.readFileSync(file, 'utf8');
-  const next = html.replace(footerRe, `Training plan calendar generator v${newVersion}`);
+  let next = html.replace(footerRe, `Training plan calendar generator v${newVersion}`);
+  next = next.replace(badgeRe, `$1v${newVersion}$2`);
   if (next === html) {
-    console.warn(`WARN: footer string not found in ${rel}`);
+    console.warn(`WARN: no version marker (footer or .app-version) found in ${rel}`);
   } else {
     fs.writeFileSync(file, next);
   }

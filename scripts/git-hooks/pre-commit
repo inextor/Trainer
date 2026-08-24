@@ -2,4 +2,4 @@
 # Bump the app version before each commit.
 # Install with: scripts/install-hooks.sh
 node scripts/bump-version.js || exit 1
-git add package.json webapp/index.html webapp/calendar.html
+git add package.json webapp/index.html webapp/calendar.html webapp/day.html
