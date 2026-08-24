@@ -6106,7 +6106,7 @@
               "5": "Q2 = 2 E + 5 × (800 T w/2 min E recovery jg) + 1 E",
               "4": "50 min E",
               "3": "30-40 min E",
-              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "2": "0-20 min E",
               "1": "20-30 min E"
             }
           }
@@ -6245,7 +6245,7 @@
               "5": "Q2 = 2 E + 3 × (1 T w/2 min rests) + 2 E",
               "4": "50 min E",
               "3": "30-40 min E",
-              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "2": "0-20 min E",
               "1": "20-30 min E"
             }
           }
@@ -6384,7 +6384,7 @@
               "5": "Q2 = 3 E + 3 × (1 T w/2 min rests) + 2 E",
               "4": "50 min E",
               "3": "30-40 min E",
-              "2": "0-20 min E 1 day: 20-30 min E (race is tomorrow)",
+              "2": "0-20 min E",
               "1": "20-30 min E (race is tomorrow)"
             }
           }
@@ -6523,7 +6523,7 @@
               "5": "Q2 = 4 E + 3 × (1 T w/2 min E recoveries) + 2 E",
               "4": "50 min E",
               "3": "30-40 min E",
-              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "2": "0-20 min E",
               "1": "20-30 min E"
             }
           }
@@ -6662,7 +6662,7 @@
               "5": "Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E",
               "4": "50 min E",
               "3": "30-40 min E",
-              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "2": "0-20 min E",
               "1": "20-30 min E"
             }
           }
@@ -6801,7 +6801,7 @@
               "5": "Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E",
               "4": "50 min E",
               "3": "30-40 min E",
-              "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "2": "0-20 min E",
               "1": "20-30 min E"
             }
           }
@@ -6940,7 +6940,7 @@
               "5": "Q2 = 4 E + 3 × (1 T w/2 min rests) + 2 E",
               "4": "50 min E",
               "3": "30-40 min E",
-              "2": "30-40 min E 1 day: 20-30 min E (tomorrow is the race)",
+              "2": "30-40 min E",
               "1": "20-30 min E"
             }
           }

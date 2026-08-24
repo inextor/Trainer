@@ -66,7 +66,7 @@
           },
           "raceWeekKm": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "3.2 km E + 5 × (1287.5 km T w/2 min E recovery jg) + 1.6 km E",
@@ -75,7 +75,7 @@
           },
           "raceWeekMi": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "2 E + 5 × (800 T w/2 min E recovery jg) + 1 E",
@@ -915,7 +915,7 @@
           },
           "raceWeekKm": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "3.2 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
@@ -924,7 +924,7 @@
           },
           "raceWeekMi": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "2 E + 3 × (1 T w/2 min rests) + 2 E",
@@ -1760,7 +1760,7 @@
           },
           "raceWeekKm": {
             "1": "20-30 min E (race is tomorrow)",
-            "2": "0-20 min E 1 day: 20-30 min E (race is tomorrow)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "4.8 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
@@ -1769,7 +1769,7 @@
           },
           "raceWeekMi": {
             "1": "20-30 min E (race is tomorrow)",
-            "2": "0-20 min E 1 day: 20-30 min E (race is tomorrow)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "3 E + 3 × (1 T w/2 min rests) + 2 E",
@@ -2630,7 +2630,7 @@
           },
           "raceWeekKm": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "6.4 km E + 3 × (1.6 km T w/2 min E recoveries) + 3.2 km E",
@@ -2639,7 +2639,7 @@
           },
           "raceWeekMi": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "4 E + 3 × (1 T w/2 min E recoveries) + 2 E",
@@ -3511,7 +3511,7 @@
           },
           "raceWeekKm": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "6.4 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
@@ -3520,7 +3520,7 @@
           },
           "raceWeekMi": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "4 E + 3 × (1 T w/2 min rests) + 2 E",
@@ -4432,7 +4432,7 @@
           },
           "raceWeekKm": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "6.4 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
@@ -4441,7 +4441,7 @@
           },
           "raceWeekMi": {
             "1": "20-30 min E",
-            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "0-20 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "4 E + 3 × (1 T w/2 min rests) + 2 E",
@@ -5333,7 +5333,7 @@
           },
           "raceWeekKm": {
             "1": "20-30 min E",
-            "2": "30-40 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "30-40 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "6.4 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
@@ -5342,7 +5342,7 @@
           },
           "raceWeekMi": {
             "1": "20-30 min E",
-            "2": "30-40 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "2": "30-40 min E",
             "3": "30-40 min E",
             "4": "50 min E",
             "5": "4 E + 3 × (1 T w/2 min rests) + 2 E",
