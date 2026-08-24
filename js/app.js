@@ -14,12 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- Load reference data ----
   async function loadData() {
     try {
-      const [vdotRes, plansRes] = await Promise.all([
+      const [vdotRes, plansRes, segmentsRes] = await Promise.all([
         fetch('data/vdot.json', {cache: 'no-store'}).then(r => r.json()),
-        fetch('data/plans.json', {cache: 'no-store'}).then(r => r.json())
+        fetch('data/plans.json', {cache: 'no-store'}).then(r => r.json()),
+        fetch('data/plans.segments.json', {cache: 'no-store'}).then(r => r.json())
       ]);
       VDOTCalculator.setTable(vdotRes.vdot);
       window.PLANS = plansRes;
+      window.PLANS_2Q_SEGMENTS = segmentsRes;
     } catch (e) {
       console.warn('Could not load reference data', e);
     }
