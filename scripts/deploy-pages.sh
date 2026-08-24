@@ -15,6 +15,11 @@ node scripts/build-plans.js
 
 VERSION=$(node -p "require('./package.json').version")
 
+# 2. Sync the local gh-pages ref to the latest remote, so we build on top of
+#    the live branch instead of a possibly-stale local copy.
+git fetch origin gh-pages
+git branch -f gh-pages origin/gh-pages
+
 WORK=$(mktemp -d)
 cleanup() {
   git -C "$ROOT" worktree remove --force "$WORK/gh-pages" 2>/dev/null || true
@@ -22,14 +27,14 @@ cleanup() {
 }
 trap cleanup EXIT
 
-# 2. Check out gh-pages into a temporary worktree.
+# 3. Check out gh-pages into a temporary worktree.
 git worktree add -f "$WORK/gh-pages" gh-pages
 
-# 3. Replace its root with the current webapp build (keep the worktree's .git).
+# 4. Replace its root with the current webapp build (keep the worktree's .git).
 find "$WORK/gh-pages" -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
 cp -a webapp/. "$WORK/gh-pages/"
 
-# 4. Commit and push. --no-verify skips the version-bump pre-commit hook, which
+# 5. Commit and push. --no-verify skips the version-bump pre-commit hook, which
 #    only makes sense on master (the source of truth), not on the build output.
 git -C "$WORK/gh-pages" add -A
 if git -C "$WORK/gh-pages" diff --cached --quiet; then
