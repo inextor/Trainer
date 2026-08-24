@@ -1,0 +1,6191 @@
+{
+  "format": "plans-2q-segments",
+  "version": 1,
+  "generatedAt": "2026-08-24T17:19:37.175Z",
+  "categories": [
+    {
+      "name": "Up to 40 miles (64 km) per week",
+      "minMiles": 0,
+      "maxMiles": 40,
+      "weeks": {
+        "1": {
+          "raceWeekSegments": {
+            "1": [
+              {
+                "p": "E",
+                "m": 25
+              }
+            ],
+            "2": [
+              {
+                "p": "E",
+                "m": 10
+              }
+            ],
+            "3": [
+              {
+                "p": "E",
+                "m": 35
+              }
+            ],
+            "4": [
+              {
+                "p": "E",
+                "m": 50
+              }
+            ],
+            "5": [
+              {
+                "p": "E",
+                "mi": 2
+              },
+              {
+                "p": "T",
+                "mi": 2.485485
+              },
+              {
+                "p": "E",
+                "m": 10
+              },
+              {
+                "p": "E",
+                "mi": 1
+              }
+            ],
+            "6": [
+              {
+                "p": "E",
+                "m": 60
+              }
+            ],
+            "7": [
+              {
+                "p": "E",
+                "m": 90
+              }
+            ]
+          },
+          "raceWeekKm": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "3.2 km E + 5 × (1287.5 km T w/2 min E recovery jg) + 1.6 km E",
+            "6": "60 min E",
+            "7": "90 min E"
+          },
+          "raceWeekMi": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "2 E + 5 × (800 T w/2 min E recovery jg) + 1 E",
+            "6": "60 min E",
+            "7": "90 min E"
+          }
+        },
+        "2": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 60
+            }
+          ],
+          "q1Km": "1.6 km E + 2 × (3.2 km T w/2 min rests) + 60 min E",
+          "q1Mi": "1 E + 2 × (2 T w/2 min rests) + 60 min E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q2Km": "6.4 km E + 1.6 km T + 3.2 km M + 1.6 km E + 1.6 km T + 3.2 km M + 1.6 km E",
+          "q2Mi": "4 E + 1 T + 2 M + 1 E + 1 T + 2 M + 1 E"
+        },
+        "3": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "1.6 km E + 12.9 km M + 1.6 km E + 9.7 km M + 1.6 km E",
+          "q1Mi": "1 E + 8 M + 1 E + 6 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 4 × (1.6 km T w/1 min rests) + 3.2 km E",
+          "q2Mi": "6 E + 4 × (1 T w/1 min rests) + 2 E"
+        },
+        "4": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 150
+            }
+          ],
+          "q1Km": "steady E run of 150 min",
+          "q1Mi": "steady E run of 150 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "m": 15
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 4
+            }
+          ],
+          "q2Km": "9.7 km E + 5 × (3 min I w/3 min jg) + 1.6 km T + 6.4 km E",
+          "q2Mi": "6 E + 5 × (3 min I w/3 min jg) + 1 T + 4 E"
+        },
+        "5": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 3.2 km T + 60 min E + 2 × (1.6 km T w/1 min rest between) + 3.2 km E",
+          "q1Mi": "2 E + 2 T + 60 min E + 2 × (1 T w/1 min rest between) + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "R",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 5 × (3 min I w/2 min jg) + 4 × (1 min R w/2 min jg) + 3.2 km E",
+          "q2Mi": "6 E + 5 × (3 min I w/2 min jg) + 4 × (1 min R w/2 min jg) + 2 E"
+        },
+        "6": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "M",
+              "mi": 12
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "4.8 km E + 19.3 km M + 1.6 km E",
+          "q1Mi": "3 E + 12 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 45
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q2Km": "45 min E + 2 × (3.2 km T w/2 min rests) + 1.6 km T + 1.6 km E",
+          "q2Mi": "45 min E + 2 × (2 T w/2 min rests) + 1 T + 1 E"
+        },
+        "7": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 140
+            }
+          ],
+          "q1Km": "steady E run of 130-150 min",
+          "q1Mi": "steady E run of 130-150 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 10
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 16.1 km M + 1.6 km T + 3.2 km E",
+          "q2Mi": "2 E + 10 M + 1 T + 2 E"
+        },
+        "8": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "M",
+              "mi": 9
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "8.0 km E + 14.5 km M + 3.2 km E",
+          "q1Mi": "5 E + 9 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "I",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (3 min I w/2 min recovery jg) + 3 × (2 min I w/1 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 5 × (3 min I w/2 min recovery jg) + 3 × (2 min I w/1 min jg) + 2 E"
+        },
+        "9": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 1.6 km T + 12.9 km M + 3.2 km E",
+          "q1Mi": "4 E + 1 T + 8 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 3.2 km T + 2 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "4 E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "10": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 125
+            }
+          ],
+          "q1Km": "steady E run of 120-130 min",
+          "q1Mi": "steady E run of 120-130 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 9.7 km M + 3.2 km E",
+          "q2Mi": "6 E + 6 M + 2 E"
+        },
+        "11": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "12.9 km E + 4 × (1.6 km T w/1 min rests) + 1.6 km E",
+          "q1Mi": "8 E + 4 × (1 T w/1 min rests) + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "m": 12
+            },
+            {
+              "p": "E",
+              "m": 9
+            },
+            {
+              "p": "R",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 3 × (4 min I w/3 min jg) + 4 × (1 min R w/2 min jg) + 3.2 km E",
+          "q2Mi": "6 E + 3 × (4 min I w/3 min jg) + 4 × (1 min R w/2 min jg) + 2 E"
+        },
+        "12": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "6.4 km E + 9.7 km M + 1.6 km T + 1.6 km E",
+          "q1Mi": "4 E + 6 M + 1 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 4.8 km T + 3 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "6 E + 3 T + 3 min E + 1 T + 2 E"
+        },
+        "13": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 105
+            }
+          ],
+          "q1Km": "steady E run of 90-120 min",
+          "q1Mi": "steady E run of 90-120 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "40 min E + 2 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "40 min E + 2 × (2 T w/2 min rests) + 2 E"
+        },
+        "14": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "m": 30
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 2 × (1.6 km T w/1 min rests) + 30 min E + 2 × (1.6 km T w/1 min rests) + 3.2 km E",
+          "q1Mi": "2 E + 2 × (1 T w/1 min rests) + 30 min E + 2 × (1 T w/1 min rests) + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "I",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "40 min E + 5 × (3 min I w/2 min jg recoveries) + 3.2 km E",
+          "q2Mi": "40 min E + 5 × (3 min I w/2 min jg recoveries) + 2 E"
+        },
+        "15": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 8.0 km M + 1.6 km T + 1.6 km M + 3.2 km E",
+          "q1Mi": "2 E + 5 M + 1 T + 1 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "40 min E + 4 × (1.6 km T w/1 min rests) + 3.2 km E",
+          "q2Mi": "40 min E + 4 × (1 T w/1 min rests) + 2 E"
+        },
+        "16": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 100
+            }
+          ],
+          "q1Km": "steady E run of 90-110 min",
+          "q1Mi": "steady E run of 90-110 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 4 × (1.6 km T w/1 min rests) + 3.2 km E",
+          "q2Mi": "5 E + 4 × (1 T w/1 min rests) + 2 E"
+        },
+        "17": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "m": 30
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 2 × (1.6 km T w/1 min rests) + 30 min E + 2 × (1.6 km T w/1 min rests) + 3.2 km E",
+          "q1Mi": "2 E + 2 × (1 T w/1 min rests) + 30 min E + 2 × (1 T w/1 min rests) + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "I",
+              "m": 12
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "R",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 6 × (2 min I w/2 min jg between) + 4 × (1 min R w/2 min jg) + 3.2 km E",
+          "q2Mi": "3 E + 6 × (2 min I w/2 min jg between) + 4 × (1 min R w/2 min jg) + 2 E"
+        },
+        "18": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "4.8 km E + 6.4 km M + 1.6 km T + 1.6 km M + 3.2 km E (nonstop workout if no rest shown)",
+          "q1Mi": "3 E + 4 M + 1 T + 1 M + 2 E (nonstop workout if no rest shown)",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 3.2 km T + 2 min rest + 1.6 km E + 2 × (1.6 km T w/1 min rest between) + 3.2 km E",
+          "q2Mi": "5 E + 2 T + 2 min rest + 1 E + 2 × (1 T w/1 min rest between) + 2 E"
+        }
+      }
+    },
+    {
+      "name": "41-55 miles (66-89 km) per week",
+      "minMiles": 41,
+      "maxMiles": 55,
+      "weeks": {
+        "1": {
+          "raceWeekSegments": {
+            "1": [
+              {
+                "p": "E",
+                "m": 25
+              }
+            ],
+            "2": [
+              {
+                "p": "E",
+                "m": 10
+              }
+            ],
+            "3": [
+              {
+                "p": "E",
+                "m": 35
+              }
+            ],
+            "4": [
+              {
+                "p": "E",
+                "m": 50
+              }
+            ],
+            "5": [
+              {
+                "p": "E",
+                "mi": 2
+              },
+              {
+                "p": "T",
+                "mi": 3
+              },
+              {
+                "p": "W",
+                "m": 6
+              },
+              {
+                "p": "E",
+                "mi": 2
+              }
+            ],
+            "6": [
+              {
+                "p": "E",
+                "m": 60
+              }
+            ],
+            "7": [
+              {
+                "p": "E",
+                "m": 90
+              }
+            ]
+          },
+          "raceWeekKm": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "3.2 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
+            "6": "60 min E",
+            "7": "90 min E"
+          },
+          "raceWeekMi": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "2 E + 3 × (1 T w/2 min rests) + 2 E",
+            "6": "60 min E",
+            "7": "90 min E"
+          }
+        },
+        "2": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "m": 60
+            }
+          ],
+          "q1Km": "1.6 km E + 3 × (3.2 km T w/2 min E recoveries) + 60 min E",
+          "q1Mi": "1 E + 3 × (2 T w/2 min E recoveries) + 60 min E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 1.6 km T + 3.2 km M + 1.6 km E + 1.6 km T + 3.2 km M + 3.2 km E",
+          "q2Mi": "4 E + 1 T + 2 M + 1 E + 1 T + 2 M + 2 E"
+        },
+        "3": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "1.6 km E + 12.9 km M + 1.6 km E + 9.7 km M + 1.6 km E",
+          "q1Mi": "1 E + 8 M + 1 E + 6 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "W",
+              "m": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 2 × (3.2 km T w/2 min rests) + 3 × (1.6 km T w/1 min rests) + 3.2 km E",
+          "q2Mi": "4 E + 2 × (2 T w/2 min rests) + 3 × (1 T w/1 min rests) + 2 E"
+        },
+        "4": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 150
+            }
+          ],
+          "q1Km": "steady E run of 150 min",
+          "q1Mi": "steady E run of 150 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "E",
+              "mi": 4
+            }
+          ],
+          "q2Km": "9.7 km E + 5 × (3 min I w/2 min E ) + 6.4 km E",
+          "q2Mi": "6 E + 5 × (3 min I w/2 min E ) + 4 E"
+        },
+        "5": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 4.8 km T + 60 min E + 3.2 km T + 3.2 km E",
+          "q1Mi": "2 E + 3 T + 60 min E + 2 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "R",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 3
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (3 min I w/2 min E ) + 4 × (1 min R w/2 min jg) + 4.8 km E",
+          "q2Mi": "8 E + 5 × (3 min I w/2 min E ) + 4 × (1 min R w/2 min jg) + 3 E"
+        },
+        "6": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 14
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "3.2 km E + 22.5 km M + 1.6 km E",
+          "q1Mi": "2 E + 14 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q2Km": "60 min E + 3 × (3.2 km T w/2 min rests) + 1.6 km T + 1.6 km E",
+          "q2Mi": "60 min E + 3 × (2 T w/2 min rests) + 1 T + 1 E"
+        },
+        "7": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 135
+            }
+          ],
+          "q1Km": "steady E run of 120-150 min",
+          "q1Mi": "steady E run of 120-150 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 12.9 km M + 3 × (1.6 km T w/1 min recovery between) + 3.2 km E",
+          "q2Mi": "2 E + 8 M + 3 × (1 T w/1 min recovery between) + 2 E"
+        },
+        "8": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "60 min E + 12.9 km M + 1.6 km E",
+          "q1Mi": "60 min E + 8 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "m": 16
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "E",
+              "mi": 3
+            }
+          ],
+          "q2Km": "12.9 km E + 4 × (4 min I w/3 min recovery jg) + 4.8 km E",
+          "q2Mi": "8 E + 4 × (4 min I w/3 min recovery jg) + 3 E"
+        },
+        "9": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "3.2 km E + 9.7 km M + 1.6 km E + 6.4 km M + 1.6 km T + 1.6 km E",
+          "q1Mi": "2 E + 6 M + 1 E + 4 M + 1 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 3 × (3.2 km T w/2 min rests) + 1.6 km T + 3.2 km E",
+          "q2Mi": "5 E + 3 × (2 T w/2 min rests) + 1 T + 2 E"
+        },
+        "10": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 120
+            }
+          ],
+          "q1Km": "steady E run of 120 min",
+          "q1Mi": "steady E run of 120 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 12
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 19.3 km M + 3.2 km E",
+          "q2Mi": "2 E + 12 M + 2 E"
+        },
+        "11": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 10
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "16.1 km E + 2 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q1Mi": "10 E + 2 × (2 T w/2 min rests) + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "R",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (3 min I w/2 min jg) + 6 × (1 min R w/2 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 5 × (3 min I w/2 min jg) + 6 × (1 min R w/2 min jg) + 2 E"
+        },
+        "12": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "3.2 km E + 9.7 km M + 1.6 km E + 9.7 km M + 1.6 km E",
+          "q1Mi": "2 E + 6 M + 1 E + 6 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "6 E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "13": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 110
+            }
+          ],
+          "q1Km": "steady E run of 100-120 min",
+          "q1Mi": "steady E run of 100-120 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "40 min E + 3 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "40 min E + 3 × (2 T w/2 min rests) + 2 E"
+        },
+        "14": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "1.6 km E + 2 × (3.2 km T w/2 min rests) + 60 min E + 1.6 km T + 1.6 km E",
+          "q1Mi": "1 E + 2 × (2 T w/2 min rests) + 60 min E + 1 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "m": 20
+            },
+            {
+              "p": "E",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 5 × (4 min I w/3 min jg recoveries) + 3.2 km E",
+          "q2Mi": "6 E + 5 × (4 min I w/3 min jg recoveries) + 2 E"
+        },
+        "15": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 12.9 km M + 1.6 km E + 3.2 km M + 3.2 km E",
+          "q1Mi": "2 E + 8 M + 1 E + 2 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "40 min E + 3 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "40 min E + 3 × (2 T w/2 min rests) + 2 E"
+        },
+        "16": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "m": 105
+            }
+          ],
+          "q1Km": "steady E run of 90-120 min",
+          "q1Mi": "steady E run of 90-120 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 3.2 km T + 2 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "6 E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "17": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "3.2 km E + 4.8 km T + 40 min E + 3.2 km T + 1.6 km E",
+          "q1Mi": "2 E + 3 T + 40 min E + 2 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "R",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 5 × (3 min I w/2 min jg recoveries) + 6 × (1 min R w/2 min jg) + 3.2 km E",
+          "q2Mi": "6 E + 5 × (3 min I w/2 min jg recoveries) + 6 × (1 min R w/2 min jg) + 2 E"
+        },
+        "18": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "6.4 km E + 12.9 km M + 1.6 km T + 1.6 km E (a nonstop workout)",
+          "q1Mi": "4 E + 8 M + 1 T + 1 E (a nonstop workout)",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 2 × (3.2 km T w/2 min rests) + 1.6 km T + 3.2 km E",
+          "q2Mi": "8 E + 2 × (2 T w/2 min rests) + 1 T + 2 E"
+        }
+      }
+    },
+    {
+      "name": "56-70 miles (90-113 km) per week",
+      "minMiles": 56,
+      "maxMiles": 70,
+      "weeks": {
+        "1": {
+          "raceWeekSegments": {
+            "1": [
+              {
+                "p": "E",
+                "m": 25
+              }
+            ],
+            "2": [
+              {
+                "p": "E",
+                "m": 10
+              }
+            ],
+            "3": [
+              {
+                "p": "E",
+                "m": 35
+              }
+            ],
+            "4": [
+              {
+                "p": "E",
+                "m": 50
+              }
+            ],
+            "5": [
+              {
+                "p": "E",
+                "mi": 3
+              },
+              {
+                "p": "T",
+                "mi": 3
+              },
+              {
+                "p": "W",
+                "m": 6
+              },
+              {
+                "p": "E",
+                "mi": 2
+              }
+            ],
+            "6": [
+              {
+                "p": "E",
+                "m": 60
+              }
+            ],
+            "7": [
+              {
+                "p": "E",
+                "m": 90
+              }
+            ]
+          },
+          "raceWeekKm": {
+            "1": "20-30 min E (race is tomorrow)",
+            "2": "0-20 min E 1 day: 20-30 min E (race is tomorrow)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "4.8 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
+            "6": "60 min E",
+            "7": "90 min E"
+          },
+          "raceWeekMi": {
+            "1": "20-30 min E (race is tomorrow)",
+            "2": "0-20 min E 1 day: 20-30 min E (race is tomorrow)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "3 E + 3 × (1 T w/2 min rests) + 2 E",
+            "6": "60 min E",
+            "7": "90 min E"
+          }
+        },
+        "2": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 7
+            }
+          ],
+          "q1Km": "3.2 km E + 3 × (3.2 km T w/2 min rests) + 11.3 km E",
+          "q1Mi": "2 E + 3 × (2 T w/2 min rests) + 7 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 1.6 km T + 3.2 km M + 1.6 km T + 3.2 km M + 3.2 km E",
+          "q2Mi": "3 E + 1 T + 2 M + 1 T + 2 M + 2 E"
+        },
+        "3": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 9.7 km M + 1.6 km E + 9.7 km M + 3.2 km E",
+          "q1Mi": "2 E + 6 M + 1 E + 6 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 4 × (3.2 km T w/2 min E) + 3.2 km E",
+          "q2Mi": "2 E + 4 × (2 T w/2 min E) + 2 E"
+        },
+        "4": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 20,
+              "capMin": 150
+            }
+          ],
+          "q1Km": "steady E run of the lesser of 32.2 km and 150 min",
+          "q1Mi": "steady E run of the lesser of 20 miles and 150 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "mi": 3.106855
+            },
+            {
+              "p": "E",
+              "m": 15
+            },
+            {
+              "p": "E",
+              "mi": 4
+            }
+          ],
+          "q2Km": "9.7 km E + 5 × (1 km I w/3 min E ) + 6.4 km E",
+          "q2Mi": "6 E + 5 × (1 km I w/3 min E ) + 4 E"
+        },
+        "5": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "9.7 km E + 3.2 km T + 9.7 km E + 3.2 km T + 1.6 km E",
+          "q1Mi": "6 E + 2 T + 6 E + 2 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.106855
+            },
+            {
+              "p": "E",
+              "m": 15
+            },
+            {
+              "p": "R",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (1 km I w/3 min jg) + 6 × (200 R w/200 jg) + 3.2 km E",
+          "q2Mi": "8 E + 5 × (1 km I w/3 min jg) + 6 × (200 R w/200 jg) + 2 E"
+        },
+        "6": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "M",
+              "mi": 12
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "4.8 km E + 19.3 km M + 3.2 km E",
+          "q1Mi": "3 E + 12 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q2Km": "40 min E + 4 × (3.2 km T w/2 min rests) + 2 × (1.6 km T w/1 min rests) + 1.6 km E",
+          "q2Mi": "40 min E + 4 × (2 T w/2 min rests) + 2 × (1 T w/1 min rests) + 1 E"
+        },
+        "7": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 20,
+              "capMin": 150
+            }
+          ],
+          "q1Km": "steady E run of the lesser of 32.2 km and 150 min",
+          "q1Mi": "steady E run of the lesser of 20 miles and 150 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 12.9 km M + 2 × (3.2 km T w/2 min recovery between) + 3.2 km E",
+          "q2Mi": "2 E + 8 M + 2 × (2 T w/2 min recovery between) + 2 E"
+        },
+        "8": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 3.2 km T + 60 min E + 3.2 km T + 3.2 km E or 60 min E + 12.9 km M + 1.6 km E",
+          "q1Mi": "2 E + 2 T + 60 min E + 2 T + 2 E or 60 min E + 8 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 18
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 6 × (1 km I w/3 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 6 × (1 km I w/3 min jg) + 2 E"
+        },
+        "9": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "4.8 km E + 9.7 km M + 1.6 km E + 6.4 km M + 1.6 km T + 1.6 km E",
+          "q1Mi": "3 E + 6 M + 1 E + 4 M + 1 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 4 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "5 E + 4 × (2 T w/2 min rests) + 2 E"
+        },
+        "10": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 18,
+              "capMin": 130
+            }
+          ],
+          "q1Km": "steady E run of the lesser of 29.0 km and 130 min",
+          "q1Mi": "steady E run of the lesser of 18 miles and 130 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 12
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 19.3 km M + 3.2 km E",
+          "q2Mi": "2 E + 12 M + 2 E"
+        },
+        "11": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 12
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "19.3 km E + 4.8 km T + 1.6 km E",
+          "q1Mi": "12 E + 3 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.106855
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 1.6 km E",
+          "q2Mi": "8 E + 5 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 1 E"
+        },
+        "12": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "1.6 km E + 12.9 km M + 1.6 km E + 9.7 km M + 1.6 km E",
+          "q1Mi": "1 E + 8 M + 1 E + 6 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "4 E + 3 T + 3 min E + 2 T + 2 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "13": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 17,
+              "capMin": 120
+            }
+          ],
+          "q1Km": "steady E run of the lesser of 27.4 km and 120 min",
+          "q1Mi": "steady E run of the lesser of 17 miles and 120 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "40 min E + 4.8 km T + 2 min rest + 2 × (3.2 km T w/1 min rest between) + 3.2 km E",
+          "q2Mi": "40 min E + 3 T + 2 min rest + 2 × (2 T w/1 min rest between) + 2 E"
+        },
+        "14": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "1.6 km E + 2 × (3.2 km T w/2 min rests) + 60 min E + 3.2 km T + 1.6 km E",
+          "q1Mi": "1 E + 2 × (2 T w/2 min rests) + 60 min E + 2 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 18
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 6 × (1 km I w/3 min jg recoveries) + 3.2 km E",
+          "q2Mi": "8 E + 6 × (1 km I w/3 min jg recoveries) + 2 E"
+        },
+        "15": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 12.9 km M + 1.6 km E + 4.8 km M + 3.2 km E",
+          "q1Mi": "2 E + 8 M + 1 E + 3 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q2Km": "40 min E + 3 × (3.2 km T w/2 min rests) + 2 × (1.6 km T w/1 min rests) + 1.6 km E",
+          "q2Mi": "40 min E + 3 × (2 T w/2 min rests) + 2 × (1 T w/1 min rests) + 1 E"
+        },
+        "16": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 16,
+              "capMin": 120
+            }
+          ],
+          "q1Km": "steady E run of the lesser of 25.7 km and 120 min",
+          "q1Mi": "steady E run of the lesser of 16 miles and 120 min",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "6 E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "17": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "3.2 km E + 4.8 km T + 60 min E + 1.6 km T + 1.6 km E",
+          "q1Mi": "2 E + 3 T + 60 min E + 1 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "I",
+              "mi": 3.106855
+            },
+            {
+              "p": "E",
+              "m": 15
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 5 × (1 km I w/3 min jg recoveries) + 4 × (400 R w/400 m jg) + 3.2 km E",
+          "q2Mi": "4 E + 5 × (1 km I w/3 min jg recoveries) + 4 × (400 R w/400 m jg) + 2 E"
+        },
+        "18": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "1.6 km E + 9.7 km M + 1.6 km E + 9.7 km M + 3.2 km E (a nonstop workout)",
+          "q1Mi": "1 E + 6 M + 1 E + 6 M + 2 E (a nonstop workout)",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "W",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 4.8 km T + 3 min rest + 3.2 km T + 3.2 km E",
+          "q2Mi": "8 E + 3 T + 3 min rest + 2 T + 2 E"
+        }
+      }
+    },
+    {
+      "name": "71 to 85 miles (114-137 km) per week",
+      "minMiles": 71,
+      "maxMiles": 85,
+      "weeks": {
+        "1": {
+          "raceWeekSegments": {
+            "1": [
+              {
+                "p": "E",
+                "m": 25
+              }
+            ],
+            "2": [
+              {
+                "p": "E",
+                "m": 10
+              }
+            ],
+            "3": [
+              {
+                "p": "E",
+                "m": 35
+              }
+            ],
+            "4": [
+              {
+                "p": "E",
+                "m": 50
+              }
+            ],
+            "5": [
+              {
+                "p": "E",
+                "mi": 4
+              },
+              {
+                "p": "T",
+                "mi": 3
+              },
+              {
+                "p": "E",
+                "m": 6
+              },
+              {
+                "p": "E",
+                "mi": 2
+              }
+            ],
+            "6": [
+              {
+                "p": "E",
+                "m": 60
+              }
+            ],
+            "7": [
+              {
+                "p": "E",
+                "m": 90
+              }
+            ]
+          },
+          "raceWeekKm": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "6.4 km E + 3 × (1.6 km T w/2 min E recoveries) + 3.2 km E",
+            "6": "60 min E",
+            "7": "90 min E"
+          },
+          "raceWeekMi": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "4 E + 3 × (1 T w/2 min E recoveries) + 2 E",
+            "6": "60 min E",
+            "7": "90 min E"
+          }
+        },
+        "2": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 8
+            }
+          ],
+          "q1Km": "3.2 km E + 3 × (3.2 km T w/2 min E recoveries) + 12.9 km E",
+          "q1Mi": "2 E + 3 × (2 T w/2 min E recoveries) + 8 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 1.6 km T + 3.2 km M + 1.6 km T + 3.2 km M + 3.2 km E",
+          "q2Mi": "4 E + 1 T + 2 M + 1 T + 2 M + 2 E"
+        },
+        "3": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "4.8 km E + 9.7 km M + 1.6 km T + 9.7 km M + 3.2 km E",
+          "q1Mi": "3 E + 6 M + 1 T + 6 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 4 × (3.2 km T w/2 min E) + 3.2 km E",
+          "q2Mi": "2 E + 4 × (2 T w/2 min E) + 2 E"
+        },
+        "4": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 18
+            }
+          ],
+          "q1Km": "steady E run of 29.0 km",
+          "q1Mi": "steady E run of 18 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "I",
+              "mi": 1.864113
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "R",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 3 × (1.6 km T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "3 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E"
+        },
+        "5": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 3.2 km T + 12.9 km E + 3.2 km T + 3.2 km E",
+          "q1Mi": "2 E + 2 T + 8 E + 2 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "mi": 3.106855
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 5 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "6 E + 5 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E"
+        },
+        "6": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "3.2 km E + 12.9 km M + 1.6 km T + 6.4 km M + 1.6 km T + 1.6 km M + 1.6 km E",
+          "q1Mi": "2 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 4 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "4 E + 4 × (2 T w/2 min rests) + 2 E"
+        },
+        "7": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 20
+            }
+          ],
+          "q1Km": "steady E run of 32.2 km",
+          "q1Mi": "steady E run of 20 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 12.9 km M + 4.8 km T + 3.2 km E",
+          "q2Mi": "2 E + 8 M + 3 T + 2 E"
+        },
+        "8": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 10
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "1.6 km E + 4.8 km T + 16.1 km E + 4.8 km T + 1.6 km E or 6.4 km E + 20.9 km M + 1.6 km E",
+          "q1Mi": "1 E + 3 T + 10 E + 3 T + 1 E or 4 E + 13 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 4.970968
+            },
+            {
+              "p": "E",
+              "m": 16
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 8 × (1 km I w/2 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 8 × (1 km I w/2 min jg) + 2 E"
+        },
+        "9": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 5
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 9.7 km M + 1.6 km T + 8.0 km M + 3.2 km E",
+          "q1Mi": "4 E + 6 M + 1 T + 5 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 3
+            }
+          ],
+          "q2Km": "8.0 km E + 2 × (4.8 km T w/3 min rests) + 3.2 km T + 4.8 km E",
+          "q2Mi": "5 E + 2 × (3 T w/3 min rests) + 2 T + 3 E"
+        },
+        "10": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 20
+            }
+          ],
+          "q1Km": "steady E run of 32.2 km",
+          "q1Mi": "steady E run of 20 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 14
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 22.5 km M + 3.2 km E",
+          "q2Mi": "2 E + 14 M + 2 E"
+        },
+        "11": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 8
+            }
+          ],
+          "q1Km": "12.9 km E + 4.8 km T + 12.9 km E",
+          "q1Mi": "8 E + 3 T + 8 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E"
+        },
+        "12": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 12.9 km M + 1.6 km T + 6.4 km M + 3.2 km E",
+          "q1Mi": "4 E + 8 M + 1 T + 4 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 4.8 km T + 4 min E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "4 E + 3 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "13": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 19
+            }
+          ],
+          "q1Km": "steady E run of 30.6 km",
+          "q1Mi": "steady E run of 19 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 7
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "11.3 km E + 4 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "7 E + 4 × (2 T w/2 min rests) + 2 E"
+        },
+        "14": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 2 × (3.2 km T w/2 min rests) + 60 min E + 3.2 km T + 3.2 km E",
+          "q1Mi": "2 E + 2 × (2 T w/2 min rests) + 60 min E + 2 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 4.970968
+            },
+            {
+              "p": "E",
+              "m": 16
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 8 × (1 km I w/2 min jg) + 3.2 km E or 12.9 km E + 5 × (1 I w/4 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 8 × (1 km I w/2 min jg) + 2 E or 8 E + 5 × (1 I w/4 min jg) + 2 E"
+        },
+        "15": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 12.9 km M + 1.6 km T + 3.2 km M + 1.6 km E + 3.2 km M + 3.2 km E",
+          "q1Mi": "2 E + 8 M + 1 T + 2 M + 1 E + 2 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 4 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "6 E + 4 × (2 T w/2 min rests) + 2 E"
+        },
+        "16": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 18
+            }
+          ],
+          "q1Km": "steady E run of 29.0 km",
+          "q1Mi": "steady E run of 18 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 6.4 km T + 4 min E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "17": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "4.8 km E + 4.8 km T + 60 min E + 3.2 km T + 3.2 km E",
+          "q1Mi": "3 E + 3 T + 60 min E + 2 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "mi": 3.106855
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "R",
+              "mi": 1.491288
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 5 × (1 km I w/2 min jg) + 6 × (400 R w/400 m recovery jg) + 3.2 km E",
+          "q2Mi": "6 E + 5 × (1 km I w/2 min jg) + 6 × (400 R w/400 m recovery jg) + 2 E"
+        },
+        "18": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 5
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "8.0 km E + 9.7 km M + 1.6 km T + 8.0 km M + 1.6 km E (a nonstop workout)",
+          "q1Mi": "5 E + 6 M + 1 T + 5 M + 1 E (a nonstop workout)",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q2Km": "12.9 km E + 6.4 km T + 4 min rest + 6.4 km T + 1.6 km E",
+          "q2Mi": "8 E + 4 T + 4 min rest + 4 T + 1 E"
+        }
+      }
+    },
+    {
+      "name": "86-100 miles (138-161 km) per week",
+      "minMiles": 86,
+      "maxMiles": 100,
+      "weeks": {
+        "1": {
+          "raceWeekSegments": {
+            "1": [
+              {
+                "p": "E",
+                "m": 25
+              }
+            ],
+            "2": [
+              {
+                "p": "E",
+                "m": 10
+              }
+            ],
+            "3": [
+              {
+                "p": "E",
+                "m": 35
+              }
+            ],
+            "4": [
+              {
+                "p": "E",
+                "m": 50
+              }
+            ],
+            "5": [
+              {
+                "p": "E",
+                "mi": 4
+              },
+              {
+                "p": "T",
+                "mi": 3
+              },
+              {
+                "p": "W",
+                "m": 6
+              },
+              {
+                "p": "E",
+                "mi": 2
+              }
+            ],
+            "6": [
+              {
+                "p": "E",
+                "m": 60
+              }
+            ],
+            "7": [
+              {
+                "p": "E",
+                "m": 90
+              }
+            ]
+          },
+          "raceWeekKm": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "6.4 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
+            "6": "60 min E",
+            "7": "90 min E"
+          },
+          "raceWeekMi": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "4 E + 3 × (1 T w/2 min rests) + 2 E",
+            "6": "60 min E",
+            "7": "90 min E"
+          }
+        },
+        "2": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 8
+            }
+          ],
+          "q1Km": "3.2 km E + 3 × (3.2 km T w/2 min rests) + 12.9 km E",
+          "q1Mi": "2 E + 3 × (2 T w/2 min rests) + 8 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 1.6 km T + 3.2 km M + 1.6 km T + 3.2 km M + 3.2 km E",
+          "q2Mi": "4 E + 1 T + 2 M + 1 T + 2 M + 2 E"
+        },
+        "3": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 9.7 km M + 1.6 km T + 9.7 km M + 3.2 km E",
+          "q1Mi": "4 E + 6 M + 1 T + 6 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 4 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "2 E + 4 × (2 T w/2 min rests) + 2 E"
+        },
+        "4": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 20
+            }
+          ],
+          "q1Km": "steady E run of 32.2 km",
+          "q1Mi": "steady E run of 20 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "W",
+              "m": 3
+            },
+            {
+              "p": "I",
+              "mi": 1.864113
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "R",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 3 × (1.6 km T w/1 min rests) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "6 E + 3 × (1 T w/1 min rests) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E"
+        },
+        "5": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 4.8 km T + 12.9 km E + 4.8 km T + 3.2 km E",
+          "q1Mi": "2 E + 3 T + 8 E + 3 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E"
+        },
+        "6": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "4.8 km E + 12.9 km M + 1.6 km T + 6.4 km M + 1.6 km T + 1.6 km M + 1.6 km E",
+          "q1Mi": "3 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 6.4 km T + 4 min E + 3 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "3 E + 4 T + 4 min E + 3 × (2 T w/2 min rests) + 2 E"
+        },
+        "7": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 22
+            }
+          ],
+          "q1Km": "steady E run of 35.4 km",
+          "q1Mi": "steady E run of 22 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 12.9 km M + 6.4 km T + 3.2 km E",
+          "q2Mi": "2 E + 8 M + 4 T + 2 E"
+        },
+        "8": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 10
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "3.2 km E + 6.4 km T + 16.1 km E + 6.4 km T + 1.6 km E or 8.0 km E + 22.5 km M + 3.2 km E",
+          "q1Mi": "2 E + 4 T + 10 E + 4 T + 1 E or 5 E + 14 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "I",
+              "mi": 1.864113
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 3 × (1 I w/4 min jg) + 3 × (1 km I w/2 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 3 × (1 I w/4 min jg) + 3 × (1 km I w/2 min jg) + 2 E"
+        },
+        "9": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "6.4 km E + 9.7 km M + 1.6 km T + 9.7 km M + 1.6 km E",
+          "q1Mi": "4 E + 6 M + 1 T + 6 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "W",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 6.4 km T + 4 min rest + 4.8 km T + 3 min rest + 4.8 km T + 3.2 km E",
+          "q2Mi": "3 E + 4 T + 4 min rest + 3 T + 3 min rest + 3 T + 2 E"
+        },
+        "10": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 21
+            }
+          ],
+          "q1Km": "steady E run of 33.8 km",
+          "q1Mi": "steady E run of 21 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 15
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 24.1 km M + 3.2 km E",
+          "q2Mi": "2 E + 15 M + 2 E"
+        },
+        "11": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 10
+            }
+          ],
+          "q1Km": "12.9 km E + 6.4 km T + 16.1 km E",
+          "q1Mi": "8 E + 4 T + 10 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E"
+        },
+        "12": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "6.4 km E + 12.9 km M + 1.6 km T + 9.7 km M + 1.6 km T + 1.6 km E",
+          "q1Mi": "4 E + 8 M + 1 T + 6 M + 1 T + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 6.4 km T + 4 min E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "6 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "13": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 21
+            }
+          ],
+          "q1Km": "steady E run of 33.8 km",
+          "q1Mi": "steady E run of 21 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "m": 40
+            },
+            {
+              "p": "T",
+              "mi": 10
+            },
+            {
+              "p": "W",
+              "m": 10
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "40 min E + 5 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "40 min E + 5 × (2 T w/2 min rests) + 2 E"
+        },
+        "14": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 2 × (3.2 km T w/2 min rests) + 60 min E + 4.8 km T + 3.2 km E",
+          "q1Mi": "2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 4.970968
+            },
+            {
+              "p": "E",
+              "m": 16
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 8 × (1 km I w/2 min jg) + 3.2 km E or 12.9 km E + 5 × (1 I w/4 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 8 × (1 km I w/2 min jg) + 2 E or 8 E + 5 × (1 I w/4 min jg) + 2 E"
+        },
+        "15": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 12.9 km M + 1.6 km T + 6.4 km M + 1.6 km T + 3.2 km M + 3.2 km E",
+          "q1Mi": "2 E + 8 M + 1 T + 4 M + 1 T + 2 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 4 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "6 E + 4 × (2 T w/2 min rests) + 2 E"
+        },
+        "16": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 22
+            }
+          ],
+          "q1Km": "steady E run of 35.4 km",
+          "q1Mi": "steady E run of 22 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "W",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 6.4 km T + 4 min rest + 4.8 km T + 3 min rest + 3.2 km T + 2 min rest + 1.6 km T + 3.2 km E",
+          "q2Mi": "5 E + 4 T + 4 min rest + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 2 E"
+        },
+        "17": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 4.8 km T + 60 min E + 4.8 km T + 3.2 km E",
+          "q1Mi": "4 E + 3 T + 60 min E + 3 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.106855
+            },
+            {
+              "p": "E",
+              "m": 10
+            },
+            {
+              "p": "R",
+              "mi": 1.491288
+            },
+            {
+              "p": "E",
+              "mi": 1.491288
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (1 km I w/2 min recovery jg) + 6 × (400 R w/400 m jg) + 3.2 km E",
+          "q2Mi": "8 E + 5 × (1 km I w/2 min recovery jg) + 6 × (400 R w/400 m jg) + 2 E"
+        },
+        "18": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "8.0 km E + 9.7 km M + 1.6 km T + 8.0 km M + 1.6 km T + 1.6 km M + 1.6 km E (a nonstop workout)",
+          "q1Mi": "5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 1 E (a nonstop workout)",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 6.4 km T + 4 min rest + 6.4 km T + 3.2 km E",
+          "q2Mi": "8 E + 4 T + 4 min rest + 4 T + 2 E"
+        }
+      }
+    },
+    {
+      "name": "101-120 miles (163-193 km) per week",
+      "minMiles": 101,
+      "maxMiles": 120,
+      "weeks": {
+        "1": {
+          "raceWeekSegments": {
+            "1": [
+              {
+                "p": "E",
+                "m": 25
+              }
+            ],
+            "2": [
+              {
+                "p": "E",
+                "m": 10
+              }
+            ],
+            "3": [
+              {
+                "p": "E",
+                "m": 35
+              }
+            ],
+            "4": [
+              {
+                "p": "E",
+                "m": 50
+              }
+            ],
+            "5": [
+              {
+                "p": "E",
+                "mi": 4
+              },
+              {
+                "p": "T",
+                "mi": 3
+              },
+              {
+                "p": "W",
+                "m": 6
+              },
+              {
+                "p": "E",
+                "mi": 2
+              }
+            ],
+            "6": [
+              {
+                "p": "E",
+                "m": 60
+              }
+            ],
+            "7": [
+              {
+                "p": "E",
+                "m": 90
+              }
+            ]
+          },
+          "raceWeekKm": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "6.4 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
+            "6": "60 min E",
+            "7": "90 min E"
+          },
+          "raceWeekMi": {
+            "1": "20-30 min E",
+            "2": "0-20 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "4 E + 3 × (1 T w/2 min rests) + 2 E",
+            "6": "60 min E",
+            "7": "90 min E"
+          }
+        },
+        "2": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 8
+            }
+          ],
+          "q1Km": "3.2 km E + 3 × (3.2 km T w/2 min rests) + 12.9 km E",
+          "q1Mi": "2 E + 3 × (2 T w/2 min rests) + 8 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 1.6 km T + 3.2 km M + 1.6 km T + 3.2 km M + 3.2 km E",
+          "q2Mi": "4 E + 1 T + 2 M + 1 T + 2 M + 2 E"
+        },
+        "3": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 9.7 km M + 1.6 km T + 9.7 km M + 1.6 km T + 3.2 km E",
+          "q1Mi": "4 E + 6 M + 1 T + 6 M + 1 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 4 × (3.2 km T w/2 min E) + 3.2 km E",
+          "q2Mi": "4 E + 4 × (2 T w/2 min E) + 2 E"
+        },
+        "4": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 21
+            }
+          ],
+          "q1Km": "steady E run of 33.8 km",
+          "q1Mi": "steady E run of 21 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "I",
+              "mi": 1.864113
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "R",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 3 × (1.6 km T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "5 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E"
+        },
+        "5": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 6.4 km T + 12.9 km E + 6.4 km T + 3.2 km E",
+          "q1Mi": "2 E + 4 T + 8 E + 4 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E"
+        },
+        "6": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 1
+            }
+          ],
+          "q1Km": "6.4 km E + 12.9 km M + 1.6 km T + 6.4 km M + 1.6 km T + 1.6 km M + 1.6 km E",
+          "q1Mi": "4 E + 8 M + 1 T + 4 M + 1 T + 1 M + 1 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 6.4 km T + 4 min rest + 2 × (4.8 km T w/3 min jg between) + 3.2 km E",
+          "q2Mi": "3 E + 4 T + 4 min rest + 2 × (3 T w/3 min jg between) + 2 E"
+        },
+        "7": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 22
+            }
+          ],
+          "q1Km": "steady E run of 35.4 km",
+          "q1Mi": "steady E run of 22 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 12.9 km M + 6.4 km T + 3.2 km E",
+          "q2Mi": "3 E + 8 M + 4 T + 2 E"
+        },
+        "8": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "M",
+              "mi": 13
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "9.7 km E + 20.9 km M + 3.2 km E",
+          "q1Mi": "6 E + 13 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 2.236935
+            },
+            {
+              "p": "E",
+              "m": 9
+            },
+            {
+              "p": "I",
+              "mi": 1.864113
+            },
+            {
+              "p": "E",
+              "m": 9
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 3 × (1,200 I w/3 min jg) + 3 × (1 km I w/3 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 3 × (1,200 I w/3 min jg) + 3 × (1 km I w/3 min jg) + 2 E"
+        },
+        "9": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 9.7 km M + 1.6 km T + 9.7 km M + 3.2 km E",
+          "q1Mi": "4 E + 6 M + 1 T + 6 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 6.4 km T + 4 min E + 6.4 km T + 4 min E + 3.2 km T + 3.2 km E",
+          "q2Mi": "3 E + 4 T + 4 min E + 4 T + 4 min E + 2 T + 2 E"
+        },
+        "10": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 21
+            }
+          ],
+          "q1Km": "steady E run of 33.8 km",
+          "q1Mi": "steady E run of 21 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 16
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 25.7 km M + 3.2 km E",
+          "q2Mi": "2 E + 16 M + 2 E"
+        },
+        "11": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 10
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 8
+            }
+          ],
+          "q1Km": "16.1 km E + 6.4 km T + 12.9 km E",
+          "q1Mi": "10 E + 4 T + 8 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "8 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E"
+        },
+        "12": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 12.9 km M + 1.6 km T + 9.7 km M + 1.6 km T + 3.2 km E",
+          "q1Mi": "4 E + 8 M + 1 T + 6 M + 1 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "W",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "W",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 6.4 km T + 4 min rest + 4.8 km T + 3 min rest + 3.2 km T + 2 min rest + 1.6 km T + 3.2 km E",
+          "q2Mi": "6 E + 4 T + 4 min rest + 3 T + 3 min rest + 2 T + 2 min rest + 1 T + 2 E"
+        },
+        "13": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 20
+            }
+          ],
+          "q1Km": "steady E run of 32.2 km",
+          "q1Mi": "steady E run of 20 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 10
+            },
+            {
+              "p": "W",
+              "m": 10
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "8 E + 5 × (2 T w/2 min rests) + 2 E"
+        },
+        "14": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 2 × (3.2 km T w/2 min rests) + 60 min E + 4.8 km T + 3.2 km E",
+          "q1Mi": "2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 4.970968
+            },
+            {
+              "p": "E",
+              "m": 16
+            },
+            {
+              "p": "E",
+              "mi": 3
+            }
+          ],
+          "q2Km": "12.9 km E + 8 × (1 km I w/2 min jg) + 4.8 km E or 12.9 km E + 5 × (1 I w/ 4 min jg) + 4.8 km E",
+          "q2Mi": "8 E + 8 × (1 km I w/2 min jg) + 3 E or 8 E + 5 × (1 I w/ 4 min jg) + 3 E"
+        },
+        "15": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 12.9 km M + 1.6 km T + 6.4 km M + 1.6 km T + 4.8 km M + 3.2 km E",
+          "q1Mi": "2 E + 8 M + 1 T + 4 M + 1 T + 3 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 4 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "8 E + 4 × (2 T w/2 min rests) + 2 E"
+        },
+        "16": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 23
+            }
+          ],
+          "q1Km": "steady E run of 37.0 km",
+          "q1Mi": "steady E run of 23 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 6.4 km T + 4 min E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "17": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 4.8 km T + 60 min E + 4.8 km T + 3.2 km E",
+          "q1Mi": "4 E + 3 T + 60 min E + 3 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.106855
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (1 km I or 3 min H w/ 2 min jg) + 6 × (400 R w/ 400 m jg) + 3.2 km E",
+          "q2Mi": "8 E + 5 × (1 km I or 3 min H w/ 2 min jg) + 6 × (400 R w/ 400 m jg) + 2 E"
+        },
+        "18": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "8.0 km E + 9.7 km M + 1.6 km T + 8.0 km M + 1.6 km T + 1.6 km M + 3.2 km E (a nonstop workout)",
+          "q1Mi": "5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 2 E (a nonstop workout)",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 10
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "16.1 km E + 6.4 km T + 4 min rest + 6.4 km T + 3.2 km E",
+          "q2Mi": "10 E + 4 T + 4 min rest + 4 T + 2 E"
+        }
+      }
+    },
+    {
+      "name": "More than 120 miles (193 km) per week",
+      "minMiles": 121,
+      "maxMiles": 999,
+      "weeks": {
+        "1": {
+          "raceWeekSegments": {
+            "1": [
+              {
+                "p": "E",
+                "m": 25
+              }
+            ],
+            "2": [
+              {
+                "p": "E",
+                "m": 35
+              }
+            ],
+            "3": [
+              {
+                "p": "E",
+                "m": 35
+              }
+            ],
+            "4": [
+              {
+                "p": "E",
+                "m": 50
+              }
+            ],
+            "5": [
+              {
+                "p": "E",
+                "mi": 4
+              },
+              {
+                "p": "T",
+                "mi": 3
+              },
+              {
+                "p": "W",
+                "m": 6
+              },
+              {
+                "p": "E",
+                "mi": 2
+              }
+            ],
+            "6": [
+              {
+                "p": "E",
+                "m": 60
+              }
+            ],
+            "7": [
+              {
+                "p": "E",
+                "m": 90
+              }
+            ]
+          },
+          "raceWeekKm": {
+            "1": "20-30 min E",
+            "2": "30-40 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "6.4 km E + 3 × (1.6 km T w/2 min rests) + 3.2 km E",
+            "6": "60 min E",
+            "7": "90 min E"
+          },
+          "raceWeekMi": {
+            "1": "20-30 min E",
+            "2": "30-40 min E 1 day: 20-30 min E (tomorrow is the race)",
+            "3": "30-40 min E",
+            "4": "50 min E",
+            "5": "4 E + 3 × (1 T w/2 min rests) + 2 E",
+            "6": "60 min E",
+            "7": "90 min E"
+          }
+        },
+        "2": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 8
+            }
+          ],
+          "q1Km": "3.2 km E + 3 × (3.2 km T w/2 min rests) + 12.9 km E",
+          "q1Mi": "2 E + 3 × (2 T w/2 min rests) + 8 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 1.6 km T + 3.2 km M + 1.6 km T + 3.2 km M + 3.2 km E",
+          "q2Mi": "4 E + 1 T + 2 M + 1 T + 2 M + 2 E"
+        },
+        "3": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 9.7 km M + 1.6 km T + 9.7 km M + 1.6 km T + 3.2 km E",
+          "q1Mi": "4 E + 6 M + 1 T + 6 M + 1 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "E",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 4 × (3.2 km T w/2 min jg) + 3.2 km E",
+          "q2Mi": "2 E + 4 × (2 T w/2 min jg) + 2 E"
+        },
+        "4": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 21
+            }
+          ],
+          "q1Km": "steady E run of 33.8 km",
+          "q1Mi": "steady E run of 21 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "I",
+              "mi": 1.864113
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "R",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 0.745644
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 3 × (1.6 km T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "5 E + 3 × (1 T w/1 min jg) + 3 × (1 km I w/2 min jg) + 3 × (400 R w/400 jg) + 2 E"
+        },
+        "5": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 6.4 km T + 12.9 km E + 6.4 km T + 3.2 km E",
+          "q1Mi": "2 E + 4 T + 8 E + 4 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "6 E + 6 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E"
+        },
+        "6": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 12.9 km M + 1.6 km T + 6.4 km M + 1.6 km T + 1.6 km M + 3.2 km E",
+          "q1Mi": "4 E + 8 M + 1 T + 4 M + 1 T + 1 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 6
+            },
+            {
+              "p": "W",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 6.4 km T + 4 min E + 2 × (4.8 km T w/3 min rests) + 3.2 km E",
+          "q2Mi": "3 E + 4 T + 4 min E + 2 × (3 T w/3 min rests) + 2 E"
+        },
+        "7": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 22
+            }
+          ],
+          "q1Km": "steady E run of 35.4 km",
+          "q1Mi": "steady E run of 22 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "6.4 km E + 12.9 km M + 6.4 km T + 3.2 km E",
+          "q2Mi": "4 E + 8 M + 4 T + 2 E"
+        },
+        "8": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "M",
+              "mi": 13
+            },
+            {
+              "p": "E",
+              "mi": 3
+            }
+          ],
+          "q1Km": "9.7 km E + 20.9 km M + 4.8 km E",
+          "q1Mi": "6 E + 13 M + 3 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "I",
+              "mi": 1.864113
+            },
+            {
+              "p": "E",
+              "m": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 3 × (1 I w/4 min jg) + 3 × (1 km I w/2 min jg) + 3.2 km E",
+          "q2Mi": "8 E + 3 × (1 I w/4 min jg) + 3 × (1 km I w/2 min jg) + 2 E"
+        },
+        "9": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 9.7 km M + 1.6 km T + 9.7 km M + 3.2 km E",
+          "q1Mi": "4 E + 6 M + 1 T + 6 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 3
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "4.8 km E + 6.4 km T + 4 min E + 6.4 km T + 4 min E + 3.2 km T + 3.2 km E",
+          "q2Mi": "3 E + 4 T + 4 min E + 4 T + 4 min E + 2 T + 2 E"
+        },
+        "10": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 21
+            }
+          ],
+          "q1Km": "steady E run of 33.8 km",
+          "q1Mi": "steady E run of 21 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 16
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "3.2 km E + 25.7 km M + 3.2 km E",
+          "q2Mi": "2 E + 16 M + 2 E"
+        },
+        "11": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 10
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 8
+            }
+          ],
+          "q1Km": "16.1 km E + 6.4 km T + 12.9 km E",
+          "q1Mi": "10 E + 4 T + 8 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 4.970968
+            },
+            {
+              "p": "E",
+              "m": 16
+            },
+            {
+              "p": "R",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 0.994192
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 8 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 3.2 km E",
+          "q2Mi": "8 E + 8 × (1 km I w/2 min jg) + 4 × (400 R w/400 jg) + 2 E"
+        },
+        "12": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 12.9 km M + 1.6 km T + 9.7 km M + 1.6 km T + 3.2 km E",
+          "q1Mi": "4 E + 8 M + 1 T + 6 M + 1 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "9.7 km E + 6.4 km T + 4 min E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "6 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "13": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 20
+            }
+          ],
+          "q1Km": "steady E run of 32.2 km",
+          "q1Mi": "steady E run of 20 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 10
+            },
+            {
+              "p": "W",
+              "m": 10
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 5 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "8 E + 5 × (2 T w/2 min rests) + 2 E"
+        },
+        "14": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "W",
+              "m": 4
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 2 × (3.2 km T w/2 min rests) + 60 min E + 4.8 km T + 3.2 km E",
+          "q1Mi": "2 E + 2 × (2 T w/2 min rests) + 60 min E + 3 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 4.970968
+            },
+            {
+              "p": "E",
+              "m": 16
+            },
+            {
+              "p": "E",
+              "mi": 3
+            }
+          ],
+          "q2Km": "12.9 km E + 8 × (1 km I w/2 min jg) + 4.8 km E or 12.9 km E + 5 × (1 I w/4 min jg) + 4.8 km E",
+          "q2Mi": "8 E + 8 × (1 km I w/2 min jg) + 3 E or 8 E + 5 × (1 I w/4 min jg) + 3 E"
+        },
+        "15": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 2
+            },
+            {
+              "p": "M",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "3.2 km E + 12.9 km M + 1.6 km T + 6.4 km M + 1.6 km T + 4.8 km M + 3.2 km E",
+          "q1Mi": "2 E + 8 M + 1 T + 4 M + 1 T + 3 M + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "T",
+              "mi": 8
+            },
+            {
+              "p": "W",
+              "m": 8
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 4 × (3.2 km T w/2 min rests) + 3.2 km E",
+          "q2Mi": "8 E + 4 × (2 T w/2 min rests) + 2 E"
+        },
+        "16": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 23
+            }
+          ],
+          "q1Km": "steady E run of 37.0 km",
+          "q1Mi": "steady E run of 23 miles",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "m": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 3
+            },
+            {
+              "p": "T",
+              "mi": 2
+            },
+            {
+              "p": "E",
+              "m": 2
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "8.0 km E + 6.4 km T + 4 min E + 4.8 km T + 3 min E + 3.2 km T + 2 min E + 1.6 km T + 3.2 km E",
+          "q2Mi": "5 E + 4 T + 4 min E + 3 T + 3 min E + 2 T + 2 min E + 1 T + 2 E"
+        },
+        "17": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 4
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "m": 60
+            },
+            {
+              "p": "T",
+              "mi": 3
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "6.4 km E + 4.8 km T + 60 min E + 4.8 km T + 3.2 km E",
+          "q1Mi": "4 E + 3 T + 60 min E + 3 T + 2 E",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 8
+            },
+            {
+              "p": "I",
+              "mi": 3.728226
+            },
+            {
+              "p": "E",
+              "m": 12
+            },
+            {
+              "p": "R",
+              "mi": 1.491288
+            },
+            {
+              "p": "E",
+              "mi": 1.491288
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "12.9 km E + 6 × (1 km I w/2 min jg) + 6 × (400 R w/400 m jg) + 3.2 km E",
+          "q2Mi": "8 E + 6 × (1 km I w/2 min jg) + 6 × (400 R w/400 m jg) + 2 E"
+        },
+        "18": {
+          "q1Segments": [
+            {
+              "p": "E",
+              "mi": 5
+            },
+            {
+              "p": "M",
+              "mi": 6
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 5
+            },
+            {
+              "p": "T",
+              "mi": 1
+            },
+            {
+              "p": "M",
+              "mi": 1
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q1Km": "8.0 km E + 9.7 km M + 1.6 km T + 8.0 km M + 1.6 km T + 1.6 km M + 3.2 km E (a nonstop workout)",
+          "q1Mi": "5 E + 6 M + 1 T + 5 M + 1 T + 1 M + 2 E (a nonstop workout)",
+          "q2Segments": [
+            {
+              "p": "E",
+              "mi": 10
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 1
+            },
+            {
+              "p": "T",
+              "mi": 4
+            },
+            {
+              "p": "E",
+              "mi": 2
+            }
+          ],
+          "q2Km": "16.1 km E + 6.4 km T + 1.6 km E + 6.4 km T + 3.2 km E",
+          "q2Mi": "10 E + 4 T + 1 E + 4 T + 2 E"
+        }
+      }
+    }
+  ]
+}

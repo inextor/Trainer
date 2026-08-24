@@ -1,9 +1,10 @@
 {
   "name": "trainer",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "commonjs",
   "scripts": {
+    "build:plans": "node scripts/build-plans.js",
     "test:e2e": "playwright test"
   },
   "devDependencies": {

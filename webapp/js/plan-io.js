@@ -1,6 +1,7 @@
 /**
  * Plan IO - Export / import the training plan as a JSON file.
- * A "plan" is the full persisted state: { config, completed, exportedAt }.
+ * A "plan" is the full persisted state plus the generated calendar:
+ * { config, completed, plan, exportedAt }.
  */
 const PlanIO = (() => {
   const FILE_EXT = 'json';
@@ -16,18 +17,32 @@ const PlanIO = (() => {
     return `${SUFFIX}-${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}.${FILE_EXT}`;
   }
 
+  /** Deep-copy a generated calendar, converting Date objects to ISO strings. */
+  function serializeCalendar(cal) {
+    if (!cal) return null;
+    return JSON.parse(JSON.stringify(cal, (key, value) => {
+      if (value instanceof Date) return value.toISOString();
+      return value;
+    }));
+  }
+
   /** Build the serializable plan object from current stored state. */
   async function exportPlan() {
     const saved = await Storage.load();
     if (!saved || !saved.config || !saved.config.event || !saved.config.raceDate) {
       return null;
     }
+    let calendar = null;
+    if (typeof CalendarGenerator !== 'undefined' && typeof CalendarGenerator.generateCalendar === 'function') {
+      calendar = CalendarGenerator.generateCalendar(saved.config);
+    }
     return {
       format: 'training-plan',
-      version: 1,
+      version: 2,
       exportedAt: new Date().toISOString(),
       config: saved.config,
-      completed: saved.completed || {}
+      completed: saved.completed || {},
+      plan: serializeCalendar(calendar)
     };
   }
 
