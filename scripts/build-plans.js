@@ -194,7 +194,6 @@ const categories = structured.categories.map(cat => {
 const out = {
   format: 'plans-2q-segments',
   version: 1,
-  generatedAt: new Date().toISOString(),
   categories
 };
 
