@@ -700,7 +700,7 @@
         }
       ]
     },
-    "week10_note": "During week 10, try to complete a steady 10K run (easy effort if raced)."
+    "week10_note": "steady_10k"
   },
   "tables": {
     "5k_10k_40_50": {
@@ -5974,7 +5974,6 @@
   "marathon_2q_structured": {
     "categories": [
       {
-        "name": "Up to 40 miles (64 km) per week",
         "minMiles": 0,
         "maxMiles": 40,
         "weeks": {
@@ -6113,7 +6112,6 @@
         }
       },
       {
-        "name": "41-55 miles (66-89 km) per week",
         "minMiles": 41,
         "maxMiles": 55,
         "weeks": {
@@ -6252,7 +6250,6 @@
         }
       },
       {
-        "name": "56-70 miles (90-113 km) per week",
         "minMiles": 56,
         "maxMiles": 70,
         "weeks": {
@@ -6391,7 +6388,6 @@
         }
       },
       {
-        "name": "71 to 85 miles (114-137 km) per week",
         "minMiles": 71,
         "maxMiles": 85,
         "weeks": {
@@ -6530,7 +6526,6 @@
         }
       },
       {
-        "name": "86-100 miles (138-161 km) per week",
         "minMiles": 86,
         "maxMiles": 100,
         "weeks": {
@@ -6669,7 +6664,6 @@
         }
       },
       {
-        "name": "101-120 miles (163-193 km) per week",
         "minMiles": 101,
         "maxMiles": 120,
         "weeks": {
@@ -6808,7 +6802,6 @@
         }
       },
       {
-        "name": "More than 120 miles (193 km) per week",
         "minMiles": 121,
         "maxMiles": 999,
         "weeks": {

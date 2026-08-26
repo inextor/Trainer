@@ -12,98 +12,98 @@
       <a href="index.html" class="brand">
         <span class="brand-mark">TC</span>
         <span class="brand-text">
-          <h1>Training Calendar</h1>
-          <span class="brand-tagline">VDOT · Training Planner</span>
+          <h1 data-i18n="brand.title">Training Calendar</h1>
+          <span class="brand-tagline" data-i18n="brand.tagline">VDOT · Training Planner</span>
           <span class="app-version">v1.0.7</span>
         </span>
       </a>
       <nav>
-        <a href="index.html" class="active">Configuration</a>
-        <a href="calendar.html" id="viewPlanLink">Calendar</a>
+        <a href="index.html" class="active" data-i18n="nav.configuration">Configuration</a>
+        <a href="calendar.html" id="viewPlanLink" data-i18n="nav.calendar">Calendar</a>
       </nav>
     </div>
   </header>
   <div class="app">
     <main class="main">
       <section class="config-panel">
-        <h2>Training Configuration</h2>
-        <p class="panel-sub">Set your race, availability and fitness to build a personalized plan.</p>
+        <h2 data-i18n="form.title">Training Configuration</h2>
+        <p class="panel-sub" data-i18n="form.subtitle">Set your race, availability and fitness to build a personalized plan.</p>
         <form id="trainingForm">
-          <div class="section-title">Race Details</div>
+          <div class="section-title" data-i18n="section.raceDetails">Race Details</div>
           <div class="form-group">
-            <label for="event">Race Event</label>
+            <label for="event" data-i18n="field.raceEvent">Race Event</label>
             <select id="event" required>
-              <option value="">Select event...</option>
+              <option value="" data-i18n="field.selectEvent">Select event...</option>
               <option value="5k">5K</option>
               <option value="10k">10K</option>
-              <option value="half_marathon">Half Marathon</option>
-              <option value="marathon">Marathon</option>
+              <option value="half_marathon" data-i18n="event.halfMarathon">Half Marathon</option>
+              <option value="marathon" data-i18n="event.marathon">Marathon</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="raceDate">Race Date</label>
+            <label for="raceDate" data-i18n="field.raceDate">Race Date</label>
             <input type="date" id="raceDate" required>
           </div>
 
-          <div class="section-title">Schedule</div>
+          <div class="section-title" data-i18n="section.schedule">Schedule</div>
           <div class="form-group">
-            <label for="daysPerWeek">Days Available Per Week</label>
+            <label for="daysPerWeek" data-i18n="field.daysPerWeek">Days Available Per Week</label>
             <div class="radio-group">
               <label class="radio-label">
                 <input type="radio" name="daysPerWeek" value="4" checked>
-                <span>4 days</span>
+                <span>4 <span data-i18n="field.daysUnit">days</span></span>
               </label>
               <label class="radio-label">
                 <input type="radio" name="daysPerWeek" value="5">
-                <span>5 days</span>
+                <span>5 <span data-i18n="field.daysUnit">days</span></span>
               </label>
               <label class="radio-label">
                 <input type="radio" name="daysPerWeek" value="6">
-                <span>6 days</span>
+                <span>6 <span data-i18n="field.daysUnit">days</span></span>
               </label>
               <label class="radio-label">
                 <input type="radio" name="daysPerWeek" value="7">
-                <span>7 days</span>
+                <span>7 <span data-i18n="field.daysUnit">days</span></span>
               </label>
             </div>
           </div>
 
           <div class="form-group">
-            <label>Distance Units</label>
+            <label data-i18n="field.distanceUnits">Distance Units</label>
             <div class="radio-group">
               <label class="radio-label">
                 <input type="radio" name="units" value="km" checked>
-                <span>Kilometers</span>
+                <span data-i18n="units.kilometers">Kilometers</span>
               </label>
               <label class="radio-label">
                 <input type="radio" name="units" value="miles">
-                <span>Miles</span>
+                <span data-i18n="units.miles">Miles</span>
               </label>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="currentMileage" id="mileageLabel">Current Weekly Distance</label>
+            <label for="currentMileage" id="mileageLabel" data-i18n="field.currentWeeklyDistance">Current Weekly Distance</label>
             <input type="number" id="currentMileage" min="0" max="200" value="32" required>
-            <span class="hint" id="mileageHint">km per week</span>
+            <span class="hint" id="mileageHint" data-i18n="field.kmPerWeek">km per week</span>
           </div>
 
-          <div class="section-title">Fitness</div>
+          <div class="section-title" data-i18n="section.fitness">Fitness</div>
           <div class="form-group">
-            <label>VDOT Level</label>
+            <label data-i18n="field.vdotLevel">VDOT Level</label>
             <div class="vdot-input-method">
               <div class="method-tabs">
-                <button type="button" class="tab active" data-method="raceTime">From Race Time</button>
-                <button type="button" class="tab" data-method="manual">Manual VDOT</button>
+                <button type="button" class="tab active" data-method="raceTime" data-i18n="field.fromRaceTime">From Race Time</button>
+                <button type="button" class="tab" data-method="manual" data-i18n="field.manualVdot">Manual VDOT</button>
               </div>
               <div id="raceTimeMethod" class="method-content active">
                 <div class="form-group">
                   <select id="raceDistance">
                     <option value="5k">5K</option>
                     <option value="10k">10K</option>
-                    <option value="half">Half Marathon</option>
-                    <option value="marathon">Marathon</option>
+                    <option value="half" data-i18n="event.halfMarathon">Half Marathon</option>
+                    <option value="marathon" data-i18n="event.marathon">Marathon</option>
                   </select>
                 </div>
                 <div class="time-input">
@@ -113,7 +113,7 @@
                   <span class="time-sep">:</span>
                   <input type="number" id="raceSeconds" min="0" max="59" placeholder="ss" class="time-field">
                 </div>
-                <button type="button" id="calculateVdot" class="btn-secondary btn-block">Calculate</button>
+                <button type="button" id="calculateVdot" class="btn-secondary btn-block" data-i18n="field.calculate">Calculate</button>
                 <div id="vdotResult" class="vdot-result hidden"></div>
               </div>
               <div id="manualMethod" class="method-content">
@@ -127,28 +127,28 @@
           </div>
 
           <div class="form-group">
-            <label>Heart Rate (for zone display)</label>
+            <label data-i18n="field.heartRate">Heart Rate (for zone display)</label>
             <div class="hr-row">
               <div>
                 <input type="number" id="maxHr" min="120" max="220" placeholder="max" value="190">
-                <span class="hint">max bpm</span>
+                <span class="hint" data-i18n="field.maxBpm">max bpm</span>
               </div>
               <div>
                 <input type="number" id="restHr" min="30" max="100" placeholder="rest" value="60">
-                <span class="hint">rest bpm</span>
+                <span class="hint" data-i18n="field.restBpm">rest bpm</span>
               </div>
             </div>
-            <span class="hint">Zones are estimates from %VO2max (Swain formula). Paces remain the source of truth.</span>
+            <span class="hint" data-i18n="field.hrNote">Zones are estimates from %VO2max (Swain formula). Paces remain the source of truth.</span>
           </div>
 
-          <button type="submit" class="btn-primary">Generate Training Plan</button>
-          <button type="button" id="resetPlan" class="btn-secondary btn-reset">Clear Saved Plan</button>
+          <button type="submit" class="btn-primary" data-i18n="field.generatePlan">Generate Training Plan</button>
+          <button type="button" id="resetPlan" class="btn-secondary btn-reset" data-i18n="field.clearPlan">Clear Saved Plan</button>
 
           <div class="plan-io">
-            <span class="plan-io-label">Plan Backup</span>
+            <span class="plan-io-label" data-i18n="field.planBackup">Plan Backup</span>
             <div class="plan-io-buttons">
-              <button type="button" id="exportPlan" class="btn-secondary">Export Plan</button>
-              <button type="button" id="importPlan" class="btn-secondary">Import Plan</button>
+              <button type="button" id="exportPlan" class="btn-secondary" data-i18n="field.exportPlan">Export Plan</button>
+              <button type="button" id="importPlan" class="btn-secondary" data-i18n="field.importPlan">Import Plan</button>
             </div>
             <input type="file" id="importFile" accept=".json,application/json" class="hidden">
             <span class="hint" id="planIoStatus"></span>
@@ -158,10 +158,12 @@
     </main>
 
     <footer class="footer">
-      <p>Training plan calendar generator v1.0.7</p>
+      <p data-i18n="footer.text">Training plan calendar generator v1.0.7</p>
     </footer>
   </div>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/workout-render.js"></script>
   <script src="js/vdot-calculator.js"></script>
   <script src="js/calendar-generator.js"></script>
   <script src="js/storage.js"></script>

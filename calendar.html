@@ -12,14 +12,14 @@
       <a href="index.html" class="brand">
         <span class="brand-mark">TC</span>
         <span class="brand-text">
-          <h1>Training Calendar</h1>
-          <span class="brand-tagline">VDOT · Training Planner</span>
+          <h1 data-i18n="brand.title">Training Calendar</h1>
+          <span class="brand-tagline" data-i18n="brand.tagline">VDOT · Training Planner</span>
           <span class="app-version">v1.0.7</span>
         </span>
       </a>
       <nav>
-        <a href="index.html">Configuration</a>
-        <a href="calendar.html" class="active">Calendar</a>
+        <a href="index.html" data-i18n="nav.configuration">Configuration</a>
+        <a href="calendar.html" class="active" data-i18n="nav.calendar">Calendar</a>
       </nav>
     </div>
   </header>
@@ -30,73 +30,73 @@
       <section class="calendar-panel" id="calendarPanel">
         <div class="calendar-header">
           <div class="calendar-title-group">
-            <h2>Training Calendar</h2>
+            <h2 data-i18n="cal.title">Training Calendar</h2>
             <div class="countdown" id="countdown"></div>
           </div>
           <div class="calendar-nav">
-            <button id="prevWeek" class="btn-nav">&laquo; Prev</button>
-            <span id="weekIndicator">Week 1</span>
-            <button id="nextWeek" class="btn-nav">Next &raquo;</button>
+            <button id="prevWeek" class="btn-nav" data-i18n-html="cal.prev">&laquo; Prev</button>
+            <span id="weekIndicator" data-i18n="cal.weekIndicator">Week 1</span>
+            <button id="nextWeek" class="btn-nav" data-i18n-html="cal.next">Next &raquo;</button>
           </div>
         </div>
 
         <div class="plan-io plan-io-toolbar">
-          <button type="button" id="exportPlan" class="btn-secondary">Export Plan</button>
-          <button type="button" id="importPlan" class="btn-secondary">Import Plan</button>
+          <button type="button" id="exportPlan" class="btn-secondary" data-i18n="field.exportPlan">Export Plan</button>
+          <button type="button" id="importPlan" class="btn-secondary" data-i18n="field.importPlan">Import Plan</button>
           <input type="file" id="importFile" accept=".json,application/json" class="hidden">
           <span class="hint" id="planIoStatus"></span>
         </div>
 
         <div id="noPlan" class="hidden">
-          <h3>No training plan yet</h3>
-          <p>Configure your race to generate a personalized training calendar.</p>
-          <a href="index.html" class="btn-primary">Create a Training Plan</a>
+          <h3 data-i18n="cal.noPlanTitle">No training plan yet</h3>
+          <p data-i18n="cal.noPlanBody">Configure your race to generate a personalized training calendar.</p>
+          <a href="index.html" class="btn-primary" data-i18n="cal.createPlan">Create a Training Plan</a>
         </div>
       </section>
 
       <!-- Card 2: Your Training Paces -->
       <section class="pace-zones" id="paceZones">
-        <h3>Your Training Paces (VDOT <span id="currentVdot">50</span>)</h3>
+        <h3><span data-i18n="cal.yourPacesPrefix">Your Training Paces (VDOT</span> <span id="currentVdot">50</span><span data-i18n="cal.yourPacesSuffix">)</span></h3>
         <div class="pace-grid">
           <div class="pace-item">
-            <span class="pace-type">Easy</span>
+            <span class="pace-type" data-i18n="zone.E">Easy</span>
             <span class="pace-value" id="paceEasy">9:15-10:00</span>
             <span class="pace-km" id="paceEasyKm"></span>
           </div>
           <div class="pace-item">
-            <span class="pace-type">Marathon</span>
+            <span class="pace-type" data-i18n="zone.M">Marathon</span>
             <span class="pace-value" id="paceMarathon">6:36</span>
             <span class="pace-km" id="paceMarathonKm"></span>
           </div>
           <div class="pace-item">
-            <span class="pace-type">Tempo</span>
+            <span class="pace-type" data-i18n="zone.T">Tempo</span>
             <span class="pace-value" id="paceTempo">6:08</span>
             <span class="pace-km" id="paceTempoKm"></span>
           </div>
           <div class="pace-item">
-            <span class="pace-type">Interval</span>
+            <span class="pace-type" data-i18n="zone.I">Interval</span>
             <span class="pace-value" id="paceInterval">5:47</span>
             <span class="pace-km" id="paceIntervalKm"></span>
           </div>
           <div class="pace-item">
-            <span class="pace-type">Repetition</span>
+            <span class="pace-type" data-i18n="zone.R">Repetition</span>
             <span class="pace-value" id="paceRepetition">5:13</span>
             <span class="pace-km" id="paceRepetitionKm"></span>
           </div>
         </div>
         <div class="hr-zones" id="hrZones">
-          <h4>Heart-Rate Zones (est.)</h4>
+          <h4 data-i18n="cal.hrZones">Heart-Rate Zones (est.)</h4>
           <div class="pace-grid" id="hrGrid"></div>
         </div>
         <div class="zone-legend" id="zoneLegend">
-          <span class="legend-item"><span class="legend-dot easy"></span> E Easy</span>
-          <span class="legend-item"><span class="legend-dot marathon"></span> M Marathon</span>
-          <span class="legend-item"><span class="legend-dot tempo"></span> T Tempo</span>
-          <span class="legend-item"><span class="legend-dot interval"></span> I Interval</span>
-          <span class="legend-item"><span class="legend-dot repetition"></span> R Repetition</span>
-          <span class="legend-item"><span class="legend-dot long"></span> L Long</span>
-          <span class="legend-item"><span class="legend-dot rest"></span> W Walk / Rest</span>
-          <span class="legend-item"><span class="legend-dot repetition"></span> ST Strides</span>
+          <span class="legend-item"><span class="legend-dot easy"></span> <span data-i18n="legend.easy">E Easy</span></span>
+          <span class="legend-item"><span class="legend-dot marathon"></span> <span data-i18n="legend.marathon">M Marathon</span></span>
+          <span class="legend-item"><span class="legend-dot tempo"></span> <span data-i18n="legend.tempo">T Tempo</span></span>
+          <span class="legend-item"><span class="legend-dot interval"></span> <span data-i18n="legend.interval">I Interval</span></span>
+          <span class="legend-item"><span class="legend-dot repetition"></span> <span data-i18n="legend.repetition">R Repetition</span></span>
+          <span class="legend-item"><span class="legend-dot long"></span> <span data-i18n="legend.long">L Long</span></span>
+          <span class="legend-item"><span class="legend-dot rest"></span> <span data-i18n="legend.walk">W Walk / Rest</span></span>
+          <span class="legend-item"><span class="legend-dot repetition"></span> <span data-i18n="legend.strides">ST Strides</span></span>
         </div>
       </section>
 
@@ -111,7 +111,7 @@
     </main>
 
     <footer class="footer">
-      <p>Training plan calendar generator v1.0.7</p>
+      <p data-i18n="footer.text">Training plan calendar generator v1.0.7</p>
     </footer>
   </div>
 
@@ -122,10 +122,13 @@
     <div id="dayDialogContent"></div>
   </dialog>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/workout-render.js"></script>
   <script src="js/vdot-calculator.js"></script>
   <script src="js/calendar-generator.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/plan-io.js"></script>
+  <script src="js/fit-io.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

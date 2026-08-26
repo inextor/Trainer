@@ -47,7 +47,7 @@ const CalendarGenerator = (() => {
         out.push({ p: seg.p, m: seg.m != null ? seg.m : (seg.dur || 0) });
         if (seg.rec) out.push({ p: seg.rec.p, m: seg.rec.m });
       }
-      if (seg.p === 'ST') out.push({ p: 'ST', m: seg.dur || 0.3, note: `${seg.times || 1} strides` });
+      if (seg.p === 'ST') out.push({ p: 'ST', m: seg.dur || 0.3, times: seg.times || 1, note: '' });
       return out;
     }).flat();
   }
@@ -65,12 +65,30 @@ const CalendarGenerator = (() => {
     return miles;
   }
 
-  function segsToDetail(segs) {
+  function segsToDetail(segs, units) {
+    // Compose a localized workout sentence from neutral segments.
+    if (typeof WorkoutRender !== 'undefined') {
+      return WorkoutRender.renderSegments(segs, units);
+    }
+    // Fallback (English) when the renderer is unavailable.
     return segs.map(s => {
       const t = s.m >= 1 ? `${Math.round(s.m)} min` : `${Math.round(s.m * 60)} s`;
       if (s.p === 'ST') return `${s.note || 'strides'}`;
       return `${t} ${s.p}`;
     }).join(' + ');
+  }
+
+  function week10Note() {
+    if (typeof I18n !== 'undefined' && I18n.locale === 'es') return I18n.t('note.week10');
+    return 'During week 10, try to complete a steady 10K run (easy effort if raced).';
+  }
+
+  function catName(cat) {
+    if (typeof WorkoutRender !== 'undefined') {
+      return WorkoutRender.renderCategoryName(cat);
+    }
+    // Fallback (English) when the renderer is unavailable.
+    return `${cat.minMiles}-${cat.maxMiles} miles per week`;
   }
 
   function phaseFor(w) {
@@ -80,8 +98,11 @@ const CalendarGenerator = (() => {
   }
 
   // ---- Novice marathon plan ----
-  function noviceWorkout(w, daysPerWeek, vdot, plans, raceDate) {
+  function noviceWorkout(w, daysPerWeek, vdot, plans, raceDate, units) {
     const plan = plans.novice_marathon;
+    const t = (typeof I18n !== 'undefined') ? I18n.t.bind(I18n) : (k) => k;
+    const restLabel = t('zone.rest') || 'Rest';
+    const taperLabel = t('wr.taper') || 'Taper';
     const block = plan.blocks.find(b => w >= Math.min(...b.weeks) && w <= Math.max(...b.weeks));
     if (block) {
       const sel = plan.daySelection[String(daysPerWeek)] || plan.daySelection['5'];
@@ -91,12 +112,12 @@ const CalendarGenerator = (() => {
         const sess = Object.keys(map).find(k => map[k] === d + 1);
         if (sess) {
           const segs = expandSegments(block.sessions[sess], block.sessions);
-          days.push(makeDay('quality', sess, segs, vdot, plan));
+          days.push(makeDay('quality', sess, segs, vdot, plan, units));
         } else {
-          days.push(makeDay('rest', 'Rest', [], vdot, plan));
+          days.push(makeDay('rest', restLabel, [], vdot, plan, units));
         }
       }
-      return { days, phase: phaseFor(w), note: w === 10 ? plan.week10_note : '' };
+      return { days, phase: phaseFor(w), note: w === 10 ? week10Note() : '' };
     }
     if (w >= 2) {
       const q = plan.weeks9_2[String(w)];
@@ -105,9 +126,9 @@ const CalendarGenerator = (() => {
         const eDay = [{ p: 'E', m: 40 }];
         const days = [];
         for (let d = 0; d < 7; d++) {
-          if (d === 1) days.push(makeDay('quality', 'Q1', q1, vdot, plan));
-          else if (d === 4) days.push(makeDay('quality', 'Q2', q2, vdot, plan));
-          else days.push(makeDay('easy', 'E', eDay, vdot, plan));
+          if (d === 1) days.push(makeDay('quality', 'Q1', q1, vdot, plan, units));
+          else if (d === 4) days.push(makeDay('quality', 'Q2', q2, vdot, plan, units));
+          else days.push(makeDay('easy', 'E', eDay, vdot, plan, units));
         }
         return { days, phase: 'peak', note: '' };
       }
@@ -122,19 +143,19 @@ const CalendarGenerator = (() => {
       placed[dow] = expandSegments(segs);
     }
     for (let di = 0; di < 7; di++) {
-      if (placed[di]) days.push(makeDay('easy', 'Taper', placed[di], vdot, plan));
-      else days.push(makeDay('rest', 'Rest', [], vdot, plan));
+      if (placed[di]) days.push(makeDay('easy', taperLabel, placed[di], vdot, plan, units));
+      else days.push(makeDay('rest', restLabel, [], vdot, plan, units));
     }
     return { days, phase: 'taper', note: '' };
   }
 
-  function makeDay(type, label, segs, vdot, plan) {
+  function makeDay(type, label, segs, vdot, plan, units) {
     return {
       type, label,
       segments: segs,
       totalMinutes: segmentMinutes(segs),
       distanceMiles: segmentDistanceMiles(segs, vdot),
-      detail: segsToDetail(segs)
+      detail: segsToDetail(segs, units)
     };
   }
 
@@ -192,24 +213,22 @@ const CalendarGenerator = (() => {
       return {
         days: [],
         phase: phaseFor(w),
-        note: `2Q • ${cat.name} • Taper week`,
+        note: (typeof I18n !== 'undefined') ? I18n.t('note.2qTaper', { cat: catName(cat) }) : `2Q • ${cat.minMiles}-${cat.maxMiles} miles • Taper week`,
         raceWeek: true,
-        taperSegments: wk.raceWeekSegments,
-        taperKm: wk.raceWeekKm,
-        taperMi: wk.raceWeekMi
+        taperSegments: wk.raceWeekSegments
       };
     }
 
     const eDay = [{ p: 'E', m: 40 }];
-    const q1Detail = units === 'km' ? wk.q1Km : wk.q1Mi;
-    const q2Detail = units === 'km' ? wk.q2Km : wk.q2Mi;
+    const q1Detail = WorkoutRender && WorkoutRender.renderSegments(wk.q1Segments, units);
+    const q2Detail = WorkoutRender && WorkoutRender.renderSegments(wk.q2Segments, units);
     const days = [];
     for (let d = 0; d < 7; d++) {
       if (d === 1) days.push(dayFromSegments('Q1', wk.q1Segments, vdot, q1Detail));
       else if (d === 4) days.push(dayFromSegments('Q2', wk.q2Segments, vdot, q2Detail));
-      else days.push(makeDay('easy', 'E', eDay, vdot, {}));
+      else days.push(makeDay('easy', 'E', eDay, vdot, {}, units));
     }
-    return { days, phase: phaseFor(w), note: `2Q • ${cat.name}` };
+    return { days, phase: phaseFor(w), note: (typeof I18n !== 'undefined') ? I18n.t('note.2q', { cat: catName(cat) }) : `2Q • ${cat.minMiles}-${cat.maxMiles} miles` };
   }
 
   // ---- Standard (distance-based) events, converted to time ----
@@ -238,10 +257,12 @@ const CalendarGenerator = (() => {
     const tpl = (STD[event] && STD[event][String(daysPerWeek)]) || STD[event]['4'] || STD.marathon['4'];
     const days = [];
     const isRecovery = (totalWeeks - weekIdx) % 4 === 0;
+    const t = (typeof I18n !== 'undefined') ? I18n.t.bind(I18n) : (k) => k;
+    const restLabel = t('zone.rest') || 'Rest';
     for (let d = 0; d < 7; d++) {
       const cell = tpl[d];
       if (!cell || cell.type === 'rest' || d >= daysPerWeek) {
-        days.push({ type: 'rest', label: 'Rest', segments: [], totalMinutes: 0, distanceMiles: 0, detail: '' });
+        days.push({ type: 'rest', label: restLabel, segments: [], totalMinutes: 0, distanceMiles: 0, detail: '' });
         continue;
       }
       const zone = cell.zone || 'E';
@@ -256,7 +277,7 @@ const CalendarGenerator = (() => {
         segments: segs,
         totalMinutes: minutes,
         distanceMiles: miles,
-        detail: `${Math.round(minutes)} min ${zone} (~${distStr})`
+        detail: `${Math.round(minutes)} ${t('wr.min')} ${zone} (~${distStr})`
       });
     }
     return { days, phase: phaseFor(totalWeeks - weekIdx), note: '' };
@@ -279,7 +300,7 @@ const CalendarGenerator = (() => {
       const weekStart = new Date(startMonday); weekStart.setDate(startMonday.getDate() + 7 * k);
       let built;
       if (event === 'marathon' && ['3', '4', '5'].includes(String(daysPerWeek)) && plans && plans.novice_marathon) {
-        built = noviceWorkout(w, daysPerWeek, vdot, plans, raceDate);
+        built = noviceWorkout(w, daysPerWeek, vdot, plans, raceDate, units);
       } else if (event === 'marathon' && plans && plans.tables) {
         const weeklyMileageRaw = config.currentMileage || 40;
         const weeklyMiles = (config.units === 'km' ? weeklyMileageRaw / 1.609344 : weeklyMileageRaw);
@@ -293,22 +314,27 @@ const CalendarGenerator = (() => {
       if (built.raceWeek && built.taperSegments) {
         const rd = new Date(raceDate + 'T00:00:00');
         const raceWeekDays = [];
+        const t = (typeof I18n !== 'undefined') ? I18n.t.bind(I18n) : (k) => k;
+        const restLabel = t('zone.rest') || 'Rest';
+        const raceLabel = t('wr.race') || 'RACE';
         for (let di=0; di<7; di++) {
           const dayDate = new Date(weekStart); dayDate.setDate(weekStart.getDate() + di);
           const diff = Math.round((rd - dayDate)/86400000);
           let day;
           if (diff === 0) {
-            day = { type: 'rest', label: 'RACE', segments: [], totalMinutes: 0, distanceMiles: 0, detail: `Race day — ${event}` };
+            day = { type: 'rest', label: raceLabel, segments: [], totalMinutes: 0, distanceMiles: 0, detail: t('wr.raceDay', { event }) };
           } else if (diff >= 1 && diff <= 7 && built.taperSegments[diff]) {
-            const detail = units === 'km' ? built.taperKm[diff] : built.taperMi[diff];
-            if (/^\s*Rest\s*$/i.test(detail)) {
-              day = { type: 'rest', label: 'Rest', segments: [], totalMinutes: 0, distanceMiles: 0, detail };
+            const segs = built.taperSegments[diff];
+            const isRest = segs.length === 0 || segs.every(s => s.p === 'W' || s.p === 'rest');
+            const detail = (WorkoutRender && WorkoutRender.renderSegments(segs, units)) || '';
+            if (isRest) {
+              day = { type: 'rest', label: restLabel, segments: [], totalMinutes: 0, distanceMiles: 0, detail: restLabel };
             } else {
-              const totals = segmentTotals(built.taperSegments[diff], vdot);
-              day = { type: 'easy', label: (detail || 'Easy').slice(0, 30), segments: built.taperSegments[diff], totalMinutes: totals.totalMinutes, distanceMiles: totals.distanceMiles, detail };
+              const totals = segmentTotals(segs, vdot);
+              day = { type: 'easy', label: (detail || t('zone.E') || 'Easy').slice(0, 30), segments: segs, totalMinutes: totals.totalMinutes, distanceMiles: totals.distanceMiles, detail };
             }
           } else {
-            day = { type: 'rest', label: 'Rest', segments: [], totalMinutes: 0, distanceMiles: 0, detail: 'Rest' };
+            day = { type: 'rest', label: restLabel, segments: [], totalMinutes: 0, distanceMiles: 0, detail: restLabel };
           }
           raceWeekDays.push({ ...day, date: dayDate, dayName: DAYS[di] });
         }

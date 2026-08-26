@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const $ = id => document.getElementById(id);
   const isConfigPage = !!$('trainingForm');
   const isCalendarPage = !!$('calendarPanel');
+  const t = (key, vars) => (typeof I18n !== 'undefined' ? I18n.t(key, vars) : key);
+  const locale = (typeof I18n !== 'undefined' && I18n.locale === 'es') ? 'es-ES' : 'en-US';
 
   // ---- Load reference data ----
   async function loadData() {
@@ -32,13 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
     if (min == null) return '';
     const m = Math.floor(min);
     const s = Math.round((min - m) * 60);
-    return s ? `${m} min ${s}s` : `${m} min`;
+    return s ? `${m} ${t('unit.min')} ${s}${t('unit.sec')}` : `${m} ${t('unit.min')}`;
   }
   function fmtDist(miles, units) {
     if (!miles) return '';
-    return units === 'miles' ? `${miles.toFixed(1)} mi` : `${(miles * 1.609344).toFixed(1)} km`;
+    return units === 'miles' ? `${miles.toFixed(1)} ${t('unit.mi')}` : `${(miles * 1.609344).toFixed(1)} ${t('unit.km')}`;
   }
   function isoDate(d) { return d.toISOString().slice(0, 10); }
+
+  const PHASE_KEYS = { build: 'phase.build', peak: 'phase.peak', taper: 'phase.taper' };
+  function phaseName(phase) {
+    return PHASE_KEYS[phase] ? t(PHASE_KEYS[phase]) : phase;
+  }
+  function dayNameLocal(code) {
+    // code is one of Mon/Tue/... → localized short name
+    const map = { Mon: 'day.Mon', Tue: 'day.Tue', Wed: 'day.Wed', Thu: 'day.Thu', Fri: 'day.Fri', Sat: 'day.Sat', Sun: 'day.Sun' };
+    return map[code] ? t(map[code]) : code;
+  }
 
   function updatePaceDisplay() {
     if (!$('currentVdot')) return;
@@ -67,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       for (const z of ['E', 'M', 'T', 'I', 'R']) {
         const el = document.createElement('div');
         el.className = 'pace-item';
-        el.innerHTML = `<span class="pace-type">${z}</span><span class="pace-value">${zones[z][0]}-${zones[z][1]}</span><span class="pace-km">bpm</span>`;
+        el.innerHTML = `<span class="pace-type">${z}</span><span class="pace-value">${zones[z][0]}-${zones[z][1]}</span><span class="pace-km">${t('unit.bpm')}</span>`;
         grid.appendChild(el);
       }
     }
@@ -76,8 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateMileageLabel() {
     if (!$('mileageLabel') || !$('mileageHint')) return;
     const units = document.querySelector('input[name="units"]:checked')?.value || 'km';
-    $('mileageLabel').textContent = units === 'km' ? 'Current Weekly Distance' : 'Current Weekly Mileage';
-    $('mileageHint').textContent = units === 'km' ? 'km per week' : 'miles per week';
+    $('mileageLabel').textContent = units === 'km' ? t('field.currentWeeklyDistance') : t('field.currentWeeklyMileage');
+    $('mileageHint').textContent = units === 'km' ? t('field.kmPerWeek') : t('field.milesPerWeek');
   }
 
   function getConfig() {
@@ -119,8 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const u = document.querySelector(`input[name="units"][value="${c.units || 'km'}"]`);
       if (u) u.checked = true;
       if ($('mileageLabel')) {
-        $('mileageLabel').textContent = (c.units || 'km') === 'km' ? 'Current Weekly Distance' : 'Current Weekly Mileage';
-        $('mileageHint').textContent = (c.units || 'km') === 'km' ? 'km per week' : 'miles per week';
+        $('mileageLabel').textContent = (c.units || 'km') === 'km' ? t('field.currentWeeklyDistance') : t('field.currentWeeklyMileage');
+        $('mileageHint').textContent = (c.units || 'km') === 'km' ? t('field.kmPerWeek') : t('field.milesPerWeek');
       }
       if (c.maxHr && $('maxHr')) $('maxHr').value = c.maxHr;
       if (c.restHr && $('restHr')) $('restHr').value = c.restHr;
@@ -180,17 +192,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const hours = $('raceHours').value;
       const minutes = $('raceMinutes').value;
       const seconds = $('raceSeconds').value;
-      if (!minutes) { alert('Please enter a race time'); return; }
+      if (!minutes) { alert(t('alert.enterRaceTime')); return; }
       const totalSeconds = VDOTCalculator.timeToSeconds(hours, minutes, seconds);
       const vdot = VDOTCalculator.calculateVDOT(distance, totalSeconds);
       if (vdot && vdot >= 30 && vdot <= 85) {
         currentVDOT = vdot;
         if ($('vdotSlider')) $('vdotSlider').value = vdot;
         if ($('vdotValue')) $('vdotValue').textContent = vdot;
-        if ($('vdotResult')) { $('vdotResult').textContent = `Calculated VDOT: ${vdot}`; $('vdotResult').classList.remove('hidden'); }
+        if ($('vdotResult')) { $('vdotResult').textContent = t('field.calculatedVdot', { vdot }); $('vdotResult').classList.remove('hidden'); }
         updatePaceDisplay();
       } else {
-        alert('Could not calculate VDOT. Please check your time.');
+        alert(t('alert.couldNotCalcVdot'));
       }
     });
     if ($('maxHr')) $('maxHr').addEventListener('input', updatePaceDisplay);
@@ -202,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (form) form.addEventListener('submit', async e => {
       e.preventDefault();
       const cfg = getConfig();
-      if (!cfg.event || !cfg.raceDate) { alert('Please fill in all required fields'); return; }
+      if (!cfg.event || !cfg.raceDate) { alert(t('alert.fillRequired')); return; }
       // also save vdot
       cfg.vdot = currentVDOT;
       await Storage.save({ config: cfg, completed });
@@ -216,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
       completed = {};
       const link = $('viewPlanLink');
       if (link) link.style.display = 'none';
-      alert('Saved plan cleared.');
+      alert(t('alert.savedCleared'));
     });
   }
 
@@ -225,8 +237,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!currentCalendar || !isCalendarPage) return;
     const week = currentCalendar.weeks[currentWeekIndex];
     const units = currentCalendar.units;
-    if ($('weekIndicator')) $('weekIndicator').textContent = `Week ${week.weekNum} of ${currentCalendar.totalWeeks} (${week.weeksUntilRace} wk to race)`;
-    if ($('countdown')) $('countdown').textContent = `Race: ${currentCalendar.raceDate.toLocaleDateString()} · Phase: ${week.phase}`;
+    if ($('weekIndicator')) $('weekIndicator').textContent = t('cal.weekIndicator', { n: week.weekNum, m: currentCalendar.totalWeeks, wk: week.weeksUntilRace });
+    if ($('countdown')) $('countdown').textContent = t('cal.raceCountdown', { date: currentCalendar.raceDate.toLocaleDateString(locale), phase: phaseName(week.phase) });
 
     const grid = $('calendarGrid');
     if (!grid) return;
@@ -234,22 +246,22 @@ document.addEventListener('DOMContentLoaded', () => {
     CalendarGenerator.DAYS.forEach(day => {
       const h = document.createElement('div');
       h.className = 'day-header';
-      h.textContent = day;
+      h.textContent = dayNameLocal(day);
       grid.appendChild(h);
     });
 
     week.days.forEach(day => {
       const cell = document.createElement('div');
       cell.className = `day-cell ${day.type === 'rest' ? 'empty' : ''}`;
-      const dateStr = day.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      const dateStr = day.date.toLocaleDateString(locale, { month: 'short', day: 'numeric' });
       const key = isoDate(day.date);
       const done = completed[key];
       const time = day.totalMinutes ? fmtMin(day.totalMinutes) : '';
       const dist = day.distanceMiles ? fmtDist(day.distanceMiles, units) : '';
       cell.innerHTML = `
         <div class="day-card-header">
-          <div class="day-date-group"><span class="day-weekday-mobile">${day.dayName}</span><span class="day-number"> ${dateStr}</span></div>
-          ${day.type !== 'rest' ? `<label class="done-chk"><input type="checkbox" data-date="${key}" ${done ? 'checked' : ''}> done</label>` : ''}
+          <div class="day-date-group"><span class="day-weekday-mobile">${dayNameLocal(day.dayName)}</span><span class="day-number"> ${dateStr}</span></div>
+          ${day.type !== 'rest' ? `<label class="done-chk"><input type="checkbox" data-date="${key}" ${done ? 'checked' : ''}> ${t('cal.done')}</label>` : ''}
         </div>
         <div class="day-workout-line"><span class="workout-type ${day.type}">${day.label}</span>${time ? ` <span class="workout-time">${time}</span>` : ''}${dist ? ` <span class="workout-dist">· ${dist}</span>` : ''}</div>
         ${day.detail ? `<div class="workout-detail">${day.detail}</div>` : ''}
@@ -280,12 +292,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if ($('weekDetails')) $('weekDetails').innerHTML = `
-      <h3>Week ${week.weekNum} Summary ${week.note ? `<span class="week-note">${week.note}</span>` : ''}</h3>
+      <h3>${t('cal.weekSummary', { n: week.weekNum })} ${week.note ? `<span class="week-note">${week.note}</span>` : ''}</h3>
       <div class="week-summary">
-        <div class="summary-item"><span class="label">Total Time</span><span class="value">${fmtMin(week.totalMinutes)}</span></div>
-        <div class="summary-item"><span class="label">Total Dist</span><span class="value">${fmtDist(week.totalMiles, units)}</span></div>
-        <div class="summary-item"><span class="label">Quality</span><span class="value">${week.qualityCount}</span></div>
-        <div class="summary-item"><span class="label">Phase</span><span class="value">${week.phase}</span></div>
+        <div class="summary-item"><span class="label">${t('cal.totalTime')}</span><span class="value">${fmtMin(week.totalMinutes)}</span></div>
+        <div class="summary-item"><span class="label">${t('cal.totalDist')}</span><span class="value">${fmtDist(week.totalMiles, units)}</span></div>
+        <div class="summary-item"><span class="label">${t('cal.quality')}</span><span class="value">${week.qualityCount}</span></div>
+        <div class="summary-item"><span class="label">${t('cal.phase')}</span><span class="value">${phaseName(week.phase)}</span></div>
       </div>`;
 
     renderPhaseTimeline(week);
@@ -295,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const el = $('calendarSummary');
     if (!el) return;
     const order = ['build', 'peak', 'taper'];
-    const labels = { build: 'Build', peak: 'Peak', taper: 'Taper' };
+    const labels = { build: t('phase.build'), peak: t('phase.peak'), taper: t('phase.taper') };
     const currentIdx = order.indexOf(week.phase);
     const blocks = order.map((p, i) => {
       const label = labels[p];
@@ -305,12 +317,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const marker = isCurrent ? '●' : isPast ? '✓' : '○';
       return `<div class="${cls}"><span class="phase-marker">${marker}</span>${label}</div>`;
     }).join('');
-    const phaseLabel = labels[week.phase] || week.phase;
+    const phaseLabel = phaseName(week.phase);
     el.innerHTML = `
-      <h3>Phases</h3>
+      <h3>${t('cal.phasesTitle')}</h3>
       <div class="phase-timeline">${blocks}</div>
-      <p class="phase-caption">You're in the <strong>${phaseLabel}</strong> phase · Week ${week.weekNum} of ${currentCalendar.totalWeeks}</p>
-      <p class="phase-hint">Tap a day for details. Progress is saved automatically.</p>`;
+      <p class="phase-caption">${t('cal.phaseCaption', { phase: phaseLabel, n: week.weekNum, m: currentCalendar.totalWeeks })}</p>
+      <p class="phase-hint">${t('cal.phaseHint')}</p>`;
   }
 
   // ---- Day detail dialog (<dialog>) ----
@@ -320,103 +332,77 @@ document.addEventListener('DOMContentLoaded', () => {
   if (closeBtn && dialog) closeBtn.addEventListener('click', () => dialog.close());
   if (dialog) dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
 
-  const ZONE_NAMES = { E:'Easy', M:'Marathon', T:'Tempo', I:'Interval', R:'Repetition', L:'Long', W:'Walk', ST:'Strides', rest:'Rest' };
+  const ZONE_NAMES = {
+    E: t('zone.E'), M: t('zone.M'), T: t('zone.T'), I: t('zone.I'),
+    R: t('zone.R'), L: t('zone.L'), W: t('zone.W'), ST: t('zone.ST'), rest: t('zone.rest')
+  };
   function fmtPaceMile(spm){ const m=Math.floor(spm/60); const s=Math.round(spm%60); return `${m}:${String(s).padStart(2,'0')}`; }
   function paceForZone(zone, units){
     if (zone==='W' || zone==='rest' || zone==='ST') return '';
     const spm = CalendarGenerator.paceSecondsPerMile(currentVDOT, zone);
-    return units==='km' ? CalendarGenerator.fmtPace(spm)+'/km' : fmtPaceMile(spm)+'/mi';
+    return units==='km' ? CalendarGenerator.fmtPace(spm)+'/'+t('unit.km') : fmtPaceMile(spm)+'/'+t('unit.mi');
   }
-  function zoneClassFor(part) {
-    if (/ST\b/i.test(part)) return 'repetition';
-    if (/\bR\b/i.test(part)) return 'repetition';
-    if (/\bI\b/i.test(part)) return 'interval';
-    if (/\bT\b/i.test(part)) return 'tempo';
-    if (/\bM\b/i.test(part)) return 'marathon';
-    if (/\bL\b/i.test(part)) return 'long';
-    if (/\bW\b|rest|jg|Walk/i.test(part)) return 'rest';
-    if (/\bE\b/i.test(part)) return 'easy';
-    return 'easy';
-  }
-  function zoneLabelFor(part) {
-    if (/ST\b/i.test(part)) return 'ST';
-    if (/\bR\b/i.test(part)) return 'R';
-    if (/\bI\b/i.test(part)) return 'I';
-    if (/\bT\b/i.test(part)) return 'T';
-    if (/\bM\b/i.test(part)) return 'M';
-    if (/\bL\b/i.test(part)) return 'L';
-    if (/\bW\b|\brest\b|\bjg\b|Walk/i.test(part)) return 'W';
-    if (/\bE\b/i.test(part)) return 'E';
-    return 'E';
-  }
-  function humanizePart(part) {
-    let s = part
-      .replace(/×/g, 'x')
-      .replace(/\bw\//g, 'with ')
-      .replace(/\bjg\b/gi, 'Jog')
-      .replace(/\brecoveries\b/gi, 'recovery')
-      .replace(/\brec\b/gi, 'recovery')
-      .replace(/\bmin\b/gi, 'Min')
-      .replace(/\bST\b/g, 'Strides')
-      .replace(/\bR\b/g, 'Repetition')
-      .replace(/\bI\b/g, 'Interval')
-      .replace(/\bT\b/g, 'Tempo')
-      .replace(/\bM\b/g, 'Marathon')
-      .replace(/\bE\b/g, 'Easy')
-      .replace(/\bL\b/g, 'Long')
-      .replace(/\bW\b/g, 'Walk');
-    s = s.replace(/\s+/g, ' ');
-    s = s.replace(/\s*\(\s*/g, ' (');
-    s = s.replace(/\s*\)\s*/g, ' ) ');
-    return s.trim();
-  }
-  function parseDetailSteps(detail) {
-    if (!detail) return [];
-    return detail.split(/\s*\+\s*(?![^()]*\))/).map(s => s.trim()).filter(Boolean);
+
+  // Render a list of segments as localized per-step <li> markup.
+  function renderDaySteps(day, units) {
+    const segs = day.segments || [];
+    if (!segs.length) {
+      const txt = day.detail || t('day.rest');
+      return `<li class="day-step"><span class="step-text">${txt}</span></li>`;
+    }
+    const clsMap = { E:'easy', M:'marathon', T:'tempo', I:'interval', R:'repetition', L:'long', W:'rest', ST:'repetition' };
+    const n = segs.length;
+    return segs.map((seg, i) => {
+      const zone = seg.p || 'E';
+      const cls = clsMap[zone] || 'easy';
+      const friendly = ZONE_NAMES[zone] || zone;
+      const isWarm = i === 0 && (zone === 'E' || zone === 'L');
+      const isCool = i === n - 1 && (zone === 'E' || zone === 'L') && n > 2;
+      const role = isWarm ? t('day.warmup') : isCool ? t('day.cooldown') : '';
+      const pace = paceForZone(zone, units);
+      const amt = WorkoutRender && WorkoutRender.renderSegments([seg], units) || zone;
+      return `<li class="day-step"><span class="zone-chip ${cls}">${zone}</span><span class="step-text">${amt}${friendly && friendly !== zone ? ' · ' + friendly : ''}${role ? ' - ' + role : ''}${pace ? ' . ' + pace : ''}</span></li>`;
+    }).join('');
   }
   function openDayDialog(day) {
     if (!dialog || !dialogContent) return;
     const units = currentCalendar.units;
     const time = day.totalMinutes ? fmtMin(day.totalMinutes) : '';
     const dist = day.distanceMiles ? fmtDist(day.distanceMiles, units) : '';
-    const dateStr = day.date.toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric' });
-    let stepsHtml = '';
-    if (day.segments && day.segments.length && !day.detail) {
-      const n = day.segments.length;
-      stepsHtml = day.segments.map((seg,i) => {
-        const zone = seg.p || 'E';
-        const clsMap = { E:'easy', M:'marathon', T:'tempo', I:'interval', R:'repetition', L:'long', W:'rest', ST:'repetition' };
-        const cls = clsMap[zone] || 'easy';
-        const friendly = ZONE_NAMES[zone] || zone;
-        const isWarm = i===0 && zone==='E';
-        const isCool = i===n-1 && zone==='E';
-        const role = isWarm ? 'Warm-up' : isCool ? 'Cool-down' : '';
-        const pace = paceForZone(zone, units);
-        const amtRaw = seg.m ? (seg.m >=1 ? `${Math.round(seg.m)} Min` : `${Math.round(seg.m*60)} s`) : seg.note || '';
-        const amt = humanizePart(amtRaw);
-        return `<li class="day-step"><span class="zone-chip ${cls}">${zone}</span><span class="step-text">${amt} . ${friendly}${role ? ' - '+role : ''}${pace ? ' . '+pace : ''}</span></li>`;
-      }).join('');
-    } else {
-      const parts = parseDetailSteps(day.detail);
-      stepsHtml = parts.map((part,i) => {
-        const zone = zoneLabelFor(part);
-        const cls = zoneClassFor(part);
-        const isWarm = i===0 && zone==='E';
-        const isCool = i===parts.length-1 && zone==='E';
-        const friendly = ZONE_NAMES[zone] || zone;
-        const role = isWarm ? 'Warm-up' : isCool ? 'Cool-down' : '';
-        const pace = paceForZone(zone, units);
-        const cleanRaw = part.replace(/\s+[EIMTRLW]\s*$/i, '').trim() || part;
-        const clean = humanizePart(cleanRaw);
-        return `<li class="day-step"><span class="zone-chip ${cls}">${zone}</span><span class="step-text">${clean} . ${friendly}${role ? ' - '+role : ''}${pace ? ' . '+pace : ''}</span></li>`;
-      }).join('');
-    }
+    const dateStr = day.date.toLocaleDateString(locale, { weekday:'long', month:'long', day:'numeric' });
+    const stepsHtml = renderDaySteps(day, units);
+    const isRest = !day.segments || !day.segments.length;
+    const fitBtn = isRest
+      ? `<button type="button" class="btn-secondary export-fit-btn" disabled>${t('field.exportFit')}</button>`
+      : `<button type="button" class="btn-secondary export-fit-btn">${t('field.exportFit')}</button>`;
     dialogContent.innerHTML = `
       <h3>${day.label} — ${dateStr}</h3>
-      <div class="dialog-meta">${time ? 'Total for the day: '+time+' · ' : ''}${dist ? dist+' · ' : ''}${day.type}${day.note ? ' · '+day.note : ''}</div>
-      ${time ? '<p style="font-size:0.8rem; color:var(--gray-500); margin:8px 0 10px;">Total includes warm-up, main set and cool-down. For example, “5 × 4 Min.” is 20 min work + 15 min jog = 35 min, plus the Easy kms.</p>' : ''}
-      <ul class="day-steps">${stepsHtml || '<li class="day-step"><span class="step-text">'+(day.detail||'Rest')+'</span></li>'}</ul>
+      <div class="dialog-meta">${time ? t('day.totalFor', { time }) + ' · ' : ''}${dist ? dist+' · ' : ''}${day.type}</div>
+      ${time ? `<p style="font-size:0.8rem; color:var(--gray-500); margin:8px 0 10px;">${t('day.totalHint')}</p>` : ''}
+      <ul class="day-steps">${stepsHtml}</ul>
+      <div class="plan-io" style="margin-top:14px">
+        ${fitBtn}
+        <span class="hint" id="fitExportStatus"></span>
+      </div>
     `;
+    if (!isRest) {
+      const btn = dialogContent.querySelector('.export-fit-btn');
+      btn.addEventListener('click', async () => {
+        const status = dialogContent.querySelector('#fitExportStatus');
+        const setStatus = (msg, isErr) => {
+          if (!status) return;
+          status.textContent = msg || '';
+          status.style.color = isErr ? 'var(--danger)' : 'var(--success)';
+        };
+        try {
+          const name = (typeof FitIO !== 'undefined') ? FitIO.downloadFitForDay(day, currentVDOT) : null;
+          if (name) setStatus(t('io.fitExported', { name }));
+          else setStatus(t('io.fitRestDay'), true);
+        } catch (e) {
+          setStatus(t('io.fitExportFailed', { msg: e.message }), true);
+        }
+      });
+    }
     dialog.showModal();
   }
 
@@ -449,10 +435,10 @@ document.addEventListener('DOMContentLoaded', () => {
       exportBtn.addEventListener('click', async () => {
         try {
           const name = await PlanIO.downloadPlan();
-          if (name) setStatus(`Exported "${name}".`);
-          else setStatus('No saved plan to export yet.', true);
+          if (name) setStatus(t('io.exported', { name }));
+          else setStatus(t('io.noPlanToExport'), true);
         } catch (e) {
-          setStatus(`Export failed: ${e.message}`, true);
+          setStatus(t('io.exportFailed', { msg: e.message }), true);
         }
       });
     }
@@ -470,11 +456,11 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
           const { config, completed } = await PlanIO.parsePlanFile(file);
           await Storage.save({ config, completed });
-          setStatus(`Imported "${file.name}".`);
+          setStatus(t('io.imported', { name: file.name }));
           // Reload to render the imported plan.
           location.reload();
         } catch (err) {
-          setStatus(`Import failed: ${err.message}`, true);
+          setStatus(t('io.importFailed', { msg: err.message }), true);
         } finally {
           e.target.value = '';
         }

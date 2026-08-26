@@ -65,20 +65,21 @@ const PlanIO = (() => {
 
   /** Parse a File object into a valid plan, or throw an error. */
   async function parsePlanFile(file) {
+    const t = (key) => (typeof I18n !== 'undefined' ? I18n.t(key) : key);
     const text = await file.text();
     let data;
     try {
       data = JSON.parse(text);
     } catch (e) {
-      throw new Error('The file is not valid JSON.');
+      throw new Error(t('io.notJson'));
     }
     if (!data || typeof data !== 'object') {
-      throw new Error('Unrecognised plan file.');
+      throw new Error(t('io.unrecognised'));
     }
     // Accept both the native wrapper and a bare {config, completed} object.
     const cfg = data.config || data;
     if (!cfg || typeof cfg !== 'object' || !cfg.event || !cfg.raceDate) {
-      throw new Error('The file does not contain a training plan (missing event / race date).');
+      throw new Error(t('io.noPlan'));
     }
     const completed = data.completed && typeof data.completed === 'object' ? data.completed : {};
     // Normalise config to the shape the app expects.

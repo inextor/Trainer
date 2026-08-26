@@ -12,14 +12,14 @@
       <a href="calendar.html" class="brand">
         <span class="brand-mark">TC</span>
         <span class="brand-text">
-          <h1>Training Day</h1>
-          <span class="brand-tagline">Workout Detail</span>
+          <h1 data-i18n="day.title">Training Day</h1>
+          <span class="brand-tagline" data-i18n="day.detail">Workout Detail</span>
           <span class="app-version">v1.0.7</span>
         </span>
       </a>
       <nav>
-        <a href="calendar.html">← Calendar</a>
-        <a href="index.html">Configuration</a>
+        <a href="calendar.html" data-i18n="nav.backToCalendar">← Calendar</a>
+        <a href="index.html" data-i18n="nav.configuration">Configuration</a>
       </nav>
     </div>
   </header>
@@ -27,14 +27,17 @@
     <main class="day-detail-page">
       <div id="dayDetail" class="day-detail-card"></div>
       <div id="dayNotFound" class="hidden" style="text-align:center; padding:40px; color:var(--text-muted);">
-        <p>Day not found.</p>
-        <a href="calendar.html" class="btn-primary" style="display:inline-block; margin-top:12px; text-decoration:none; padding:12px 24px; width:auto;">Back to Calendar</a>
+        <p data-i18n="day.notFound">Day not found.</p>
+        <a href="calendar.html" class="btn-primary" style="display:inline-block; margin-top:12px; text-decoration:none; padding:12px 24px; width:auto;" data-i18n="day.backToCalendar">Back to Calendar</a>
       </div>
     </main>
   </div>
+  <script src="js/i18n.js"></script>
+  <script src="js/workout-render.js"></script>
   <script src="js/vdot-calculator.js"></script>
   <script src="js/calendar-generator.js"></script>
   <script src="js/storage.js"></script>
+  <script src="js/fit-io.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       const params = new URLSearchParams(location.search);
@@ -75,56 +78,80 @@
       const { day, week } = target;
       const units = cal.units;
       const vdot = cal.vdot;
+      const t = (key, vars) => (typeof I18n !== 'undefined' ? I18n.t(key, vars) : key);
+      const locale = (typeof I18n !== 'undefined' && I18n.locale === 'es') ? 'es-ES' : 'en-US';
       // Helpers (duplicated from app.js for standalone page)
-      function fmtMin(min){ if(min==null) return ''; const m=Math.floor(min); const s=Math.round((min-m)*60); return s?`${m} min ${s}s`:`${m} min`; }
-      function fmtDist(miles, units){ if(!miles) return ''; return units==='miles'?`${miles.toFixed(1)} mi`:`${(miles*1.609344).toFixed(1)} km`; }
+      function fmtMin(min){ if(min==null) return ''; const m=Math.floor(min); const s=Math.round((min-m)*60); return s?`${m} ${t('unit.min')} ${s}${t('unit.sec')}`:`${m} ${t('unit.min')}`; }
+      function fmtDist(miles, units){ if(!miles) return ''; return units==='miles'?`${miles.toFixed(1)} ${t('unit.mi')}`:`${(miles*1.609344).toFixed(1)} ${t('unit.km')}`; }
       function fmtPaceMile(spm){ const m=Math.floor(spm/60); const s=Math.round(spm%60); return `${m}:${String(s).padStart(2,'0')}`; }
       function paceForZone(zone, units){
         if(zone==='W'||zone==='rest'||zone==='ST') return '';
         const spm = CalendarGenerator.paceSecondsPerMile(vdot, zone);
-        return units==='km' ? CalendarGenerator.fmtPace(spm)+'/km' : fmtPaceMile(spm)+'/mi';
+        return units==='km' ? CalendarGenerator.fmtPace(spm)+'/'+t('unit.km') : fmtPaceMile(spm)+'/'+t('unit.mi');
       }
-      const ZONE_NAMES = { E:'Easy', M:'Marathon', T:'Tempo', I:'Interval', R:'Repetition', L:'Long', W:'Walk', ST:'Strides', rest:'Rest' };
-      function zoneClassFor(p){ if(/ST\b/i.test(p)) return 'repetition'; if(/\bR\b/i.test(p)) return 'repetition'; if(/\bI\b/i.test(p)) return 'interval'; if(/\bT\b/i.test(p)) return 'tempo'; if(/\bM\b/i.test(p)) return 'marathon'; if(/\bL\b/i.test(p)) return 'long'; if(/\bW\b|rest|jg|Walk/i.test(p)) return 'rest'; if(/\bE\b/i.test(p)) return 'easy'; return 'easy'; }
-      function zoneLabelFor(p){ if(/ST\b/i.test(p)) return 'ST'; if(/\bR\b/i.test(p)) return 'R'; if(/\bI\b/i.test(p)) return 'I'; if(/\bT\b/i.test(p)) return 'T'; if(/\bM\b/i.test(p)) return 'M'; if(/\bL\b/i.test(p)) return 'L'; if(/\bW\b|\brest\b|\bjg\b|Walk/i.test(p)) return 'W'; if(/\bE\b/i.test(p)) return 'E'; return 'E'; }
-      function humanizePart(part){
-        let s=part.replace(/×/g,'x').replace(/\bw\//g,'with ').replace(/\bjg\b/gi,'Jog').replace(/\brecoveries\b/gi,'recovery').replace(/\brec\b/gi,'recovery').replace(/\bmin\b/gi,'Min').replace(/\bST\b/g,'Strides').replace(/\bR\b/g,'Repetition').replace(/\bI\b/g,'Interval').replace(/\bT\b/g,'Tempo').replace(/\bM\b/g,'Marathon').replace(/\bE\b/g,'Easy').replace(/\bL\b/g,'Long').replace(/\bW\b/g,'Walk');
-        s=s.replace(/\s+/g,' '); s=s.replace(/\s*\(\s*/g,' ('); s=s.replace(/\s*\)\s*/g,' ) '); return s.trim();
+      const ZONE_NAMES = { E:t('zone.E'), M:t('zone.M'), T:t('zone.T'), I:t('zone.I'), R:t('zone.R'), L:t('zone.L'), W:t('zone.W'), ST:t('zone.ST'), rest:t('zone.rest') };
+      function renderDaySteps(day, units){
+        const segs = day.segments || [];
+        if (!segs.length) {
+          const txt = day.detail || t('day.rest');
+          return `<li class="day-step"><span class="step-text">${txt}</span></li>`;
+        }
+        const clsMap = { E:'easy', M:'marathon', T:'tempo', I:'interval', R:'repetition', L:'long', W:'rest', ST:'repetition' };
+        const n = segs.length;
+        return segs.map((seg,i)=>{
+          const zone = seg.p || 'E';
+          const cls = clsMap[zone] || 'easy';
+          const friendly = ZONE_NAMES[zone] || zone;
+          const isWarm = i===0 && (zone==='E' || zone==='L');
+          const isCool = i===n-1 && (zone==='E' || zone==='L') && n > 2;
+          const role = isWarm ? t('day.warmup') : isCool ? t('day.cooldown') : '';
+          const pace = paceForZone(zone, units);
+          const amt = WorkoutRender && WorkoutRender.renderSegments([seg], units) || zone;
+          return `<li class="day-step"><span class="zone-chip ${cls}">${zone}</span><span class="step-text">${amt}${friendly && friendly !== zone ? ' · ' + friendly : ''}${role ? ' - ' + role : ''}${pace ? ' . ' + pace : ''}</span></li>`;
+        }).join('');
       }
-      function parseDetailSteps(detail){ if(!detail) return []; return detail.split(/\s*\+\s*(?![^()]*\))/).map(s=>s.trim()).filter(Boolean); }
       const time = day.totalMinutes ? fmtMin(day.totalMinutes) : '';
       const dist = day.distanceMiles ? fmtDist(day.distanceMiles, units) : '';
-      const dateStr2 = day.date.toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
-      let stepsHtml = '';
-      if (day.segments && day.segments.length && !day.detail) {
-        const n = day.segments.length;
-        stepsHtml = day.segments.map((seg,i)=>{
-          const zone=seg.p||'E'; const clsMap={E:'easy',M:'marathon',T:'tempo',I:'interval',R:'repetition',L:'long',W:'rest',ST:'repetition'}; const cls=clsMap[zone]||'easy'; const friendly=ZONE_NAMES[zone]||zone;
-          const isWarm=i===0&&zone==='E'; const isCool=i===n-1&&zone==='E'; const role=isWarm?'Warm-up':isCool?'Cool-down':''; const pace=paceForZone(zone, units);
-          const amtRaw=seg.m ? (seg.m>=1?`${Math.round(seg.m)} Min`:`${Math.round(seg.m*60)} s`) : seg.note||''; const amt=humanizePart(amtRaw);
-          return `<li class="day-step"><span class="zone-chip ${cls}">${zone}</span><span class="step-text">${amt} . ${friendly}${role?' - '+role:''}${pace?' . '+pace:''}</span></li>`;
-        }).join('');
-      } else {
-        const parts=parseDetailSteps(day.detail);
-        stepsHtml=parts.map((part,i)=>{
-          const zone=zoneLabelFor(part); const cls=zoneClassFor(part); const isWarm=i===0&&zone==='E'; const isCool=i===parts.length-1&&zone==='E'; const friendly=ZONE_NAMES[zone]||zone; const role=isWarm?'Warm-up':isCool?'Cool-down':''; const pace=paceForZone(zone,units);
-          const cleanRaw=part.replace(/\s+[EIMTRLW]\s*$/i,'').trim()||part; const clean=humanizePart(cleanRaw);
-          return `<li class="day-step"><span class="zone-chip ${cls}">${zone}</span><span class="step-text">${clean} . ${friendly}${role?' - '+role:''}${pace?' . '+pace:''}</span></li>`;
-        }).join('');
-      }
+      const dateStr2 = day.date.toLocaleDateString(locale, { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+      const stepsHtml = renderDaySteps(day, units);
+      const zoneNames = ZONE_NAMES;
+      const isRest = !day.segments || !day.segments.length;
       document.getElementById('dayDetail').innerHTML = `
         <h3>${day.label} — ${dateStr2}</h3>
-        <div class="dialog-meta">${time ? 'Total for the day: '+time+' · ' : ''}${dist ? dist+' · ' : ''}${day.type}${week.note ? ' · '+week.note : ''} · ${week.phase}</div>
-        ${time ? '<p style="font-size:0.8rem; color:var(--text-muted); margin:8px 0 10px;">Total includes warm-up, main set and cool-down.</p>' : ''}
-        <ul class="day-steps">${stepsHtml || '<li class="day-step"><span class="step-text">'+(day.detail||'Rest')+'</span></li>'}</ul>
+        <div class="dialog-meta">${time ? t('day.totalFor', { time }) + ' · ' : ''}${dist ? dist+' · ' : ''}${day.type}${week.note ? ' · '+week.note : ''} · ${week.phase}</div>
+        ${time ? `<p style="font-size:0.8rem; color:var(--text-muted); margin:8px 0 10px;">${t('day.totalHint')}</p>` : ''}
+        <ul class="day-steps">${stepsHtml || '<li class="day-step"><span class="step-text">'+(day.detail||t('day.rest'))+'</span></li>'}</ul>
         <div class="zone-legend" style="margin-top:14px">
-          <span class="legend-item"><span class="legend-dot easy"></span> Easy</span>
-          <span class="legend-item"><span class="legend-dot tempo"></span> Tempo</span>
-          <span class="legend-item"><span class="legend-dot interval"></span> Interval</span>
-          <span class="legend-item"><span class="legend-dot marathon"></span> Marathon</span>
-          <span class="legend-item"><span class="legend-dot long"></span> Long</span>
+          <span class="legend-item"><span class="legend-dot easy"></span> ${zoneNames.E}</span>
+          <span class="legend-item"><span class="legend-dot tempo"></span> ${zoneNames.T}</span>
+          <span class="legend-item"><span class="legend-dot interval"></span> ${zoneNames.I}</span>
+          <span class="legend-item"><span class="legend-dot marathon"></span> ${zoneNames.M}</span>
+          <span class="legend-item"><span class="legend-dot long"></span> ${zoneNames.L}</span>
+        </div>
+        <div class="plan-io" style="margin-top:14px">
+          ${isRest
+            ? `<button type="button" class="btn-secondary" disabled>${t('field.exportFit')}</button>`
+            : `<button type="button" class="btn-secondary" id="exportFitDay">${t('field.exportFit')}</button>`}
+          <span class="hint" id="fitExportStatus"></span>
         </div>
       `;
+      if (!isRest) {
+        const btn = document.getElementById('exportFitDay');
+        const status = document.getElementById('fitExportStatus');
+        const setStatus = (msg, isErr) => {
+          status.textContent = msg || '';
+          status.style.color = isErr ? 'var(--danger)' : 'var(--success)';
+        };
+        btn.addEventListener('click', () => {
+          try {
+            const name = (typeof FitIO !== 'undefined') ? FitIO.downloadFitForDay(day, vdot) : null;
+            if (name) setStatus(t('io.fitExported', { name }));
+            else setStatus(t('io.fitRestDay'), true);
+          } catch (e) {
+            setStatus(t('io.fitExportFailed', { msg: e.message }), true);
+          }
+        });
+      }
     });
   </script>
 </body>
